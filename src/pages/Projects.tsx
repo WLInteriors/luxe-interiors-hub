@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroImage from "@/assets/hero-kitchen.jpg";
@@ -12,23 +13,28 @@ const categories = [
   { label: "All", value: "all" },
   { label: "Kitchens", value: "kitchens" },
   { label: "Bathrooms", value: "bathrooms" },
-  { label: "Full Renovation", value: "renovation" },
+  { label: "Full Renovation", value: "full-renovation" },
   { label: "Millwork", value: "millwork" },
 ];
 
 const projects = [
   { title: "Modern Farmhouse Kitchen", category: "kitchens", image: heroImage, location: "Scarsdale, NY" },
+  { title: "Chef's Kitchen Remodel", category: "kitchens", image: heroImage, location: "Greenwich, CT" },
   { title: "Spa-Inspired Master Bath", category: "bathrooms", image: bathroomImage, location: "Rye, NY" },
   { title: "Custom Library & Study", category: "millwork", image: millworkImage, location: "Greenwich, CT" },
-  { title: "Contemporary Great Room", category: "renovation", image: livingRoom, location: "Bronxville, NY" },
+  { title: "Contemporary Great Room", category: "full-renovation", image: livingRoom, location: "Bronxville, NY" },
   { title: "Bespoke Walk-in Closet", category: "millwork", image: closetImage, location: "Larchmont, NY" },
   { title: "Gentleman's Bar", category: "millwork", image: barImage, location: "Rye, NY" },
 ];
 
-import { useState } from "react";
-
 const Projects = () => {
-  const [filter, setFilter] = useState("all");
+  const { category } = useParams();
+  const [filter, setFilter] = useState(category ?? "all");
+
+  useEffect(() => {
+    setFilter(category ?? "all");
+  }, [category]);
+
   const filtered = filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
   return (
@@ -38,10 +44,9 @@ const Projects = () => {
           <SectionHeading
             label="Our Portfolio"
             title="Completed Projects"
-            description="Explore our collection of luxury renovations and custom millwork across Westchester and Fairfield counties."
+            description="Explore our collection of luxury renovations and custom millwork delivered across the tri-state area. We also welcome fabrication-only commissions for designers, architects, and homeowners nationwide."
           />
 
-          {/* Filter */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map((cat) => (
               <button
@@ -58,7 +63,6 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((project) => (
               <div key={project.title} className="group relative overflow-hidden aspect-[4/3] cursor-pointer">

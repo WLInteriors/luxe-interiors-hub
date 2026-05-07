@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send } from "lucide-react";
 
 const Consultation = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", project: "", message: "" });
@@ -109,17 +109,13 @@ const Consultation = () => {
                     <Phone className="w-5 h-5 text-brass flex-shrink-0" />
                     (914) 467-0807
                   </a>
-                  <a href="mailto:info@wlinteriors.com" className="flex items-center gap-4 text-sm hover:text-brass transition-colors">
+                  <a href="mailto:info@westchesterluxuryinteriors.com" className="flex items-center gap-4 text-sm hover:text-brass transition-colors break-all">
                     <Mail className="w-5 h-5 text-brass flex-shrink-0" />
-                    info@wlinteriors.com
+                    info@westchesterluxuryinteriors.com
                   </a>
                   <div className="flex items-start gap-4 text-sm">
                     <MapPin className="w-5 h-5 text-brass flex-shrink-0 mt-0.5" />
                     209 North Street<br />Rye, NY 10580
-                  </div>
-                  <div className="flex items-start gap-4 text-sm">
-                    <Clock className="w-5 h-5 text-brass flex-shrink-0 mt-0.5" />
-                    Mon–Fri: 8am–6pm<br />Sat: By Appointment
                   </div>
                 </div>
               </div>
