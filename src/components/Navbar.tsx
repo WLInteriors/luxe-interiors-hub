@@ -6,7 +6,9 @@ import logo from "@/assets/wl-logo.png";
 const projectLinks = [
   { label: "Kitchens", to: "/projects/kitchens" },
   { label: "Bathrooms", to: "/projects/bathrooms" },
+  { label: "Living Spaces", to: "/projects/living-spaces" },
   { label: "Full Home Renovation", to: "/projects/full-renovation" },
+  { label: "Commercial", to: "/projects/commercial" },
 ];
 
 const millworkLinks = [
