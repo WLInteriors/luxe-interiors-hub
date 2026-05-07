@@ -9,12 +9,17 @@ import livingRoom from "@/assets/living-room.jpg";
 import closetImage from "@/assets/closet-custom.jpg";
 import barImage from "@/assets/bar-custom.jpg";
 
+import livingSpaces from "@/assets/living-spaces.jpg";
+import commercialImage from "@/assets/commercial.jpg";
+
 const categories = [
   { label: "All", value: "all" },
   { label: "Kitchens", value: "kitchens" },
   { label: "Bathrooms", value: "bathrooms" },
+  { label: "Living Spaces", value: "living-spaces" },
   { label: "Full Renovation", value: "full-renovation" },
   { label: "Millwork", value: "millwork" },
+  { label: "Commercial", value: "commercial" },
 ];
 
 const projects = [
@@ -25,6 +30,10 @@ const projects = [
   { title: "Contemporary Great Room", category: "full-renovation", image: livingRoom, location: "Bronxville, NY" },
   { title: "Bespoke Walk-in Closet", category: "millwork", image: closetImage, location: "Larchmont, NY" },
   { title: "Gentleman's Bar", category: "millwork", image: barImage, location: "Rye, NY" },
+  { title: "Master Bedroom Retreat", category: "living-spaces", image: livingSpaces, location: "Scarsdale, NY" },
+  { title: "Refined Foyer & Entry", category: "living-spaces", image: livingRoom, location: "Rye, NY" },
+  { title: "Corporate Headquarters Lobby", category: "commercial", image: commercialImage, location: "White Plains, NY" },
+  { title: "Boutique Office Buildout", category: "commercial", image: commercialImage, location: "Stamford, CT" },
 ];
 
 const Projects = () => {
