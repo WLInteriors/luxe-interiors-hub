@@ -6,7 +6,9 @@ import logo from "@/assets/wl-logo.png";
 const projectLinks = [
   { label: "Kitchens", to: "/projects/kitchens" },
   { label: "Bathrooms", to: "/projects/bathrooms" },
+  { label: "Living Spaces", to: "/projects/living-spaces" },
   { label: "Full Home Renovation", to: "/projects/full-renovation" },
+  { label: "Commercial", to: "/projects/commercial" },
 ];
 
 const millworkLinks = [
@@ -31,7 +33,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="WL Interiors" className="h-12 w-auto" />
+            <img src={logo} alt="WL Interiors" className="h-14 w-auto mix-blend-multiply" />
           </Link>
 
           {/* Desktop Nav */}
