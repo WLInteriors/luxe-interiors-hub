@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import livingRoom from "@/assets/living-room.jpg";
+import aboutHero from "@/assets/about-hero.jpg";
 import heroImage from "@/assets/hero-kitchen.jpg";
 import { ArrowRight, Award, Users, Clock, Hammer } from "lucide-react";
 
@@ -25,7 +25,7 @@ const About = () => (
     {/* Hero */}
     <section className="relative h-[50vh] min-h-[400px] flex items-center">
       <div className="absolute inset-0">
-        <img src={livingRoom} alt="WL Interiors renovation" className="w-full h-full object-cover" />
+        <img src={aboutHero} alt="WL Interiors renovation" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-foreground/60" />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -39,9 +39,9 @@ const About = () => (
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
-            <SectionHeading label="Who We Are" title="Building Legacy, One Home at a Time" align="left" />
+            <SectionHeading label="Who We Are" title="Building Legacy, One Space at a Time" align="left" />
             <p className="text-muted-foreground leading-relaxed mb-6">
-              With over two decades of experience serving Westchester County and the surrounding tri-state area, WL Interiors has earned a reputation as one of the region's most trusted luxury general contractors.
+              Backed by deep, hands-on experience across the tri-state area, WL Interiors has earned a reputation as one of the region's most trusted luxury general contractors — serving residential, commercial, and institutional clients alike.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Our in-house millwork shop sets us apart — allowing us to design, fabricate, and install custom cabinetry, built-ins, and architectural details with unparalleled quality control.
