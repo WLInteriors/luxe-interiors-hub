@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
+import logo from "@/assets/wl-logo.png";
 
 const projectLinks = [
   { label: "Kitchens", to: "/projects/kitchens" },
   { label: "Bathrooms", to: "/projects/bathrooms" },
   { label: "Full Home Renovation", to: "/projects/full-renovation" },
-  { label: "Additions", to: "/projects/additions" },
-  { label: "Stairs", to: "/projects/stairs" },
 ];
 
 const millworkLinks = [
@@ -32,12 +31,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 border-2 border-foreground flex items-center justify-center">
-              <span className="font-serif text-lg font-bold tracking-tight">WL</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-serif text-sm tracking-[0.2em] uppercase">Interiors</span>
-            </div>
+            <img src={logo} alt="WL Interiors" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
@@ -46,11 +40,10 @@ const Navbar = () => {
               Home
             </Link>
 
-            {/* Projects Dropdown */}
             <div className="relative" onMouseEnter={() => setDropdown("projects")} onMouseLeave={() => setDropdown(null)}>
-              <button className="flex items-center gap-1 text-sm tracking-wide uppercase transition-colors hover:text-brass">
+              <Link to="/projects" className="flex items-center gap-1 text-sm tracking-wide uppercase transition-colors hover:text-brass">
                 Projects <ChevronDown className="w-3 h-3" />
-              </button>
+              </Link>
               {dropdown === "projects" && (
                 <div className="absolute top-full left-0 pt-2">
                   <div className="bg-background border border-border shadow-xl py-2 min-w-[220px]">
@@ -64,11 +57,10 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* Millwork Dropdown */}
             <div className="relative" onMouseEnter={() => setDropdown("millwork")} onMouseLeave={() => setDropdown(null)}>
-              <button className="flex items-center gap-1 text-sm tracking-wide uppercase transition-colors hover:text-brass">
+              <Link to="/millwork" className="flex items-center gap-1 text-sm tracking-wide uppercase transition-colors hover:text-brass">
                 Custom Millwork <ChevronDown className="w-3 h-3" />
-              </button>
+              </Link>
               {dropdown === "millwork" && (
                 <div className="absolute top-full left-0 pt-2">
                   <div className="bg-background border border-border shadow-xl py-2 min-w-[220px]">
@@ -114,7 +106,7 @@ const Navbar = () => {
           <div className="px-6 py-6 space-y-4">
             <Link to="/" className="block text-sm uppercase tracking-wide" onClick={() => setOpen(false)}>Home</Link>
             <div>
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects</span>
+              <Link to="/projects" onClick={() => setOpen(false)} className="text-xs uppercase tracking-widest text-muted-foreground">Projects</Link>
               <div className="mt-2 space-y-2 pl-4">
                 {projectLinks.map((link) => (
                   <Link key={link.to} to={link.to} className="block text-sm" onClick={() => setOpen(false)}>{link.label}</Link>
@@ -122,7 +114,7 @@ const Navbar = () => {
               </div>
             </div>
             <div>
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">Custom Millwork</span>
+              <Link to="/millwork" onClick={() => setOpen(false)} className="text-xs uppercase tracking-widest text-muted-foreground">Custom Millwork</Link>
               <div className="mt-2 space-y-2 pl-4">
                 {millworkLinks.map((link) => (
                   <Link key={link.to} to={link.to} className="block text-sm" onClick={() => setOpen(false)}>{link.label}</Link>

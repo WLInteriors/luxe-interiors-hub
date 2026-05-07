@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/wl-logo.png";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
@@ -7,14 +8,11 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
         <div>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-12 h-12 border-2 border-primary-foreground flex items-center justify-center">
-              <span className="font-serif text-lg font-bold">WL</span>
-            </div>
-            <span className="font-serif text-sm tracking-[0.2em] uppercase">Interiors</span>
+          <div className="bg-cream inline-block p-3 mb-6">
+            <img src={logo} alt="Westchester Luxury Interiors" className="h-12 w-auto" />
           </div>
           <p className="text-sm leading-relaxed opacity-70">
-            Where craftsmanship meets elegance. Creating luxury residential and commercial spaces in Westchester and beyond.
+            Where craftsmanship meets elegance. Creating luxury residential, commercial, and institutional spaces across the tri-state area.
           </p>
         </div>
 
@@ -48,9 +46,9 @@ const Footer = () => (
               <Phone className="w-4 h-4 flex-shrink-0" />
               (914) 467-0807
             </a>
-            <a href="mailto:info@wlinteriors.com" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity">
+            <a href="mailto:info@westchesterluxuryinteriors.com" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity">
               <Mail className="w-4 h-4 flex-shrink-0" />
-              info@wlinteriors.com
+              info@westchesterluxuryinteriors.com
             </a>
             <div className="flex items-start gap-3 text-sm opacity-70">
               <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
@@ -61,7 +59,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-primary-foreground/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-xs opacity-50">© 2026 WL Interiors. All rights reserved.</p>
+        <p className="text-xs opacity-50">© 2026 Westchester Luxury Interiors. All rights reserved.</p>
         <p className="text-xs opacity-50">Licensed & Insured General Contractor</p>
       </div>
     </div>
