@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import aboutHero from "@/assets/about-hero.jpg";
-import heroImage from "@/assets/hero-kitchen.jpg";
+import aboutHero from "@/assets/wli/living-skyline-penthouse.jpg";
+import heroImage from "@/assets/wli/kitchen-bright-open.jpg";
 import { ArrowRight, Award, Users, Clock, Hammer } from "lucide-react";
 
 const values = [

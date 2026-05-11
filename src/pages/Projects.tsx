@@ -2,15 +2,41 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import heroImage from "@/assets/hero-kitchen.jpg";
-import bathroomImage from "@/assets/bathroom-luxury.jpg";
-import millworkImage from "@/assets/millwork-library.jpg";
-import livingRoom from "@/assets/living-room.jpg";
-import closetImage from "@/assets/closet-custom.jpg";
-import barImage from "@/assets/bar-custom.jpg";
 
-import livingSpaces from "@/assets/living-spaces.jpg";
-import commercialImage from "@/assets/commercial.jpg";
+// Kitchens
+import kBrightOpen from "@/assets/wli/kitchen-bright-open.jpg";
+import kOakBrass from "@/assets/wli/kitchen-oak-brass.jpg";
+import kMarbleIsland from "@/assets/wli/kitchen-marble-island.jpg";
+import kDramaticHood from "@/assets/wli/kitchen-dramatic-hood.jpg";
+import kWarmOak from "@/assets/wli/kitchen-warm-oak.jpg";
+import kStairBar from "@/assets/wli/kitchen-stair-bar.jpg";
+
+// Bathrooms
+import bMarbleBrass from "@/assets/wli/bath-marble-brass.jpg";
+import bSpaMarble from "@/assets/wli/bath-spa-marble.jpg";
+import bRoseBrass from "@/assets/wli/bath-rose-brass.jpg";
+import bArchedBrass from "@/assets/wli/bath-arched-brass.jpg";
+import bFloatingVanity from "@/assets/wli/bath-floating-vanity.jpg";
+import bCheckerFloor from "@/assets/wli/bath-checker-floor.jpg";
+
+// Living
+import lSkyline from "@/assets/wli/living-skyline-penthouse.jpg";
+import lGlassStair from "@/assets/wli/living-glass-stair.jpg";
+import lCantilever from "@/assets/wli/living-cantilever-stair.jpg";
+
+// Millwork
+import mWalnutFluted from "@/assets/wli/millwork-walnut-fluted.jpg";
+import mCaneBar from "@/assets/wli/millwork-cane-bar.jpg";
+import mReededLib from "@/assets/wli/millwork-reeded-library.jpg";
+import mMurphy from "@/assets/wli/millwork-murphy-bed.jpg";
+import mOfficeShelving from "@/assets/wli/millwork-office-shelving.jpg";
+import mOfficeBridge from "@/assets/wli/millwork-office-bridge-view.jpg";
+import mVanityDetail from "@/assets/wli/millwork-vanity-detail.jpg";
+
+// Commercial
+import cPrivacy from "@/assets/wli/commercial-privacy-booths.jpg";
+import cGlass from "@/assets/wli/commercial-glass-offices.jpg";
+import cStorefront from "@/assets/wli/commercial-storefront.jpg";
 
 const categories = [
   { label: "All", value: "all" },
@@ -23,17 +49,44 @@ const categories = [
 ];
 
 const projects = [
-  { title: "Modern Farmhouse Kitchen", category: "kitchens", image: heroImage, location: "Scarsdale, NY" },
-  { title: "Chef's Kitchen Remodel", category: "kitchens", image: heroImage, location: "Greenwich, CT" },
-  { title: "Spa-Inspired Master Bath", category: "bathrooms", image: bathroomImage, location: "Rye, NY" },
-  { title: "Custom Library & Study", category: "millwork", image: millworkImage, location: "Greenwich, CT" },
-  { title: "Contemporary Great Room", category: "full-renovation", image: livingRoom, location: "Bronxville, NY" },
-  { title: "Bespoke Walk-in Closet", category: "millwork", image: closetImage, location: "Larchmont, NY" },
-  { title: "Gentleman's Bar", category: "millwork", image: barImage, location: "Rye, NY" },
-  { title: "Master Bedroom Retreat", category: "living-spaces", image: livingSpaces, location: "Scarsdale, NY" },
-  { title: "Refined Foyer & Entry", category: "living-spaces", image: livingRoom, location: "Rye, NY" },
-  { title: "Corporate Headquarters Lobby", category: "commercial", image: commercialImage, location: "White Plains, NY" },
-  { title: "Boutique Office Buildout", category: "commercial", image: commercialImage, location: "Stamford, CT" },
+  // Kitchens
+  { title: "Bright Open-Concept Kitchen", category: "kitchens", image: kBrightOpen, location: "Westchester County, NY" },
+  { title: "White Oak & Brass Kitchen", category: "kitchens", image: kOakBrass, location: "Scarsdale, NY" },
+  { title: "Marble Island Kitchen", category: "kitchens", image: kMarbleIsland, location: "Greenwich, CT" },
+  { title: "Black Hood & Waterfall Island", category: "kitchens", image: kDramaticHood, location: "Rye, NY" },
+  { title: "Warm Oak Family Kitchen", category: "kitchens", image: kWarmOak, location: "Larchmont, NY" },
+
+  // Bathrooms
+  { title: "Marble & Brass Primary Bath", category: "bathrooms", image: bMarbleBrass, location: "Rye, NY" },
+  { title: "Spa-Inspired Master Bath", category: "bathrooms", image: bSpaMarble, location: "Scarsdale, NY" },
+  { title: "Rose Vanity Powder Suite", category: "bathrooms", image: bRoseBrass, location: "Bronxville, NY" },
+  { title: "Arched Brass Double Vanity", category: "bathrooms", image: bArchedBrass, location: "Greenwich, CT" },
+  { title: "Floating Walnut Vanity", category: "bathrooms", image: bFloatingVanity, location: "Rye, NY" },
+  { title: "Classic Checkered Bath", category: "bathrooms", image: bCheckerFloor, location: "Larchmont, NY" },
+
+  // Living Spaces
+  { title: "Skyline Penthouse Living Room", category: "living-spaces", image: lSkyline, location: "Manhattan, NY" },
+  { title: "Glass Stair Lounge & Dining", category: "living-spaces", image: lGlassStair, location: "Tribeca, NY" },
+  { title: "Cantilevered Stair Great Room", category: "living-spaces", image: lCantilever, location: "Manhattan, NY" },
+
+  // Full Renovation
+  { title: "Open-Concept Whole-Home Renovation", category: "full-renovation", image: kStairBar, location: "Scarsdale, NY" },
+  { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: lGlassStair, location: "Tribeca, NY" },
+  { title: "Whole-Floor Kitchen & Living Renovation", category: "full-renovation", image: kBrightOpen, location: "Westchester County, NY" },
+
+  // Millwork
+  { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted, location: "Rye, NY" },
+  { title: "Black & Brass Cane Bar", category: "millwork", image: mCaneBar, location: "Greenwich, CT" },
+  { title: "Reeded Glass Walnut Library", category: "millwork", image: mReededLib, location: "Larchmont, NY" },
+  { title: "Custom Oak Murphy Bed Wall", category: "millwork", image: mMurphy, location: "Scarsdale, NY" },
+  { title: "Floating Office Shelving", category: "millwork", image: mOfficeShelving, location: "Manhattan, NY" },
+  { title: "Bridge-View Home Office", category: "millwork", image: mOfficeBridge, location: "Manhattan, NY" },
+  { title: "Floating Walnut Vanity (Detail)", category: "millwork", image: mVanityDetail, location: "Rye, NY" },
+
+  // Commercial
+  { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy, location: "New York, NY" },
+  { title: "Black-Framed Glass Offices", category: "commercial", image: cGlass, location: "White Plains, NY" },
+  { title: "Irving Farm Café Storefront", category: "commercial", image: cStorefront, location: "New York, NY" },
 ];
 
 const Projects = () => {
