@@ -46,6 +46,8 @@ import mVanityDetail from "@/assets/wli/millwork-vanity-detail.jpg";
 import cPrivacy from "@/assets/wli/commercial-privacy-booths.jpg";
 import cGlass from "@/assets/wli/commercial-glass-offices.jpg";
 import cStorefront from "@/assets/wli/commercial-storefront.jpg";
+import cWoodDoors from "@/assets/wli/commercial-wood-doors.jpg";
+import cGlassCorridor from "@/assets/wli/commercial-glass-corridor.jpg";
 
 const categories = [
   { label: "All", value: "all" },
