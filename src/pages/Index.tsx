@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import heroImage from "@/assets/hero-kitchen.jpg";
-import bathroomImage from "@/assets/bathroom-luxury.jpg";
-import millworkImage from "@/assets/millwork-library.jpg";
-import livingRoom from "@/assets/living-room.jpg";
+import heroImage from "@/assets/wli/kitchen-bright-open.jpg";
+import bathroomImage from "@/assets/wli/bath-marble-brass.jpg";
+import millworkImage from "@/assets/wli/millwork-walnut-fluted.jpg";
+import livingRoom from "@/assets/wli/living-skyline-penthouse.jpg";
 import closetImage from "@/assets/closet-custom.jpg";
-import barImage from "@/assets/bar-custom.jpg";
+import barImage from "@/assets/wli/millwork-cane-bar.jpg";
 import { ArrowRight, Star, Shield, Ruler, Leaf } from "lucide-react";
 
 const services = [
@@ -59,7 +59,7 @@ const Index = () => (
     {/* Hero */}
     <section className="relative h-[90vh] min-h-[600px] flex items-center">
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Luxury kitchen renovation by WL Interiors" className="w-full h-full object-cover" width={1920} height={1080} />
+        <img src={heroImage} alt="Luxury kitchen renovation by Westchester Luxury Interiors" className="w-full h-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/70 via-foreground/40 to-transparent" />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
@@ -162,7 +162,7 @@ const Index = () => (
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative">
-            <img src={livingRoom} alt="WL Interiors living room renovation" className="w-full aspect-[4/3] object-cover" loading="lazy" width={1200} height={800} />
+            <img src={livingRoom} alt="Westchester Luxury Interiors living room renovation" className="w-full aspect-[4/3] object-cover" loading="lazy" width={1200} height={800} />
             <div className="absolute -bottom-6 -right-6 bg-brass text-accent-foreground p-6 hidden lg:block">
               <span className="font-serif text-3xl font-bold">20+</span>
               <span className="block text-xs uppercase tracking-widest mt-1">Years Experience</span>

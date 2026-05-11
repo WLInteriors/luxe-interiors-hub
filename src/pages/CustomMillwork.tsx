@@ -2,12 +2,13 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import millworkImage from "@/assets/millwork-library.jpg";
+import millworkImage from "@/assets/wli/millwork-reeded-library.jpg";
 import closetImage from "@/assets/closet-custom.jpg";
-import barImage from "@/assets/bar-custom.jpg";
-import vanityImage from "@/assets/vanity-custom.jpg";
+import barImage from "@/assets/wli/millwork-cane-bar.jpg";
+import vanityImage from "@/assets/wli/millwork-vanity-detail.jpg";
 import mudroomImage from "@/assets/mudroom-custom.jpg";
-import officeImage from "@/assets/office-custom.jpg";
+import officeImage from "@/assets/wli/millwork-office-shelving.jpg";
+import millworkHero from "@/assets/wli/millwork-walnut-fluted.jpg";
 import { ArrowRight } from "lucide-react";
 
 const millworkTypes = [
