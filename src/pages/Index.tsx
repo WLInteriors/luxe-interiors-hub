@@ -27,7 +27,7 @@ const services = [
   {
     title: "Full Renovations",
     description: "Complete gut renovations to expert framing, drywall, finishes, flooring — handled with precision and care.",
-    image: livingRoom,
+    image: livingRoomFullReno,
     link: "/projects/full-renovation",
   },
 ];
@@ -164,7 +164,7 @@ const Index = () => (
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative">
-            <img src={livingRoom} alt="Westchester Luxury Interiors living room renovation" className="w-full aspect-[4/3] object-cover" loading="lazy" width={1200} height={800} />
+            <img src={aboutImage} alt="Westchester Luxury Interiors living room renovation" className="w-full aspect-[4/3] object-cover" loading="lazy" width={1200} height={800} />
             <div className="absolute -bottom-6 -right-6 bg-brass text-accent-foreground p-6 hidden lg:block">
               <span className="font-serif text-3xl font-bold">20+</span>
               <span className="block text-xs uppercase tracking-widest mt-1">Years Experience</span>
