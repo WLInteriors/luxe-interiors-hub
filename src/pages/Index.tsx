@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import heroImage from "@/assets/wli/kitchen-bright-open.jpg";
+import heroImage from "@/assets/hero-kitchen.jpg";
 import bathroomImage from "@/assets/wli/bath-marble-brass.jpg";
-import millworkImage from "@/assets/wli/millwork-walnut-fluted.jpg";
-import livingRoom from "@/assets/wli/living-skyline-penthouse.jpg";
+import millworkImage from "@/assets/millwork-library.jpg";
+import livingRoomFullReno from "@/assets/wli/living-room-2.jpg";
+import aboutImage from "@/assets/wli/kitchen-7.jpg";
+import librariesImage from "@/assets/millwork-library.jpg";
 import closetImage from "@/assets/closet-custom.jpg";
-import barImage from "@/assets/wli/millwork-cane-bar.jpg";
+import barImage from "@/assets/bar-custom.jpg";
 import { ArrowRight, Star, Shield, Ruler, Leaf } from "lucide-react";
 
 const services = [
