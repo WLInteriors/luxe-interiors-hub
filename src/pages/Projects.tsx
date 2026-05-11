@@ -46,6 +46,8 @@ import mVanityDetail from "@/assets/wli/millwork-vanity-detail.jpg";
 import cPrivacy from "@/assets/wli/commercial-privacy-booths.jpg";
 import cGlass from "@/assets/wli/commercial-glass-offices.jpg";
 import cStorefront from "@/assets/wli/commercial-storefront.jpg";
+import cWoodDoors from "@/assets/wli/commercial-wood-doors.jpg";
+import cGlassCorridor from "@/assets/wli/commercial-glass-corridor.jpg";
 
 const categories = [
   { label: "All", value: "all" },
@@ -101,6 +103,8 @@ const projects = [
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy, location: "New York, NY" },
   { title: "Black-Framed Glass Offices", category: "commercial", image: cGlass, location: "White Plains, NY" },
   { title: "Boutique Café Storefront", category: "commercial", image: cStorefront, location: "New York, NY" },
+  { title: "Custom Wood Office Doors", category: "commercial", image: cWoodDoors, location: "New York, NY" },
+  { title: "Glass Office Corridor", category: "commercial", image: cGlassCorridor, location: "White Plains, NY" },
 ];
 
 const Projects = () => {
