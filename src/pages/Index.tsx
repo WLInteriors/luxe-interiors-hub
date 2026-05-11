@@ -6,7 +6,7 @@ import bathroomImage from "@/assets/wli/bath-marble-brass.jpg";
 import millworkImage from "@/assets/millwork-library.jpg";
 import livingRoomFullReno from "@/assets/wli/living-room-2.jpg";
 import aboutImage from "@/assets/wli/kitchen-7.jpg";
-import librariesImage from "@/assets/millwork-library.jpg";
+
 import closetImage from "@/assets/closet-custom.jpg";
 import barImage from "@/assets/bar-custom.jpg";
 import { ArrowRight, Star, Shield, Ruler, Leaf } from "lucide-react";
