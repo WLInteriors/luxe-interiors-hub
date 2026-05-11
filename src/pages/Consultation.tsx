@@ -123,7 +123,7 @@ const Consultation = () => {
               <div className="bg-primary text-primary-foreground p-8">
                 <h3 className="font-serif text-lg mb-3">Why Choose Us?</h3>
                 <ul className="space-y-3 text-sm opacity-80">
-                  <li>✓ 20+ years of experience</li>
+                  <li>✓ Hundreds of luxury projects delivered</li>
                   <li>✓ In-house millwork shop</li>
                   <li>✓ Licensed & fully insured</li>
                   <li>✓ Transparent pricing</li>

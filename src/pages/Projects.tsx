@@ -110,10 +110,23 @@ const projects = [
 const Projects = () => {
   const { category } = useParams();
   const [filter, setFilter] = useState(category ?? "all");
+  const [lightbox, setLightbox] = useState<null | { image: string; title: string; location: string }>(null);
 
   useEffect(() => {
     setFilter(category ?? "all");
   }, [category]);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setLightbox(null);
+    document.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [lightbox]);
 
   const filtered = filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
@@ -145,18 +158,53 @@ const Projects = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((project) => (
-              <div key={project.title} className="group relative overflow-hidden aspect-[4/3] cursor-pointer">
+              <button
+                type="button"
+                key={project.title}
+                onClick={() => setLightbox(project)}
+                className="group relative overflow-hidden aspect-[4/3] cursor-zoom-in text-left"
+              >
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/50 transition-colors duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <h3 className="font-serif text-lg text-cream">{project.title}</h3>
                   <span className="text-xs text-cream/60 uppercase tracking-wide">{project.location}</span>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </div>
       </section>
+
+      {lightbox && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={lightbox.title}
+          onClick={() => setLightbox(null)}
+          className="fixed inset-0 z-[100] bg-foreground/90 backdrop-blur-sm flex items-center justify-center p-4 md:p-10 animate-fade-in cursor-zoom-out"
+        >
+          <button
+            type="button"
+            aria-label="Close"
+            onClick={(e) => { e.stopPropagation(); setLightbox(null); }}
+            className="absolute top-5 right-5 text-cream/80 hover:text-cream text-3xl leading-none w-10 h-10 flex items-center justify-center"
+          >
+            ×
+          </button>
+          <figure onClick={(e) => e.stopPropagation()} className="max-w-6xl w-full max-h-full flex flex-col items-center">
+            <img
+              src={lightbox.image}
+              alt={lightbox.title}
+              className="max-h-[85vh] w-auto max-w-full object-contain shadow-2xl"
+            />
+            <figcaption className="mt-4 text-center">
+              <h3 className="font-serif text-xl text-cream">{lightbox.title}</h3>
+              <span className="text-xs text-cream/60 uppercase tracking-widest">{lightbox.location}</span>
+            </figcaption>
+          </figure>
+        </div>
+      )}
     </Layout>
   );
 };

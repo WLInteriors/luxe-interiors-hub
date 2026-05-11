@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
         <div>
-          <img src={logo} alt="Westchester Luxury Interiors" className="h-16 w-auto mb-6 invert brightness-0 contrast-100" style={{ filter: "invert(1) brightness(2)" }} />
+          <img src={logo} alt="Westchester Luxury Interiors" className="h-20 w-auto mb-6 invert" width={1024} height={1024} loading="lazy" />
           <p className="text-sm leading-relaxed opacity-70">
             Where craftsmanship meets elegance. Creating luxury residential, commercial, and institutional spaces across the tri-state area.
           </p>
