@@ -9,7 +9,6 @@ import kOakBrass from "@/assets/wli/kitchen-oak-brass.jpg";
 import kMarbleIsland from "@/assets/wli/kitchen-marble-island.jpg";
 import kDramaticHood from "@/assets/wli/kitchen-dramatic-hood.jpg";
 import kWarmOak from "@/assets/wli/kitchen-warm-oak.jpg";
-import kStairBar from "@/assets/wli/kitchen-stair-bar.jpg";
 
 // Bathrooms
 import bMarbleBrass from "@/assets/wli/bath-marble-brass.jpg";
@@ -23,6 +22,16 @@ import bCheckerFloor from "@/assets/wli/bath-checker-floor.jpg";
 import lSkyline from "@/assets/wli/living-skyline-penthouse.jpg";
 import lGlassStair from "@/assets/wli/living-glass-stair.jpg";
 import lCantilever from "@/assets/wli/living-cantilever-stair.jpg";
+import lLoftLounge from "@/assets/wli/living-loft-lounge.jpg";
+import lFamilyLounge from "@/assets/wli/living-family-lounge.jpg";
+import lPenthouseDining from "@/assets/wli/living-penthouse-dining.jpg";
+
+// Full Renovation
+import rPenthouseStair from "@/assets/wli/reno-penthouse-stair-kitchen.jpg";
+import rOpenFamily from "@/assets/wli/reno-open-family-kitchen.jpg";
+import rWholeKitchen from "@/assets/wli/reno-whole-kitchen-transformation.jpg";
+import rModernPenthouse from "@/assets/wli/reno-modern-penthouse-kitchen.jpg";
+import rHilltop from "@/assets/wli/reno-hilltop-estate-kitchen.jpg";
 
 // Millwork
 import mWalnutFluted from "@/assets/wli/millwork-walnut-fluted.jpg";
