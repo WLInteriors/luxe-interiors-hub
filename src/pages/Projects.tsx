@@ -77,11 +77,16 @@ const projects = [
   { title: "Skyline Penthouse Living Room", category: "living-spaces", image: lSkyline, location: "Manhattan, NY" },
   { title: "Glass Stair Lounge & Dining", category: "living-spaces", image: lGlassStair, location: "Tribeca, NY" },
   { title: "Cantilevered Stair Great Room", category: "living-spaces", image: lCantilever, location: "Manhattan, NY" },
+  { title: "Hudson View Loft Lounge", category: "living-spaces", image: lLoftLounge, location: "Manhattan, NY" },
+  { title: "Family Lounge & Dining", category: "living-spaces", image: lFamilyLounge, location: "Westchester County, NY" },
+  { title: "Penthouse Living & Dining", category: "living-spaces", image: lPenthouseDining, location: "Manhattan, NY" },
 
   // Full Renovation
-  { title: "Open-Concept Whole-Home Renovation", category: "full-renovation", image: kStairBar, location: "Scarsdale, NY" },
-  { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: lGlassStair, location: "Tribeca, NY" },
-  { title: "Whole-Floor Kitchen & Living Renovation", category: "full-renovation", image: kBrightOpen, location: "Westchester County, NY" },
+  { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair, location: "Tribeca, NY" },
+  { title: "Open-Concept Family Kitchen Renovation", category: "full-renovation", image: rOpenFamily, location: "Scarsdale, NY" },
+  { title: "Whole-Home Kitchen Transformation", category: "full-renovation", image: rWholeKitchen, location: "Greenwich, CT" },
+  { title: "Modern Penthouse Kitchen Renovation", category: "full-renovation", image: rModernPenthouse, location: "Manhattan, NY" },
+  { title: "Hilltop Estate Kitchen Renovation", category: "full-renovation", image: rHilltop, location: "Westchester County, NY" },
 
   // Millwork
   { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted, location: "Rye, NY" },
@@ -95,7 +100,7 @@ const projects = [
   // Commercial
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy, location: "New York, NY" },
   { title: "Black-Framed Glass Offices", category: "commercial", image: cGlass, location: "White Plains, NY" },
-  { title: "Irving Farm Café Storefront", category: "commercial", image: cStorefront, location: "New York, NY" },
+  { title: "Boutique Café Storefront", category: "commercial", image: cStorefront, location: "New York, NY" },
 ];
 
 const Projects = () => {
