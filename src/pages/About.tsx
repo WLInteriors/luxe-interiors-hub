@@ -9,7 +9,7 @@ const values = [
   { icon: Award, title: "Excellence", description: "Every detail matters. We hold ourselves to the highest standards of craftsmanship." },
   { icon: Users, title: "Communication", description: "From consultation to final walkthrough, we collaborate closely at every step." },
   { icon: Clock, title: "Reliability", description: "We respect your time and deliver on schedule without compromising quality." },
-  { icon: Hammer, title: "Craftsmanship", description: "Our in-house team of artisans brings decades of specialized expertise." },
+  { icon: Hammer, title: "Craftsmanship", description: "Our in-house team of artisans brings deep, specialized expertise to every detail." },
 ];
 
 const processSteps = [
