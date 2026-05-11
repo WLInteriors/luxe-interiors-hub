@@ -1,32 +1,26 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import heroImage from "@/assets/hero-kitchen.jpg";
-import bathroomImage from "@/assets/bathroom-luxury.jpg";
-import livingRoom from "@/assets/living-room.jpg";
+import baBeforeLiving from "@/assets/wli/ba-before-living.jpg";
+import baAfterLiving from "@/assets/wli/ba-after-living.jpg";
+import baBeforeKitchen from "@/assets/wli/ba-before-kitchen.jpg";
+import baAfterKitchen from "@/assets/wli/ba-after-kitchen.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const beforeAfterItems = [
   {
-    title: "Kitchen Transformation",
-    location: "Scarsdale, NY",
-    description: "A dated 1990s kitchen transformed into a modern masterpiece with custom navy cabinetry, marble countertops, and brass fixtures.",
-    beforeImage: livingRoom,
-    afterImage: heroImage,
+    title: "Living Room Modernization",
+    location: "New York, NY",
+    description: "A dated apartment living room with worn hardwood, dark accent walls, and aging fixtures was reimagined as a bright, contemporary space featuring a custom walnut slat accent wall, refinished wide-plank flooring, and refreshed millwork throughout.",
+    beforeImage: baBeforeLiving,
+    afterImage: baAfterLiving,
   },
   {
-    title: "Master Bathroom Renovation",
-    location: "Rye, NY",
-    description: "Outdated tile and fixtures replaced with a spa-inspired retreat featuring a freestanding marble tub and custom vanity.",
-    beforeImage: heroImage,
-    afterImage: bathroomImage,
-  },
-  {
-    title: "Living Room Redesign",
-    location: "Greenwich, CT",
-    description: "Cramped rooms opened into a stunning great room with floor-to-ceiling windows and custom millwork throughout.",
-    beforeImage: bathroomImage,
-    afterImage: livingRoom,
+    title: "Kitchen & Floor Renovation",
+    location: "New York, NY",
+    description: "Severely damaged subfloor and a cramped pass-through were rebuilt from the studs out — new luxury vinyl plank flooring, white shaker cabinetry, marble-look subway backsplash, granite peninsula, and stainless appliances.",
+    beforeImage: baBeforeKitchen,
+    afterImage: baAfterKitchen,
   },
 ];
 
