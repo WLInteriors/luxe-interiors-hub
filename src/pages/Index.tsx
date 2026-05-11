@@ -9,6 +9,7 @@ import aboutImage from "@/assets/wli/kitchen-7.jpg";
 
 import closetImage from "@/assets/closet-custom.jpg";
 import barImage from "@/assets/bar-custom.jpg";
+import librariesImage from "@/assets/wli/library-builtin.jpg";
 import { ArrowRight, Star, Shield, Ruler, Leaf } from "lucide-react";
 
 const services = [
@@ -35,7 +36,7 @@ const services = [
 const millworkShowcase = [
   { title: "Walk-in Closets", image: closetImage, link: "/millwork/closets" },
   { title: "Custom Bars", image: barImage, link: "/millwork/bars" },
-  { title: "Built-in Libraries", image: millworkImage, link: "/millwork/built-ins" },
+  { title: "Built-in Libraries", image: librariesImage, link: "/millwork/built-ins" },
 ];
 
 const testimonials = [
