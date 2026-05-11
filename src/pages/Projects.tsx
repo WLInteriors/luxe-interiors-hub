@@ -110,10 +110,23 @@ const projects = [
 const Projects = () => {
   const { category } = useParams();
   const [filter, setFilter] = useState(category ?? "all");
+  const [lightbox, setLightbox] = useState<null | { image: string; title: string; location: string }>(null);
 
   useEffect(() => {
     setFilter(category ?? "all");
   }, [category]);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setLightbox(null);
+    document.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [lightbox]);
 
   const filtered = filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
