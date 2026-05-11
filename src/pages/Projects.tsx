@@ -103,6 +103,8 @@ const projects = [
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy, location: "New York, NY" },
   { title: "Black-Framed Glass Offices", category: "commercial", image: cGlass, location: "White Plains, NY" },
   { title: "Boutique Café Storefront", category: "commercial", image: cStorefront, location: "New York, NY" },
+  { title: "Custom Wood Office Doors", category: "commercial", image: cWoodDoors, location: "New York, NY" },
+  { title: "Glass Office Corridor", category: "commercial", image: cGlassCorridor, location: "White Plains, NY" },
 ];
 
 const Projects = () => {
