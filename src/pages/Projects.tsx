@@ -9,7 +9,6 @@ import kOakBrass from "@/assets/wli/kitchen-oak-brass.jpg";
 import kMarbleIsland from "@/assets/wli/kitchen-marble-island.jpg";
 import kDramaticHood from "@/assets/wli/kitchen-dramatic-hood.jpg";
 import kWarmOak from "@/assets/wli/kitchen-warm-oak.jpg";
-import kStairBar from "@/assets/wli/kitchen-stair-bar.jpg";
 
 // Bathrooms
 import bMarbleBrass from "@/assets/wli/bath-marble-brass.jpg";
@@ -23,6 +22,16 @@ import bCheckerFloor from "@/assets/wli/bath-checker-floor.jpg";
 import lSkyline from "@/assets/wli/living-skyline-penthouse.jpg";
 import lGlassStair from "@/assets/wli/living-glass-stair.jpg";
 import lCantilever from "@/assets/wli/living-cantilever-stair.jpg";
+import lLoftLounge from "@/assets/wli/living-loft-lounge.jpg";
+import lFamilyLounge from "@/assets/wli/living-family-lounge.jpg";
+import lPenthouseDining from "@/assets/wli/living-penthouse-dining.jpg";
+
+// Full Renovation
+import rPenthouseStair from "@/assets/wli/reno-penthouse-stair-kitchen.jpg";
+import rOpenFamily from "@/assets/wli/reno-open-family-kitchen.jpg";
+import rWholeKitchen from "@/assets/wli/reno-whole-kitchen-transformation.jpg";
+import rModernPenthouse from "@/assets/wli/reno-modern-penthouse-kitchen.jpg";
+import rHilltop from "@/assets/wli/reno-hilltop-estate-kitchen.jpg";
 
 // Millwork
 import mWalnutFluted from "@/assets/wli/millwork-walnut-fluted.jpg";
@@ -68,11 +77,16 @@ const projects = [
   { title: "Skyline Penthouse Living Room", category: "living-spaces", image: lSkyline, location: "Manhattan, NY" },
   { title: "Glass Stair Lounge & Dining", category: "living-spaces", image: lGlassStair, location: "Tribeca, NY" },
   { title: "Cantilevered Stair Great Room", category: "living-spaces", image: lCantilever, location: "Manhattan, NY" },
+  { title: "Hudson View Loft Lounge", category: "living-spaces", image: lLoftLounge, location: "Manhattan, NY" },
+  { title: "Family Lounge & Dining", category: "living-spaces", image: lFamilyLounge, location: "Westchester County, NY" },
+  { title: "Penthouse Living & Dining", category: "living-spaces", image: lPenthouseDining, location: "Manhattan, NY" },
 
   // Full Renovation
-  { title: "Open-Concept Whole-Home Renovation", category: "full-renovation", image: kStairBar, location: "Scarsdale, NY" },
-  { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: lGlassStair, location: "Tribeca, NY" },
-  { title: "Whole-Floor Kitchen & Living Renovation", category: "full-renovation", image: kBrightOpen, location: "Westchester County, NY" },
+  { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair, location: "Tribeca, NY" },
+  { title: "Open-Concept Family Kitchen Renovation", category: "full-renovation", image: rOpenFamily, location: "Scarsdale, NY" },
+  { title: "Whole-Home Kitchen Transformation", category: "full-renovation", image: rWholeKitchen, location: "Greenwich, CT" },
+  { title: "Modern Penthouse Kitchen Renovation", category: "full-renovation", image: rModernPenthouse, location: "Manhattan, NY" },
+  { title: "Hilltop Estate Kitchen Renovation", category: "full-renovation", image: rHilltop, location: "Westchester County, NY" },
 
   // Millwork
   { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted, location: "Rye, NY" },
@@ -86,7 +100,7 @@ const projects = [
   // Commercial
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy, location: "New York, NY" },
   { title: "Black-Framed Glass Offices", category: "commercial", image: cGlass, location: "White Plains, NY" },
-  { title: "Irving Farm Café Storefront", category: "commercial", image: cStorefront, location: "New York, NY" },
+  { title: "Boutique Café Storefront", category: "commercial", image: cStorefront, location: "New York, NY" },
 ];
 
 const Projects = () => {
