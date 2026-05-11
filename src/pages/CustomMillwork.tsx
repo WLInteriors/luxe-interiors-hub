@@ -65,7 +65,7 @@ const CustomMillwork = () => {
       {/* Hero */}
       <section className="relative h-[60vh] min-h-[400px] flex items-center">
         <div className="absolute inset-0">
-          <img src={millworkImage} alt="Custom millwork" className="w-full h-full object-cover" />
+          <img src={millworkHero} alt="Custom millwork" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-foreground/60" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
