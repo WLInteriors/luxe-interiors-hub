@@ -5,6 +5,8 @@ import baBeforeLiving from "@/assets/wli/ba-before-living.jpg";
 import baAfterLiving from "@/assets/wli/ba-after-living.jpg";
 import baBeforeKitchen from "@/assets/wli/ba-before-kitchen.jpg";
 import baAfterKitchen from "@/assets/wli/ba-after-kitchen.jpg";
+import baBeforeMurphy from "@/assets/wli/ba-before-murphy.jpg";
+import baAfterMurphy from "@/assets/wli/ba-after-murphy.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const beforeAfterItems = [
@@ -21,6 +23,13 @@ const beforeAfterItems = [
     description: "Severely damaged subfloor and a cramped pass-through were rebuilt from the studs out — new luxury vinyl plank flooring, white shaker cabinetry, marble-look subway backsplash, granite peninsula, and stainless appliances.",
     beforeImage: baBeforeKitchen,
     afterImage: baAfterKitchen,
+  },
+  {
+    title: "Custom Murphy Bed Suite",
+    location: "Westchester County, NY",
+    description: "An underused room was transformed into a dual-purpose guest suite with a custom white oak murphy bed, integrated bookshelves with warm LED lighting, grasscloth wall panels, and a sculptural rope chandelier — all built in-house and finished to high-end residential standards.",
+    beforeImage: baBeforeMurphy,
+    afterImage: baAfterMurphy,
   },
 ];
 

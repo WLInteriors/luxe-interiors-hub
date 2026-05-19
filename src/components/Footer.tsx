@@ -7,10 +7,10 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
-        <div>
-          <img src={logo} alt="Westchester Luxury Interiors" className="h-20 w-auto mb-6 invert" width={1024} height={1024} loading="lazy" />
-          <p className="text-sm leading-relaxed opacity-70">
-            Where craftsmanship meets elegance. Creating luxury residential, commercial, and institutional spaces across the tri-state area.
+        <div className="md:col-span-2 lg:col-span-1">
+          <img src={logo} alt="Westchester Luxury Interiors" className="h-24 w-auto mb-6 invert" width={500} height={500} loading="lazy" />
+          <p className="text-sm leading-relaxed opacity-70 max-w-sm" style={{ hyphens: "none" }}>
+            Where craftsmanship meets elegance. Creating luxury residential, commercial, and institutional spaces across the&nbsp;tri-state area.
           </p>
         </div>
 
