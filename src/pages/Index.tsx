@@ -46,12 +46,12 @@ const testimonials = [
     location: "New York, NY",
   },
   {
-    text: "From design to completion, the team was professional, communicative, and delivered beyond our expectations. Truly luxury quality.",
+    text: "From the first design meeting through final walkthrough, the WL Interiors team was thoughtful, communicative, and genuinely invested in getting every detail right. They navigated tricky structural decisions, coordinated trades seamlessly, and held the schedule even when we pushed in extra scope. The finished space feels far more luxurious than we imagined — clearly the work of people who care about their craft.",
     author: "David & Karen T.",
     location: "Rye, NY",
   },
   {
-    text: "The custom millwork in our home office is a work of art. Every guest comments on the quality. Couldn't be happier.",
+    text: "The custom millwork in our home office is genuinely a piece of art — the proportions, the joinery, the way the grain wraps around corners. Every guest who walks in stops and comments. What impressed us most was how collaborative the process felt: real drawings, real samples, and a team that pushed back kindly when we needed it. We'd hire them again in a heartbeat for the rest of the house.",
     author: "Michael R.",
     location: "Greenwich, CT",
   },

@@ -27,13 +27,15 @@ const beforeAfterItems = [
   {
     title: "Custom Murphy Bed Suite",
     location: "Westchester County, NY",
-    description: "An underused room was transformed into a dual-purpose guest suite with a custom white oak murphy bed, integrated bookshelves with warm LED lighting, grasscloth wall panels, and a sculptural rope chandelier — all built in-house and finished to high-end residential standards.",
+    description: "A dual-purpose guest suite featuring a custom white oak Murphy bed that disappears flush into a millwork wall when closed, then folds down to reveal a hotel-grade queen bed. Integrated bookshelves with warm LED lighting, grasscloth panels, brass reading sconces, and a sculptural rope chandelier — all built in-house.",
     beforeImage: baBeforeMurphy,
     afterImage: baAfterMurphy,
+    beforeLabel: "Closed",
+    afterLabel: "Open",
   },
 ];
 
-const BeforeAfterSlider = ({ before, after }: { before: string; after: string }) => {
+const BeforeAfterSlider = ({ before, after, beforeLabel = "Before", afterLabel = "After" }: { before: string; after: string; beforeLabel?: string; afterLabel?: string }) => {
   const [position, setPosition] = useState(50);
 
   return (
@@ -62,8 +64,8 @@ const BeforeAfterSlider = ({ before, after }: { before: string; after: string })
         </div>
       </div>
       {/* Labels */}
-      <span className="absolute top-4 left-4 bg-foreground/70 text-cream text-xs uppercase tracking-widest px-3 py-1">Before</span>
-      <span className="absolute top-4 right-4 bg-brass text-accent-foreground text-xs uppercase tracking-widest px-3 py-1">After</span>
+      <span className="absolute top-4 left-4 bg-foreground/70 text-cream text-xs uppercase tracking-widest px-3 py-1">{beforeLabel}</span>
+      <span className="absolute top-4 right-4 bg-brass text-accent-foreground text-xs uppercase tracking-widest px-3 py-1">{afterLabel}</span>
     </div>
   );
 };
@@ -82,7 +84,7 @@ const BeforeAfter = () => (
           {beforeAfterItems.map((item) => (
             <div key={item.title} className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
               <div className="lg:col-span-3">
-                <BeforeAfterSlider before={item.beforeImage} after={item.afterImage} />
+                <BeforeAfterSlider before={item.beforeImage} after={item.afterImage} beforeLabel={item.beforeLabel} afterLabel={item.afterLabel} />
               </div>
               <div className="lg:col-span-2">
                 <span className="text-xs uppercase tracking-widest text-brass">{item.location}</span>
