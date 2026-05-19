@@ -27,9 +27,11 @@ const beforeAfterItems = [
   {
     title: "Custom Murphy Bed Suite",
     location: "Westchester County, NY",
-    description: "An underused room was transformed into a dual-purpose guest suite with a custom white oak murphy bed, integrated bookshelves with warm LED lighting, grasscloth wall panels, and a sculptural rope chandelier — all built in-house and finished to high-end residential standards.",
+    description: "A dual-purpose guest suite featuring a custom white oak Murphy bed that disappears flush into a millwork wall when closed, then folds down to reveal a hotel-grade queen bed. Integrated bookshelves with warm LED lighting, grasscloth panels, brass reading sconces, and a sculptural rope chandelier — all built in-house.",
     beforeImage: baBeforeMurphy,
     afterImage: baAfterMurphy,
+    beforeLabel: "Closed",
+    afterLabel: "Open",
   },
 ];
 
