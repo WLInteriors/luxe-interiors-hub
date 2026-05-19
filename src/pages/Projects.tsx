@@ -81,6 +81,7 @@ const categories = [
   { label: "Kitchens", value: "kitchens" },
   { label: "Bathrooms", value: "bathrooms" },
   { label: "Living Spaces", value: "living-spaces" },
+  { label: "Bedrooms", value: "bedrooms" },
   { label: "Full Renovation", value: "full-renovation" },
   { label: "Millwork", value: "millwork" },
   { label: "Commercial", value: "commercial" },
@@ -93,6 +94,12 @@ const projects = [
   { title: "Marble Island Kitchen", category: "kitchens", image: kMarbleIsland, location: "Greenwich, CT" },
   { title: "Black Hood & Waterfall Island", category: "kitchens", image: kDramaticHood, location: "Rye, NY" },
   { title: "Warm Oak Family Kitchen", category: "kitchens", image: kWarmOak, location: "Larchmont, NY" },
+  { title: "Classic Island Kitchen", category: "kitchens", image: kClassicIsland, location: "Bronxville, NY" },
+  { title: "Modern White Kitchen", category: "kitchens", image: kWhiteModern, location: "Rye, NY" },
+  { title: "Shaker Kitchen with Pantry", category: "kitchens", image: kShakerPantry, location: "Larchmont, NY" },
+  { title: "Two-Tone Family Kitchen", category: "kitchens", image: kTwoTone, location: "Greenwich, CT" },
+  { title: "Coastal Blue Kitchen", category: "kitchens", image: kCoastalBlue, location: "Westport, CT" },
+  { title: "Statement Hood Kitchen", category: "kitchens", image: kStatementHood, location: "Scarsdale, NY" },
 
   // Bathrooms
   { title: "Marble & Brass Primary Bath", category: "bathrooms", image: bMarbleBrass, location: "Rye, NY" },
@@ -101,6 +108,11 @@ const projects = [
   { title: "Arched Brass Double Vanity", category: "bathrooms", image: bArchedBrass, location: "Greenwich, CT" },
   { title: "Floating Walnut Vanity", category: "bathrooms", image: bFloatingVanity, location: "Rye, NY" },
   { title: "Classic Checkered Bath", category: "bathrooms", image: bCheckerFloor, location: "Larchmont, NY" },
+  { title: "Mosaic Tile Shower Bath", category: "bathrooms", image: bMosaicShower, location: "Westchester County, NY" },
+  { title: "Double Vanity Primary Bath", category: "bathrooms", image: bDoubleVanity, location: "Scarsdale, NY" },
+  { title: "Walk-in Glass Shower Suite", category: "bathrooms", image: bWalkInGlass, location: "Rye, NY" },
+  { title: "Freestanding Soaking Tub Bath", category: "bathrooms", image: bSoakingTub, location: "Greenwich, CT" },
+  { title: "Designer Powder Room", category: "bathrooms", image: bPowderRoom, location: "Bronxville, NY" },
 
   // Living Spaces
   { title: "Skyline Penthouse Living Room", category: "living-spaces", image: lSkyline, location: "Manhattan, NY" },
@@ -109,6 +121,19 @@ const projects = [
   { title: "Hudson View Loft Lounge", category: "living-spaces", image: lLoftLounge, location: "Manhattan, NY" },
   { title: "Family Lounge & Dining", category: "living-spaces", image: lFamilyLounge, location: "Westchester County, NY" },
   { title: "Penthouse Living & Dining", category: "living-spaces", image: lPenthouseDining, location: "Manhattan, NY" },
+  { title: "Fireplace & Built-Ins Living Room", category: "living-spaces", image: lFireplaceBuiltins, location: "Rye, NY" },
+  { title: "Coffered Ceiling Great Room", category: "living-spaces", image: lCofferedCeiling, location: "Scarsdale, NY" },
+  { title: "Modern Sectional Lounge", category: "living-spaces", image: lModernSectional, location: "Greenwich, CT" },
+  { title: "Warm Textured Family Room", category: "living-spaces", image: lWarmTextures, location: "Larchmont, NY" },
+  { title: "Paneled Dining Room", category: "living-spaces", image: lDiningPaneled, location: "Bronxville, NY" },
+  { title: "Statement-Light Dining Room", category: "living-spaces", image: lDiningStatement, location: "Rye, NY" },
+
+  // Bedrooms
+  { title: "Paneled Headboard Primary Suite", category: "bedrooms", image: bedPaneled, location: "Rye, NY" },
+  { title: "Serene Neutral Bedroom", category: "bedrooms", image: bedSerene, location: "Scarsdale, NY" },
+  { title: "Warm Oak Primary Bedroom", category: "bedrooms", image: bedWarmOak, location: "Greenwich, CT" },
+  { title: "Window-Bench Guest Bedroom", category: "bedrooms", image: bedWindowBench, location: "Larchmont, NY" },
+  { title: "Soft Modern Bedroom", category: "bedrooms", image: bedSoftModern, location: "Bronxville, NY" },
 
   // Full Renovation
   { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair, location: "Tribeca, NY" },
@@ -125,6 +150,9 @@ const projects = [
   { title: "Floating Office Shelving", category: "millwork", image: mOfficeShelving, location: "Manhattan, NY" },
   { title: "Bridge-View Home Office", category: "millwork", image: mOfficeBridge, location: "Manhattan, NY" },
   { title: "Floating Walnut Vanity (Detail)", category: "millwork", image: mVanityDetail, location: "Rye, NY" },
+  { title: "Custom Walk-in Closet", category: "millwork", image: mWalkInCloset, location: "Scarsdale, NY" },
+  { title: "Boutique Island Closet", category: "millwork", image: mIslandCloset, location: "Greenwich, CT" },
+  { title: "Murphy Bed Cabinetry Detail", category: "millwork", image: mMurphyDetail, location: "Rye, NY" },
 
   // Commercial
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy, location: "New York, NY" },
