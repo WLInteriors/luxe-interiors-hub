@@ -41,9 +41,9 @@ const millworkShowcase = [
 
 const testimonials = [
   {
-    text: "WL Interiors transformed our dated kitchen into a breathtaking space. The attention to detail and craftsmanship is unmatched.",
-    author: "Sarah M.",
-    location: "Scarsdale, NY",
+    text: "I've worked with WL Interiors on dozens of commercial office fit-outs across multiple markets — from 1,200 SF suites to 35,000 SF full-floor build-outs. Every project was delivered with the right outcome. They're professional, responsive, fairly priced, and consistently stick to budgets and timelines. Their ability to manage both small details and large-scale logistics with equal care sets them apart.",
+    author: "Z. L.",
+    location: "New York, NY",
   },
   {
     text: "From design to completion, the team was professional, communicative, and delivered beyond our expectations. Truly luxury quality.",
@@ -166,10 +166,6 @@ const Index = () => (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative">
             <img src={aboutImage} alt="Custom kitchen renovation by Westchester Luxury Interiors" className="w-full aspect-[4/3] object-cover" loading="lazy" width={1200} height={800} />
-            <div className="absolute -bottom-6 -right-6 bg-brass text-accent-foreground p-6 hidden lg:block">
-              <span className="font-serif text-3xl font-bold">500+</span>
-              <span className="block text-xs uppercase tracking-widest mt-1">Projects Delivered</span>
-            </div>
           </div>
           <div>
             <SectionHeading
