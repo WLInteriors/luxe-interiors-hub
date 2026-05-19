@@ -9,6 +9,12 @@ import kOakBrass from "@/assets/wli/kitchen-oak-brass.jpg";
 import kMarbleIsland from "@/assets/wli/kitchen-marble-island.jpg";
 import kDramaticHood from "@/assets/wli/kitchen-dramatic-hood.jpg";
 import kWarmOak from "@/assets/wli/kitchen-warm-oak.jpg";
+import kClassicIsland from "@/assets/wli/kitchen-classic-island.jpg";
+import kWhiteModern from "@/assets/wli/kitchen-white-modern.jpg";
+import kShakerPantry from "@/assets/wli/kitchen-shaker-pantry.jpg";
+import kTwoTone from "@/assets/wli/kitchen-two-tone.jpg";
+import kCoastalBlue from "@/assets/wli/kitchen-coastal-blue.jpg";
+import kStatementHood from "@/assets/wli/kitchen-statement-hood.jpg";
 
 // Bathrooms
 import bMarbleBrass from "@/assets/wli/bath-marble-brass.jpg";
@@ -17,6 +23,11 @@ import bRoseBrass from "@/assets/wli/bath-rose-brass.jpg";
 import bArchedBrass from "@/assets/wli/bath-arched-brass.jpg";
 import bFloatingVanity from "@/assets/wli/bath-floating-vanity.jpg";
 import bCheckerFloor from "@/assets/wli/bath-checker-floor.jpg";
+import bMosaicShower from "@/assets/wli/bath-mosaic-shower.jpg";
+import bDoubleVanity from "@/assets/wli/bath-double-vanity.jpg";
+import bWalkInGlass from "@/assets/wli/bath-walk-in-glass.jpg";
+import bSoakingTub from "@/assets/wli/bath-soaking-tub.jpg";
+import bPowderRoom from "@/assets/wli/bath-powder-room.jpg";
 
 // Living
 import lSkyline from "@/assets/wli/living-skyline-penthouse.jpg";
@@ -25,6 +36,19 @@ import lCantilever from "@/assets/wli/living-cantilever-stair.jpg";
 import lLoftLounge from "@/assets/wli/living-loft-lounge.jpg";
 import lFamilyLounge from "@/assets/wli/living-family-lounge.jpg";
 import lPenthouseDining from "@/assets/wli/living-penthouse-dining.jpg";
+import lFireplaceBuiltins from "@/assets/wli/living-fireplace-builtins.jpg";
+import lCofferedCeiling from "@/assets/wli/living-coffered-ceiling.jpg";
+import lModernSectional from "@/assets/wli/living-modern-sectional.jpg";
+import lWarmTextures from "@/assets/wli/living-warm-textures.jpg";
+import lDiningPaneled from "@/assets/wli/dining-paneled-walls.jpg";
+import lDiningStatement from "@/assets/wli/dining-statement-light.jpg";
+
+// Bedrooms
+import bedPaneled from "@/assets/wli/bedroom-paneled-headboard.jpg";
+import bedSerene from "@/assets/wli/bedroom-serene-neutral.jpg";
+import bedWarmOak from "@/assets/wli/bedroom-warm-oak.jpg";
+import bedWindowBench from "@/assets/wli/bedroom-window-bench.jpg";
+import bedSoftModern from "@/assets/wli/bedroom-soft-modern.jpg";
 
 // Full Renovation
 import rPenthouseStair from "@/assets/wli/reno-penthouse-stair-kitchen.jpg";
@@ -41,6 +65,9 @@ import mMurphy from "@/assets/wli/millwork-murphy-bed.jpg";
 import mOfficeShelving from "@/assets/wli/millwork-office-shelving.jpg";
 import mOfficeBridge from "@/assets/wli/millwork-office-bridge-view.jpg";
 import mVanityDetail from "@/assets/wli/millwork-vanity-detail.jpg";
+import mWalkInCloset from "@/assets/wli/millwork-walk-in-closet.jpg";
+import mIslandCloset from "@/assets/wli/millwork-island-closet.jpg";
+import mMurphyDetail from "@/assets/wli/millwork-murphy-detail.jpg";
 
 // Commercial
 import cPrivacy from "@/assets/wli/commercial-privacy-booths.jpg";
