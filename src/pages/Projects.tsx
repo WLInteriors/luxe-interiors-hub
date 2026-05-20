@@ -32,12 +32,9 @@ import bPowderRoom from "@/assets/wli/bath-powder-room.jpg";
 import lSkyline from "@/assets/wli/living-skyline-penthouse.jpg";
 import lGlassStair from "@/assets/wli/living-glass-stair.jpg";
 import lCantilever from "@/assets/wli/living-cantilever-stair.jpg";
-import lLoftLounge from "@/assets/wli/living-loft-lounge.jpg";
-import lFamilyLounge from "@/assets/wli/living-family-lounge.jpg";
 import lPenthouseDining from "@/assets/wli/living-penthouse-dining.jpg";
 import lFireplaceBuiltins from "@/assets/wli/living-fireplace-builtins.jpg";
 import lCofferedCeiling from "@/assets/wli/living-coffered-ceiling.jpg";
-import lModernSectional from "@/assets/wli/living-modern-sectional.jpg";
 import lWarmTextures from "@/assets/wli/living-warm-textures.jpg";
 import lDiningPaneled from "@/assets/wli/dining-paneled-walls.jpg";
 import lDiningStatement from "@/assets/wli/dining-statement-light.jpg";
@@ -66,7 +63,7 @@ import mOfficeBridge from "@/assets/wli/millwork-office-bridge-view.jpg";
 import mVanityDetail from "@/assets/wli/millwork-vanity-detail.jpg";
 import mWalkInCloset from "@/assets/wli/millwork-walk-in-closet.jpg";
 import mIslandCloset from "@/assets/wli/millwork-island-closet.jpg";
-import mMurphyDetail from "@/assets/wli/millwork-murphy-detail.jpg";
+
 
 // Commercial
 import cPrivacy from "@/assets/wli/commercial-privacy-booths.jpg";
