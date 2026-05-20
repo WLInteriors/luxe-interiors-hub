@@ -9,7 +9,6 @@ import kOakBrass from "@/assets/wli/kitchen-oak-brass.jpg";
 import kMarbleIsland from "@/assets/wli/kitchen-marble-island.jpg";
 import kDramaticHood from "@/assets/wli/kitchen-dramatic-hood.jpg";
 import kWarmOak from "@/assets/wli/kitchen-warm-oak.jpg";
-import kClassicIsland from "@/assets/wli/kitchen-classic-island.jpg";
 import kWhiteModern from "@/assets/wli/kitchen-white-modern.jpg";
 import kShakerPantry from "@/assets/wli/kitchen-shaker-pantry.jpg";
 import kTwoTone from "@/assets/wli/kitchen-two-tone.jpg";
@@ -33,12 +32,9 @@ import bPowderRoom from "@/assets/wli/bath-powder-room.jpg";
 import lSkyline from "@/assets/wli/living-skyline-penthouse.jpg";
 import lGlassStair from "@/assets/wli/living-glass-stair.jpg";
 import lCantilever from "@/assets/wli/living-cantilever-stair.jpg";
-import lLoftLounge from "@/assets/wli/living-loft-lounge.jpg";
-import lFamilyLounge from "@/assets/wli/living-family-lounge.jpg";
 import lPenthouseDining from "@/assets/wli/living-penthouse-dining.jpg";
 import lFireplaceBuiltins from "@/assets/wli/living-fireplace-builtins.jpg";
 import lCofferedCeiling from "@/assets/wli/living-coffered-ceiling.jpg";
-import lModernSectional from "@/assets/wli/living-modern-sectional.jpg";
 import lWarmTextures from "@/assets/wli/living-warm-textures.jpg";
 import lDiningPaneled from "@/assets/wli/dining-paneled-walls.jpg";
 import lDiningStatement from "@/assets/wli/dining-statement-light.jpg";
@@ -67,7 +63,7 @@ import mOfficeBridge from "@/assets/wli/millwork-office-bridge-view.jpg";
 import mVanityDetail from "@/assets/wli/millwork-vanity-detail.jpg";
 import mWalkInCloset from "@/assets/wli/millwork-walk-in-closet.jpg";
 import mIslandCloset from "@/assets/wli/millwork-island-closet.jpg";
-import mMurphyDetail from "@/assets/wli/millwork-murphy-detail.jpg";
+
 
 // Commercial
 import cPrivacy from "@/assets/wli/commercial-privacy-booths.jpg";
@@ -94,7 +90,6 @@ const projects = [
   { title: "Marble Island Kitchen", category: "kitchens", image: kMarbleIsland, location: "Greenwich, CT" },
   { title: "Black Hood & Waterfall Island", category: "kitchens", image: kDramaticHood, location: "Rye, NY" },
   { title: "Warm Oak Family Kitchen", category: "kitchens", image: kWarmOak, location: "Larchmont, NY" },
-  { title: "Classic Island Kitchen", category: "kitchens", image: kClassicIsland, location: "Bronxville, NY" },
   { title: "Modern White Kitchen", category: "kitchens", image: kWhiteModern, location: "Rye, NY" },
   { title: "Shaker Kitchen with Pantry", category: "kitchens", image: kShakerPantry, location: "Larchmont, NY" },
   { title: "Two-Tone Family Kitchen", category: "kitchens", image: kTwoTone, location: "Greenwich, CT" },
@@ -118,12 +113,9 @@ const projects = [
   { title: "Skyline Penthouse Living Room", category: "living-spaces", image: lSkyline, location: "Manhattan, NY" },
   { title: "Glass Stair Lounge & Dining", category: "living-spaces", image: lGlassStair, location: "Tribeca, NY" },
   { title: "Cantilevered Stair Great Room", category: "living-spaces", image: lCantilever, location: "Manhattan, NY" },
-  { title: "Hudson View Loft Lounge", category: "living-spaces", image: lLoftLounge, location: "Manhattan, NY" },
-  { title: "Family Lounge & Dining", category: "living-spaces", image: lFamilyLounge, location: "Westchester County, NY" },
   { title: "Penthouse Living & Dining", category: "living-spaces", image: lPenthouseDining, location: "Manhattan, NY" },
   { title: "Fireplace & Built-Ins Living Room", category: "living-spaces", image: lFireplaceBuiltins, location: "Rye, NY" },
   { title: "Coffered Ceiling Great Room", category: "living-spaces", image: lCofferedCeiling, location: "Scarsdale, NY" },
-  { title: "Modern Sectional Lounge", category: "living-spaces", image: lModernSectional, location: "Greenwich, CT" },
   { title: "Warm Textured Family Room", category: "living-spaces", image: lWarmTextures, location: "Larchmont, NY" },
   { title: "Paneled Dining Room", category: "living-spaces", image: lDiningPaneled, location: "Bronxville, NY" },
   { title: "Statement-Light Dining Room", category: "living-spaces", image: lDiningStatement, location: "Rye, NY" },
@@ -152,7 +144,6 @@ const projects = [
   { title: "Floating Walnut Vanity (Detail)", category: "millwork", image: mVanityDetail, location: "Rye, NY" },
   { title: "Custom Walk-in Closet", category: "millwork", image: mWalkInCloset, location: "Scarsdale, NY" },
   { title: "Boutique Island Closet", category: "millwork", image: mIslandCloset, location: "Greenwich, CT" },
-  { title: "Murphy Bed Cabinetry Detail", category: "millwork", image: mMurphyDetail, location: "Rye, NY" },
 
   // Commercial
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy, location: "New York, NY" },
