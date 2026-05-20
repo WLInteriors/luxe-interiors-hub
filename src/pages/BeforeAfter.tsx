@@ -140,13 +140,20 @@ const BeforeAfter = () => {
             {beforeAfterItems.map((item) => (
               <div key={item.title} className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
                 <div className="lg:col-span-3">
-                  <BeforeAfterSlider
-                    before={item.beforeImage}
-                    after={item.afterImage}
-                    beforeLabel={item.beforeLabel}
-                    afterLabel={item.afterLabel}
-                    onExpand={() => setLightbox(item)}
-                  />
+                  <button
+                    type="button"
+                    onClick={() => setLightbox(item)}
+                    aria-label={`Enlarge ${item.title}`}
+                    className="block w-full text-left"
+                  >
+                    <BeforeAfterSlider
+                      before={item.beforeImage}
+                      after={item.afterImage}
+                      beforeLabel={item.beforeLabel}
+                      afterLabel={item.afterLabel}
+                      onExpand={() => setLightbox(item)}
+                    />
+                  </button>
                 </div>
                 <div className="lg:col-span-2">
                   <span className="text-xs uppercase tracking-widest text-brass">{item.location}</span>
@@ -165,7 +172,7 @@ const BeforeAfter = () => {
           aria-modal="true"
           aria-label={lightbox.title}
           onClick={() => setLightbox(null)}
-          className="fixed inset-0 z-[100] bg-foreground/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-10 animate-fade-in"
+          className="fixed inset-0 z-[100] bg-foreground/95 backdrop-blur-sm overflow-y-auto animate-fade-in"
         >
           <button
             type="button"
@@ -174,22 +181,36 @@ const BeforeAfter = () => {
               e.stopPropagation();
               setLightbox(null);
             }}
-            className="absolute top-5 right-5 text-cream/80 hover:text-cream text-3xl leading-none w-10 h-10 flex items-center justify-center z-10"
+            className="fixed top-5 right-5 text-cream/80 hover:text-cream text-4xl leading-none w-10 h-10 flex items-center justify-center z-10"
           >
             ×
           </button>
-          <div onClick={(e) => e.stopPropagation()} className="w-full max-w-7xl">
-            <div className="w-full max-h-[85vh]">
-              <BeforeAfterSlider
-                before={lightbox.beforeImage}
-                after={lightbox.afterImage}
-                beforeLabel={lightbox.beforeLabel}
-                afterLabel={lightbox.afterLabel}
-              />
-            </div>
-            <div className="mt-4 text-center">
+          <div onClick={(e) => e.stopPropagation()} className="w-full max-w-6xl mx-auto px-4 py-10 md:py-14">
+            <div className="text-center mb-6">
               <span className="text-xs uppercase tracking-widest text-brass">{lightbox.location}</span>
               <h3 className="font-serif text-xl md:text-2xl text-cream mt-1">{lightbox.title}</h3>
+            </div>
+            <div className="space-y-6">
+              <figure>
+                <figcaption className="text-xs uppercase tracking-widest text-cream/70 mb-2">
+                  {lightbox.beforeLabel ?? "Before"}
+                </figcaption>
+                <img
+                  src={lightbox.beforeImage}
+                  alt={`${lightbox.title} — ${lightbox.beforeLabel ?? "before"}`}
+                  className="w-full h-auto object-contain max-h-[85vh] mx-auto"
+                />
+              </figure>
+              <figure>
+                <figcaption className="text-xs uppercase tracking-widest text-brass mb-2">
+                  {lightbox.afterLabel ?? "After"}
+                </figcaption>
+                <img
+                  src={lightbox.afterImage}
+                  alt={`${lightbox.title} — ${lightbox.afterLabel ?? "after"}`}
+                  className="w-full h-auto object-contain max-h-[85vh] mx-auto"
+                />
+              </figure>
             </div>
           </div>
         </div>
