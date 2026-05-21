@@ -55,6 +55,36 @@ const About = () => (
       </div>
     </section>
 
+    {/* Credentials & Capabilities */}
+    <section className="py-16 lg:py-20 border-t border-border/50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-3xl">
+          <span className="inline-block text-xs font-sans tracking-[0.25em] uppercase text-brass mb-3">Credentials & Capabilities</span>
+          <h3 className="font-serif text-2xl md:text-3xl mb-4">Certified, Trusted, & Equipped for Any Scope</h3>
+          <p className="text-muted-foreground leading-relaxed mb-8 text-sm">
+            Beyond our residential luxury work, WL Interiors holds certifications and partnerships that support institutional and large-scale commercial projects across the region.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3 text-sm text-muted-foreground">
+          {[
+            "MBE-certified",
+            "DBE-certified",
+            "NYC SCA Mentor Program participant",
+            "CU Grow program graduates",
+            "Columbia University-approved vendor",
+            "Open-shop & off-hours capable",
+            "Commercial & institutional experience",
+            "In-house millwork fabrication",
+          ].map((item) => (
+            <div key={item} className="flex items-start gap-3 py-1">
+              <span className="text-brass mt-1.5 w-1 h-1 rounded-full bg-brass flex-shrink-0" />
+              <span>{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* Values */}
     <section className="py-20 lg:py-28 bg-secondary">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
