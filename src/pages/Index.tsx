@@ -71,7 +71,7 @@ const Index = () => (
             Westchester's Premier General Contractor
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-[1.1] text-cream animate-fade-in-up">
-            Luxury Interior Design & Renovation
+            Luxury Renovations & Custom Millwork
           </h1>
           <p className="mt-6 text-lg text-cream/80 leading-relaxed animate-fade-in-up animation-delay-200">
             Where craftsmanship meets elegance. Custom millwork, full renovations, and bespoke interiors for discerning homeowners.
@@ -93,7 +93,6 @@ const Index = () => (
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-wrap justify-center gap-8 lg:gap-16">
         {[
           { icon: Shield, text: "Licensed & Insured" },
-          { icon: Star, text: "5-Star Rated" },
           { icon: Ruler, text: "Custom Millwork Shop" },
           { icon: Leaf, text: "Green Building Options" },
         ].map(({ icon: Icon, text }) => (
