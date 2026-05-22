@@ -60,6 +60,12 @@ import bedLoftBunkWide from "@/assets/wli/bedroom-loft-bunk-wide.jpg";
 import rPenthouseStair from "@/assets/wli/reno-penthouse-stair-kitchen.jpg";
 import rWholeKitchen from "@/assets/wli/reno-whole-kitchen-transformation.jpg";
 import rModernPenthouse from "@/assets/wli/reno-modern-penthouse-kitchen.jpg";
+import rHilltop from "@/assets/wli/reno-hilltop-estate-kitchen.jpg";
+import rOpenFamily from "@/assets/wli/reno-open-family-kitchen.jpg";
+import rKitchenExtra from "@/assets/wli/kitchen-7.jpg";
+import rPowderRoom from "@/assets/wli/bath-powder-room.jpg";
+import rLivingExtra from "@/assets/wli/living-room-2.jpg";
+import rLibraryBuiltin from "@/assets/wli/library-builtin.jpg";
 
 // Millwork
 import mWalnutFluted from "@/assets/wli/millwork-walnut-fluted.jpg";
@@ -76,6 +82,12 @@ import mIslandCloset from "@/assets/wli/millwork-island-closet.jpg";
 import cPrivacy from "@/assets/wli/commercial-privacy-booths.jpg";
 import cGlass from "@/assets/wli/commercial-glass-offices.jpg";
 import cStorefront from "@/assets/wli/commercial-storefront.jpg";
+import cBankAtm from "@/assets/wli/commercial-bank-atm.jpg";
+import cGlassSuite from "@/assets/wli/commercial-glass-office-suite.jpg";
+import cGlassPartitions from "@/assets/wli/commercial-glass-partitions.jpg";
+import cBankEntrance from "@/assets/wli/commercial-bank-entrance.jpg";
+import cBrickBooths from "@/assets/wli/commercial-brick-booths.jpg";
+import cLobbyLounge from "@/assets/wli/commercial-lobby-lounge.jpg";
 
 const categories = [
   { label: "All", value: "all" },
@@ -142,10 +154,16 @@ const projects = [
   { title: "Loft Bunk Bedroom (Loft Detail)", category: "bedrooms", image: bedLoftBunkDetail },
   { title: "Loft Bunk Bedroom (Wide View)", category: "bedrooms", image: bedLoftBunkWide },
 
-  // Full Renovation (3)
+  // Full Renovation (9)
   { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair },
   { title: "Whole-Home Kitchen Transformation", category: "full-renovation", image: rWholeKitchen },
   { title: "Modern Penthouse Kitchen Renovation", category: "full-renovation", image: rModernPenthouse },
+  { title: "Hilltop Estate Renovation", category: "full-renovation", image: rHilltop },
+  { title: "Open Family-Home Renovation", category: "full-renovation", image: rOpenFamily },
+  { title: "Chef's Kitchen Gut Renovation", category: "full-renovation", image: rKitchenExtra },
+  { title: "Powder Room Renovation", category: "full-renovation", image: rPowderRoom },
+  { title: "Living Room Renovation", category: "full-renovation", image: rLivingExtra },
+  { title: "Library & Built-In Renovation", category: "full-renovation", image: rLibraryBuiltin },
 
   // Millwork (9)
   { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted },
@@ -158,10 +176,16 @@ const projects = [
   { title: "Custom Walk-in Closet", category: "millwork", image: mWalkInCloset },
   { title: "Boutique Island Closet", category: "millwork", image: mIslandCloset },
 
-  // Commercial (3)
+  // Commercial (9)
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy },
   { title: "Black-Framed Glass Offices", category: "commercial", image: cGlass },
   { title: "Boutique Café Storefront", category: "commercial", image: cStorefront },
+  { title: "Bank ATM Lobby Build-Out", category: "commercial", image: cBankAtm },
+  { title: "Executive Glass Office Suite", category: "commercial", image: cGlassSuite },
+  { title: "Glass Partitioned Conference Room", category: "commercial", image: cGlassPartitions },
+  { title: "Commercial Bank Entrance", category: "commercial", image: cBankEntrance },
+  { title: "Industrial Loft Phone Booths", category: "commercial", image: cBrickBooths },
+  { title: "Corporate Lobby Lounge", category: "commercial", image: cLobbyLounge },
 ];
 
 const Projects = () => {
