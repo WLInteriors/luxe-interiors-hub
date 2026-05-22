@@ -60,6 +60,12 @@ import bedLoftBunkWide from "@/assets/wli/bedroom-loft-bunk-wide.jpg";
 import rPenthouseStair from "@/assets/wli/reno-penthouse-stair-kitchen.jpg";
 import rWholeKitchen from "@/assets/wli/reno-whole-kitchen-transformation.jpg";
 import rModernPenthouse from "@/assets/wli/reno-modern-penthouse-kitchen.jpg";
+import rHilltop from "@/assets/wli/reno-hilltop-estate-kitchen.jpg";
+import rOpenFamily from "@/assets/wli/reno-open-family-kitchen.jpg";
+import rKitchenExtra from "@/assets/wli/kitchen-7.jpg";
+import rPowderRoom from "@/assets/wli/bath-powder-room.jpg";
+import rLivingExtra from "@/assets/wli/living-room-2.jpg";
+import rLibraryBuiltin from "@/assets/wli/library-builtin.jpg";
 
 // Millwork
 import mWalnutFluted from "@/assets/wli/millwork-walnut-fluted.jpg";
