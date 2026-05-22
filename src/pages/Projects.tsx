@@ -14,7 +14,7 @@ import kShakerPantry from "@/assets/wli/kitchen-shaker-pantry.jpg";
 import kTwoTone from "@/assets/wli/kitchen-two-tone.jpg";
 import kCoastalBlue from "@/assets/wli/kitchen-coastal-blue.jpg";
 import kStatementHood from "@/assets/wli/kitchen-statement-hood.jpg";
-import kClassicIsland from "@/assets/wli/kitchen-classic-island.jpg";
+import kClassicIsland from "@/assets/wli/kitchen-replacement-luxury.jpg";
 import kStairBar from "@/assets/wli/kitchen-stair-bar.jpg";
 
 // Bathrooms
@@ -35,11 +35,8 @@ import lCantilever from "@/assets/wli/living-cantilever-stair.jpg";
 import lPenthouseDining from "@/assets/wli/living-penthouse-dining.jpg";
 import lFireplaceBuiltins from "@/assets/wli/living-fireplace-builtins.jpg";
 import lCofferedCeiling from "@/assets/wli/living-coffered-ceiling.jpg";
-import lWarmTextures from "@/assets/wli/living-warm-textures.jpg";
 import lDiningPaneled from "@/assets/wli/dining-paneled-walls.jpg";
 import lDiningStatement from "@/assets/wli/dining-statement-light.jpg";
-import lFamilyLounge from "@/assets/wli/living-family-lounge.jpg";
-import lModernSectional from "@/assets/wli/living-modern-sectional.jpg";
 import lLoftLounge from "@/assets/wli/living-loft-lounge.jpg";
 
 // Bedrooms
@@ -52,8 +49,6 @@ import bedWarmOakAlt from "@/assets/wli/bedroom-warm-oak-alt.jpg";
 import bedWindowBench from "@/assets/wli/bedroom-window-bench.jpg";
 import bedSoftModern from "@/assets/wli/bedroom-soft-modern.jpg";
 import bedSoftModernAlt from "@/assets/wli/bedroom-soft-modern-alt.jpg";
-import bedLoftBunk from "@/assets/wli/bedroom-loft-bunk.jpg";
-import bedLoftBunkDetail from "@/assets/wli/bedroom-loft-bunk-detail.jpg";
 import bedLoftBunkWide from "@/assets/wli/bedroom-loft-bunk-wide.jpg";
 
 // Full Renovation
@@ -62,10 +57,7 @@ import rWholeKitchen from "@/assets/wli/reno-whole-kitchen-transformation.jpg";
 import rModernPenthouse from "@/assets/wli/reno-modern-penthouse-kitchen.jpg";
 import rHilltop from "@/assets/wli/reno-hilltop-estate-kitchen.jpg";
 import rOpenFamily from "@/assets/wli/reno-open-family-kitchen.jpg";
-import rKitchenExtra from "@/assets/wli/kitchen-7.jpg";
-import rPowderRoom from "@/assets/wli/bath-powder-room.jpg";
 import rLivingExtra from "@/assets/wli/living-room-2.jpg";
-import rLibraryBuiltin from "@/assets/wli/library-builtin.jpg";
 
 // Millwork
 import mWalnutFluted from "@/assets/wli/millwork-walnut-fluted.jpg";
@@ -85,8 +77,8 @@ import cStorefront from "@/assets/wli/commercial-storefront.jpg";
 import cBankAtm from "@/assets/wli/commercial-bank-atm.jpg";
 import cGlassSuite from "@/assets/wli/commercial-glass-office-suite.jpg";
 import cGlassPartitions from "@/assets/wli/commercial-glass-partitions.jpg";
-import cBankEntrance from "@/assets/wli/commercial-bank-entrance.jpg";
-import cBrickBooths from "@/assets/wli/commercial-brick-booths.jpg";
+import cSoundproofing from "@/assets/wli/commercial-soundproofing.jpg";
+import cOfficeBuildout from "@/assets/wli/commercial-office-buildout.jpg";
 import cLobbyLounge from "@/assets/wli/commercial-lobby-lounge.jpg";
 
 const categories = [
