@@ -82,6 +82,12 @@ import mIslandCloset from "@/assets/wli/millwork-island-closet.jpg";
 import cPrivacy from "@/assets/wli/commercial-privacy-booths.jpg";
 import cGlass from "@/assets/wli/commercial-glass-offices.jpg";
 import cStorefront from "@/assets/wli/commercial-storefront.jpg";
+import cBankAtm from "@/assets/wli/commercial-bank-atm.jpg";
+import cGlassSuite from "@/assets/wli/commercial-glass-office-suite.jpg";
+import cGlassPartitions from "@/assets/wli/commercial-glass-partitions.jpg";
+import cBankEntrance from "@/assets/wli/commercial-bank-entrance.jpg";
+import cBrickBooths from "@/assets/wli/commercial-brick-booths.jpg";
+import cLobbyLounge from "@/assets/wli/commercial-lobby-lounge.jpg";
 
 const categories = [
   { label: "All", value: "all" },
