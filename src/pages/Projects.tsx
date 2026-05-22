@@ -176,10 +176,16 @@ const projects = [
   { title: "Custom Walk-in Closet", category: "millwork", image: mWalkInCloset },
   { title: "Boutique Island Closet", category: "millwork", image: mIslandCloset },
 
-  // Commercial (3)
+  // Commercial (9)
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy },
   { title: "Black-Framed Glass Offices", category: "commercial", image: cGlass },
   { title: "Boutique Café Storefront", category: "commercial", image: cStorefront },
+  { title: "Bank ATM Lobby Build-Out", category: "commercial", image: cBankAtm },
+  { title: "Executive Glass Office Suite", category: "commercial", image: cGlassSuite },
+  { title: "Glass Partitioned Conference Room", category: "commercial", image: cGlassPartitions },
+  { title: "Commercial Bank Entrance", category: "commercial", image: cBankEntrance },
+  { title: "Industrial Loft Phone Booths", category: "commercial", image: cBrickBooths },
+  { title: "Corporate Lobby Lounge", category: "commercial", image: cLobbyLounge },
 ];
 
 const Projects = () => {
