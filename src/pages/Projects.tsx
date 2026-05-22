@@ -104,7 +104,7 @@ const projects = [
   { title: "Two-Tone Family Kitchen", category: "kitchens", image: kTwoTone },
   { title: "Coastal Blue Kitchen", category: "kitchens", image: kCoastalBlue },
   { title: "Statement Hood Kitchen", category: "kitchens", image: kStatementHood },
-  { title: "Classic Island Kitchen", category: "kitchens", image: kClassicIsland },
+  { title: "Luxury Stone-Backsplash Kitchen", category: "kitchens", image: kClassicIsland },
   { title: "Stair-Side Bar Kitchen", category: "kitchens", image: kStairBar },
 
   // Bathrooms (9)
@@ -118,21 +118,18 @@ const projects = [
   { title: "Double Vanity Primary Bath", category: "bathrooms", image: bDoubleVanity },
   { title: "Walk-in Glass Shower Suite", category: "bathrooms", image: bWalkInGlass },
 
-  // Living Spaces (12)
+  // Living Spaces (9)
   { title: "Skyline Penthouse Living Room", category: "living-spaces", image: lSkyline },
   { title: "Glass Stair Lounge & Dining", category: "living-spaces", image: lGlassStair },
   { title: "Cantilevered Stair Great Room", category: "living-spaces", image: lCantilever },
   { title: "Penthouse Living & Dining", category: "living-spaces", image: lPenthouseDining },
   { title: "Fireplace & Built-Ins Living Room", category: "living-spaces", image: lFireplaceBuiltins },
   { title: "Coffered Ceiling Great Room", category: "living-spaces", image: lCofferedCeiling },
-  { title: "Warm Textured Family Room", category: "living-spaces", image: lWarmTextures },
   { title: "Paneled Dining Room", category: "living-spaces", image: lDiningPaneled },
   { title: "Statement-Light Dining Room", category: "living-spaces", image: lDiningStatement },
-  { title: "Family Lounge", category: "living-spaces", image: lFamilyLounge },
-  { title: "Modern Sectional Living Room", category: "living-spaces", image: lModernSectional },
   { title: "Loft Lounge", category: "living-spaces", image: lLoftLounge },
 
-  // Bedrooms (12)
+  // Bedrooms (10)
   { title: "Paneled Headboard Primary Suite", category: "bedrooms", image: bedPaneled },
   { title: "Paneled Primary Suite (Detail)", category: "bedrooms", image: bedPaneledDetail },
   { title: "Serene Neutral Bedroom", category: "bedrooms", image: bedSerene },
@@ -142,20 +139,15 @@ const projects = [
   { title: "Window-Bench Guest Bedroom", category: "bedrooms", image: bedWindowBench },
   { title: "Soft Modern Bedroom", category: "bedrooms", image: bedSoftModern },
   { title: "Soft Modern Bedroom (Alt View)", category: "bedrooms", image: bedSoftModernAlt },
-  { title: "Custom Loft Bunk Bedroom", category: "bedrooms", image: bedLoftBunk },
-  { title: "Loft Bunk Bedroom (Loft Detail)", category: "bedrooms", image: bedLoftBunkDetail },
   { title: "Loft Bunk Bedroom (Wide View)", category: "bedrooms", image: bedLoftBunkWide },
 
-  // Full Renovation (9)
+  // Full Renovation (6)
   { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair },
   { title: "Whole-Home Kitchen Transformation", category: "full-renovation", image: rWholeKitchen },
   { title: "Modern Penthouse Kitchen Renovation", category: "full-renovation", image: rModernPenthouse },
   { title: "Hilltop Estate Renovation", category: "full-renovation", image: rHilltop },
   { title: "Open Family-Home Renovation", category: "full-renovation", image: rOpenFamily },
-  { title: "Chef's Kitchen Gut Renovation", category: "full-renovation", image: rKitchenExtra },
-  { title: "Powder Room Renovation", category: "full-renovation", image: rPowderRoom },
   { title: "Living Room Renovation", category: "full-renovation", image: rLivingExtra },
-  { title: "Library & Built-In Renovation", category: "full-renovation", image: rLibraryBuiltin },
 
   // Millwork (9)
   { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted },
@@ -174,9 +166,9 @@ const projects = [
   { title: "Boutique Café Storefront", category: "commercial", image: cStorefront },
   { title: "Bank ATM Lobby Build-Out", category: "commercial", image: cBankAtm },
   { title: "Executive Glass Office Suite", category: "commercial", image: cGlassSuite },
+  { title: "Commercial Sound Proofing", category: "commercial", image: cSoundproofing },
   { title: "Glass Partitioned Conference Room", category: "commercial", image: cGlassPartitions },
-  { title: "Commercial Bank Entrance", category: "commercial", image: cBankEntrance },
-  { title: "Industrial Loft Phone Booths", category: "commercial", image: cBrickBooths },
+  { title: "Commercial Office Build-Out", category: "commercial", image: cOfficeBuildout },
   { title: "Corporate Lobby Lounge", category: "commercial", image: cLobbyLounge },
 ];
 
