@@ -154,10 +154,16 @@ const projects = [
   { title: "Loft Bunk Bedroom (Loft Detail)", category: "bedrooms", image: bedLoftBunkDetail },
   { title: "Loft Bunk Bedroom (Wide View)", category: "bedrooms", image: bedLoftBunkWide },
 
-  // Full Renovation (3)
+  // Full Renovation (9)
   { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair },
   { title: "Whole-Home Kitchen Transformation", category: "full-renovation", image: rWholeKitchen },
   { title: "Modern Penthouse Kitchen Renovation", category: "full-renovation", image: rModernPenthouse },
+  { title: "Hilltop Estate Renovation", category: "full-renovation", image: rHilltop },
+  { title: "Open Family-Home Renovation", category: "full-renovation", image: rOpenFamily },
+  { title: "Chef's Kitchen Gut Renovation", category: "full-renovation", image: rKitchenExtra },
+  { title: "Powder Room Renovation", category: "full-renovation", image: rPowderRoom },
+  { title: "Living Room Renovation", category: "full-renovation", image: rLivingExtra },
+  { title: "Library & Built-In Renovation", category: "full-renovation", image: rLibraryBuiltin },
 
   // Millwork (9)
   { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted },
