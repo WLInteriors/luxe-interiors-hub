@@ -1,0 +1,18 @@
+# WL Interiors
+
+> Westchester's premier luxury general contractor — custom millwork, kitchen & bath renovations, and full home transformations from Rye, NY.
+
+WL Interiors (also known as Westchester Luxury Interiors) is a licensed and insured luxury general contractor based at 209 North Street, Rye, NY 10580. We serve Westchester County, New York City, Connecticut, and the wider tri-state area. Our in-house millwork shop fabricates custom cabinetry, built-ins, vanities, closets, bars, and architectural details. Phone: (914) 467-0807. Email: info@westchesterluxuryinteriors.com.
+
+## Pages
+
+- [Home](/): Overview of luxury renovation and millwork services.
+- [About](/about): Company story, values, credentials, and process.
+- [Projects](/projects): Portfolio of completed kitchens, bathrooms, living spaces, bedrooms, full renovations, millwork, and commercial work.
+- [Custom Millwork](/millwork): In-house millwork — built-ins, closets, bars, vanities, mudrooms, home office.
+- [Before & After](/before-after): Renovation transformations with side-by-side comparisons.
+- [Free Consultation](/consultation): Contact form and direct contact details for a complimentary project consultation.
+
+## Optional
+
+- [Email Preferences](/unsubscribe): Email unsubscribe page.
