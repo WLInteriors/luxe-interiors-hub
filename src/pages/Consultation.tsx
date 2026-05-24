@@ -155,8 +155,8 @@ const Consultation = () => {
                       className="w-full bg-transparent border-b-2 border-border py-3 text-sm focus:border-brass outline-none transition-colors resize-none"
                     />
                   </div>
-                  <button type="submit" className="bg-primary text-primary-foreground px-10 py-4 text-sm uppercase tracking-widest hover:bg-primary/90 transition-colors">
-                    Send Inquiry
+                  <button type="submit" disabled={submitting} className="bg-primary text-primary-foreground px-10 py-4 text-sm uppercase tracking-widest hover:bg-primary/90 transition-colors disabled:opacity-60">
+                    {submitting ? "Sending…" : "Send Inquiry"}
                   </button>
                 </form>
               )}
