@@ -19,8 +19,32 @@ const formatBytes = (b: number) => b < 1024 * 1024 ? `${(b / 1024).toFixed(0)} K
 
 const Consultation = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", project: "", message: "" });
+  const [files, setFiles] = useState<File[]>([]);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const addFiles = (incoming: FileList | null) => {
+    if (!incoming) return;
+    const next = [...files];
+    let rejected: string | null = null;
+    for (const f of Array.from(incoming)) {
+      if (next.length >= MAX_FILES) { rejected = `Max ${MAX_FILES} files.`; break; }
+      const mimeOk = ALLOWED_MIME.includes(f.type);
+      const extOk = ALLOWED_EXT.test(f.name);
+      if (!mimeOk && !extOk) { rejected = `"${f.name}" isn't an allowed photo or video.`; continue; }
+      if (f.size > MAX_FILE_BYTES) { rejected = `"${f.name}" exceeds ${formatBytes(MAX_FILE_BYTES)}.`; continue; }
+      const total = next.reduce((s, x) => s + x.size, 0) + f.size;
+      if (total > MAX_TOTAL_BYTES) { rejected = `Total attachments exceed ${formatBytes(MAX_TOTAL_BYTES)}.`; break; }
+      if (next.some(x => x.name === f.name && x.size === f.size)) continue;
+      next.push(f);
+    }
+    if (rejected) toast({ title: "Some files weren't added", description: rejected, variant: "destructive" });
+    setFiles(next);
+    if (fileInputRef.current) fileInputRef.current.value = "";
+  };
+
+  const removeFile = (idx: number) => setFiles(files.filter((_, i) => i !== idx));
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,6 +52,25 @@ const Consultation = () => {
     setSubmitting(true);
 
     const id = crypto.randomUUID();
+
+    // Upload attachments first
+    const attachments: { name: string; url: string; size: number; type: string }[] = [];
+    for (const f of files) {
+      const safeName = f.name.replace(/[^a-zA-Z0-9._-]/g, "_");
+      const path = `${id}/${Date.now()}-${safeName}`;
+      const { error: upErr } = await supabase.storage
+        .from("consultation-uploads")
+        .upload(path, f, { contentType: f.type, upsert: false });
+      if (upErr) {
+        console.error("Upload failed", upErr);
+        toast({ title: "Upload failed", description: `Couldn't upload "${f.name}". Please try again.`, variant: "destructive" });
+        setSubmitting(false);
+        return;
+      }
+      const { data: pub } = supabase.storage.from("consultation-uploads").getPublicUrl(path);
+      attachments.push({ name: f.name, url: pub.publicUrl, size: f.size, type: f.type });
+    }
+
     const payload = {
       id,
       name: form.name,
@@ -35,6 +78,7 @@ const Consultation = () => {
       phone: form.phone || null,
       project_type: form.project || null,
       message: form.message || null,
+      attachments,
     };
 
     const { error } = await supabase.from("consultation_inquiries").insert(payload);
@@ -56,6 +100,7 @@ const Consultation = () => {
       phone: form.phone,
       projectType: form.project,
       message: form.message,
+      attachments,
     };
 
     // Fire-and-log emails; submission is already saved so the user always sees success.
