@@ -2,14 +2,76 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "@/hooks/use-toast";
 
 const Consultation = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", project: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (submitting) return;
+    setSubmitting(true);
+
+    const id = crypto.randomUUID();
+    const payload = {
+      id,
+      name: form.name,
+      email: form.email,
+      phone: form.phone || null,
+      project_type: form.project || null,
+      message: form.message || null,
+    };
+
+    const { error } = await supabase.from("consultation_inquiries").insert(payload);
+
+    if (error) {
+      console.error("Failed to save inquiry", error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or call us at (914) 467-0807.",
+        variant: "destructive",
+      });
+      setSubmitting(false);
+      return;
+    }
+
+    const templateData = {
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      projectType: form.project,
+      message: form.message,
+    };
+
+    // Fire-and-log emails; submission is already saved so the user always sees success.
+    supabase.functions.invoke("send-transactional-email", {
+      body: {
+        templateName: "consultation-notification",
+        idempotencyKey: `consult-notify-${id}`,
+        templateData,
+      },
+    }).then(({ error }) => {
+      if (error) console.error("Notification email failed", error);
+    });
+
+    if (form.email) {
+      supabase.functions.invoke("send-transactional-email", {
+        body: {
+          templateName: "consultation-confirmation",
+          recipientEmail: form.email,
+          idempotencyKey: `consult-confirm-${id}`,
+          templateData: { name: form.name },
+        },
+      }).then(({ error }) => {
+        if (error) console.error("Confirmation email failed", error);
+      });
+    }
+
     setSubmitted(true);
+    setSubmitting(false);
   };
 
   return (
@@ -93,8 +155,8 @@ const Consultation = () => {
                       className="w-full bg-transparent border-b-2 border-border py-3 text-sm focus:border-brass outline-none transition-colors resize-none"
                     />
                   </div>
-                  <button type="submit" className="bg-primary text-primary-foreground px-10 py-4 text-sm uppercase tracking-widest hover:bg-primary/90 transition-colors">
-                    Send Inquiry
+                  <button type="submit" disabled={submitting} className="bg-primary text-primary-foreground px-10 py-4 text-sm uppercase tracking-widest hover:bg-primary/90 transition-colors disabled:opacity-60">
+                    {submitting ? "Sending…" : "Send Inquiry"}
                   </button>
                 </form>
               )}

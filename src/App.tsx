@@ -11,6 +11,7 @@ import BeforeAfter from "./pages/BeforeAfter";
 import About from "./pages/About";
 import Consultation from "./pages/Consultation";
 import NotFound from "./pages/NotFound";
+import Unsubscribe from "./pages/Unsubscribe";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/before-after" element={<BeforeAfter />} />
           <Route path="/about" element={<About />} />
           <Route path="/consultation" element={<Consultation />} />
+          <Route path="/unsubscribe" element={<Unsubscribe />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
