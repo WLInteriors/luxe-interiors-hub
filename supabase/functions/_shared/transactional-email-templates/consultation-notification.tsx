@@ -83,3 +83,5 @@ const label = { fontSize: '11px', textTransform: 'uppercase' as const, letterSpa
 const value = { fontSize: '15px', color: '#1a1a1a', margin: '0 0 8px', whiteSpace: 'pre-wrap' as const, fontFamily: 'Arial, sans-serif' }
 const hr = { borderColor: '#e5e5e5', margin: '20px 0' }
 const footer = { fontSize: '12px', color: '#999', margin: '20px 0 0' }
+const linkStyle = { color: '#9a8350', textDecoration: 'underline' }
+
