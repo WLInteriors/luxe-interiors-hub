@@ -1,21 +1,26 @@
 import * as React from 'npm:react@18.3.1'
 import {
-  Body, Container, Head, Heading, Html, Preview, Section, Text, Hr,
+  Body, Container, Head, Heading, Html, Preview, Section, Text, Hr, Link,
 } from 'npm:@react-email/components@0.0.22'
 import type { TemplateEntry } from './registry.ts'
 
 const SITE_NAME = 'Westchester Luxury Interiors'
 
+interface Attachment { name?: string; url?: string; size?: number; type?: string }
 interface Props {
   name?: string
   email?: string
   phone?: string
   projectType?: string
   message?: string
+  attachments?: Attachment[]
 }
 
+const formatBytes = (b?: number) =>
+  !b ? '' : b < 1024 * 1024 ? ` (${Math.round(b / 1024)} KB)` : ` (${(b / 1024 / 1024).toFixed(1)} MB)`
+
 const ConsultationNotificationEmail = ({
-  name, email, phone, projectType, message,
+  name, email, phone, projectType, message, attachments,
 }: Props) => (
   <Html lang="en" dir="ltr">
     <Head />
@@ -36,6 +41,17 @@ const ConsultationNotificationEmail = ({
           <Text style={value}>{projectType || '—'}</Text>
           <Text style={label}>Message</Text>
           <Text style={value}>{message || '—'}</Text>
+          {attachments && attachments.length > 0 && (
+            <>
+              <Text style={label}>Attachments ({attachments.length})</Text>
+              {attachments.map((a, i) => (
+                <Text key={i} style={value}>
+                  <Link href={a.url} style={linkStyle}>{a.name || a.url}</Link>
+                  <span style={{ color: '#9a8350' }}>{formatBytes(a.size)}</span>
+                </Text>
+              ))}
+            </>
+          )}
         </Section>
         <Hr style={hr} />
         <Text style={footer}>Reply directly to {email || 'the visitor'} to follow up.</Text>
@@ -67,3 +83,5 @@ const label = { fontSize: '11px', textTransform: 'uppercase' as const, letterSpa
 const value = { fontSize: '15px', color: '#1a1a1a', margin: '0 0 8px', whiteSpace: 'pre-wrap' as const, fontFamily: 'Arial, sans-serif' }
 const hr = { borderColor: '#e5e5e5', margin: '20px 0' }
 const footer = { fontSize: '12px', color: '#999', margin: '20px 0 0' }
+const linkStyle = { color: '#9a8350', textDecoration: 'underline' }
+
