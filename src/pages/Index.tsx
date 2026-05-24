@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import SectionHeading from "@/components/SectionHeading";
 import heroImage from "@/assets/hero-kitchen.jpg";
 import bathroomImage from "@/assets/wli/bath-marble-brass.jpg";
@@ -59,10 +60,15 @@ const testimonials = [
 
 const Index = () => (
   <Layout>
+    <SEO
+      title="WL Interiors | Luxury Renovations in Westchester, NY"
+      description="Custom millwork, kitchen & bath renovations, and full home transformations from Westchester's premier general contractor. Free consultation."
+      path="/"
+    />
     {/* Hero */}
     <section className="relative h-[90vh] min-h-[600px] flex items-center">
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Luxury kitchen renovation by Westchester Luxury Interiors" className="w-full h-full object-cover" width={1920} height={1080} />
+        <img src={heroImage} alt="Luxury kitchen renovation by Westchester Luxury Interiors" className="w-full h-full object-cover" width={1920} height={1080} fetchPriority="high" />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/70 via-foreground/40 to-transparent" />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">

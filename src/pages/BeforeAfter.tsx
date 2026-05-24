@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 import baBeforeLiving from "@/assets/wli/ba-before-living.jpg";
 import baAfterLiving from "@/assets/wli/ba-after-living.jpg";
 import baBeforeKitchen from "@/assets/wli/ba-before-kitchen.jpg";
@@ -48,12 +49,16 @@ const beforeAfterItems: BAItem[] = [
 const BeforeAfterSlider = ({
   before,
   after,
+  beforeAlt,
+  afterAlt,
   beforeLabel = "Before",
   afterLabel = "After",
   onExpand,
 }: {
   before: string;
   after: string;
+  beforeAlt: string;
+  afterAlt: string;
   beforeLabel?: string;
   afterLabel?: string;
   onExpand?: () => void;
@@ -73,11 +78,11 @@ const BeforeAfterSlider = ({
         setPosition(((touch.clientX - rect.left) / rect.width) * 100);
       }}
     >
-      <img src={after} alt="After" className="absolute inset-0 w-full h-full object-cover" />
+      <img src={after} alt={afterAlt} className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 overflow-hidden" style={{ width: `${position}%` }}>
         <img
           src={before}
-          alt="Before"
+          alt={beforeAlt}
           className="absolute inset-0 w-full h-full object-cover"
           style={{ minWidth: `${100 / (position / 100)}%` }}
         />
@@ -128,6 +133,11 @@ const BeforeAfter = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Before & After Renovations | WL Interiors"
+        description="See dramatic kitchen, living room, and millwork transformations by WL Interiors. Drag the slider to compare each renovation before and after."
+        path="/before-after"
+      />
       <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <SectionHeading
@@ -149,6 +159,8 @@ const BeforeAfter = () => {
                     <BeforeAfterSlider
                       before={item.beforeImage}
                       after={item.afterImage}
+                      beforeAlt={`${item.title} in ${item.location} — ${item.beforeLabel?.toLowerCase() ?? "before renovation by WL Interiors"}`}
+                      afterAlt={`${item.title} in ${item.location} — ${item.afterLabel?.toLowerCase() ?? "after renovation by WL Interiors"}`}
                       beforeLabel={item.beforeLabel}
                       afterLabel={item.afterLabel}
                       onExpand={() => setLightbox(item)}

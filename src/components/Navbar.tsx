@@ -96,7 +96,13 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Toggle */}
-          <button className="lg:hidden p-2" onClick={() => setOpen(!open)}>
+          <button
+            className="lg:hidden p-2"
+            onClick={() => setOpen(!open)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+          >
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -104,7 +110,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="lg:hidden bg-background border-t border-border">
+        <div id="mobile-menu" className="lg:hidden bg-background border-t border-border">
           <div className="px-6 py-6 space-y-4">
             <Link to="/" className="block text-sm uppercase tracking-wide" onClick={() => setOpen(false)}>Home</Link>
             <div>

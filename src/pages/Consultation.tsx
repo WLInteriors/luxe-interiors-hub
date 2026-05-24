@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
@@ -76,8 +77,14 @@ const Consultation = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Free Consultation | WL Interiors"
+        description="Schedule a complimentary consultation with WL Interiors. Tell us about your renovation or millwork project — we'll respond within 24 hours."
+        path="/consultation"
+      />
       <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h1 className="sr-only">Schedule Your Free Consultation</h1>
           <SectionHeading
             label="Get In Touch"
             title="Schedule Your Free Consultation"
@@ -99,8 +106,9 @@ const Consultation = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Name *</label>
+                      <label htmlFor="consult-name" className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Name *</label>
                       <input
+                        id="consult-name"
                         type="text"
                         required
                         value={form.name}
@@ -109,8 +117,9 @@ const Consultation = () => {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Email *</label>
+                      <label htmlFor="consult-email" className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Email *</label>
                       <input
+                        id="consult-email"
                         type="email"
                         required
                         value={form.email}
@@ -121,8 +130,9 @@ const Consultation = () => {
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Phone</label>
+                      <label htmlFor="consult-phone" className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Phone</label>
                       <input
+                        id="consult-phone"
                         type="tel"
                         value={form.phone}
                         onChange={(e) => setForm({ ...form, phone: e.target.value })}
@@ -130,8 +140,9 @@ const Consultation = () => {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Project Type</label>
+                      <label htmlFor="consult-project" className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Project Type</label>
                       <select
+                        id="consult-project"
                         value={form.project}
                         onChange={(e) => setForm({ ...form, project: e.target.value })}
                         className="w-full bg-transparent border-b-2 border-border py-3 text-sm focus:border-brass outline-none transition-colors"
@@ -147,8 +158,9 @@ const Consultation = () => {
                     </div>
                   </div>
                   <div>
-                    <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Tell Us About Your Project</label>
+                    <label htmlFor="consult-message" className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Tell Us About Your Project</label>
                     <textarea
+                      id="consult-message"
                       rows={5}
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
