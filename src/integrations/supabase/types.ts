@@ -16,6 +16,7 @@ export type Database = {
     Tables: {
       consultation_inquiries: {
         Row: {
+          attachments: Json
           created_at: string
           email: string
           id: string
@@ -25,6 +26,7 @@ export type Database = {
           project_type: string | null
         }
         Insert: {
+          attachments?: Json
           created_at?: string
           email: string
           id?: string
@@ -34,6 +36,7 @@ export type Database = {
           project_type?: string | null
         }
         Update: {
+          attachments?: Json
           created_at?: string
           email?: string
           id?: string
