@@ -223,6 +223,47 @@ const Consultation = () => {
                       className="w-full bg-transparent border-b-2 border-border py-3 text-sm focus:border-brass outline-none transition-colors resize-none"
                     />
                   </div>
+                  <div>
+                    <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
+                      Photos & Videos (optional)
+                    </label>
+                    <input
+                      ref={fileInputRef}
+                      id="consult-files"
+                      type="file"
+                      multiple
+                      accept="image/jpeg,image/png,image/webp,image/gif,image/heic,image/heif,video/mp4,video/quicktime,video/webm"
+                      onChange={(e) => addFiles(e.target.files)}
+                      className="sr-only"
+                    />
+                    <label
+                      htmlFor="consult-files"
+                      className="inline-flex items-center gap-2 border-2 border-border px-4 py-2 text-xs uppercase tracking-widest cursor-pointer hover:border-brass transition-colors"
+                    >
+                      <Paperclip className="w-4 h-4" />
+                      Attach Files
+                    </label>
+                    <p className="text-xs text-muted-foreground mt-2">
+                      Up to {MAX_FILES} files, {formatBytes(MAX_FILE_BYTES)} each ({formatBytes(MAX_TOTAL_BYTES)} total). Images and videos only.
+                    </p>
+                    {files.length > 0 && (
+                      <ul className="mt-3 space-y-2">
+                        {files.map((f, i) => (
+                          <li key={`${f.name}-${i}`} className="flex items-center justify-between gap-3 text-sm bg-secondary px-3 py-2">
+                            <span className="truncate">{f.name} <span className="text-muted-foreground text-xs">({formatBytes(f.size)})</span></span>
+                            <button
+                              type="button"
+                              onClick={() => removeFile(i)}
+                              aria-label={`Remove ${f.name}`}
+                              className="text-muted-foreground hover:text-destructive"
+                            >
+                              <X className="w-4 h-4" />
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
                   <button type="submit" disabled={submitting} className="bg-primary text-primary-foreground px-10 py-4 text-sm uppercase tracking-widest hover:bg-primary/90 transition-colors disabled:opacity-60">
                     {submitting ? "Sending…" : "Send Inquiry"}
                   </button>
