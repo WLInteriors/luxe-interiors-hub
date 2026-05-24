@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 import millworkImage from "@/assets/wli/millwork-reeded-library.jpg";
 import closetImage from "@/assets/closet-custom.jpg";
 import barImage from "@/assets/wli/millwork-cane-bar.jpg";
@@ -62,6 +63,11 @@ const CustomMillwork = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Custom Millwork & Cabinetry | WL Interiors"
+        description="In-house millwork shop crafting custom built-ins, vanities, walk-in closets, bars, mudrooms, and home office cabinetry in Westchester, NY."
+        path={category ? `/millwork/${category}` : "/millwork"}
+      />
       {/* Hero */}
       <section className="relative h-[60vh] min-h-[400px] flex items-center">
         <div className="absolute inset-0">
@@ -90,7 +96,7 @@ const CustomMillwork = () => {
                 <img src={item.image} alt={item.title} className="w-full aspect-[4/3] object-cover" loading="lazy" />
               </div>
               <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                <h3 className="font-serif text-2xl lg:text-3xl mb-4">{item.title}</h3>
+                <h2 className="font-serif text-2xl lg:text-3xl mb-4">{item.title}</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">{item.description}</p>
                 <Link to="/consultation" className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-brass hover:gap-3 transition-all">
                   Discuss Your Project <ArrowRight className="w-4 h-4" />

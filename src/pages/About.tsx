@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 import aboutHero from "@/assets/wli/living-skyline-penthouse.jpg";
 import heroImage from "@/assets/wli/kitchen-bright-open.jpg";
 import { ArrowRight, Award, Users, Clock, Hammer } from "lucide-react";
@@ -22,6 +23,11 @@ const processSteps = [
 
 const About = () => (
   <Layout>
+    <SEO
+      title="About WL Interiors | Luxury General Contractor in Rye, NY"
+      description="Our story, values, credentials, and process. WL Interiors is a licensed luxury general contractor with an in-house millwork shop in Rye, NY."
+      path="/about"
+    />
     {/* Hero */}
     <section className="relative h-[50vh] min-h-[400px] flex items-center">
       <div className="absolute inset-0">
@@ -60,7 +66,7 @@ const About = () => (
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-3xl">
           <span className="inline-block text-xs font-sans tracking-[0.25em] uppercase text-brass mb-3">Credentials & Capabilities</span>
-          <h3 className="font-serif text-2xl md:text-3xl mb-4">Certified, Trusted, & Equipped for Any Scope</h3>
+          <h2 className="font-serif text-2xl md:text-3xl mb-4">Certified, Trusted, & Equipped for Any Scope</h2>
           <p className="text-muted-foreground leading-relaxed mb-8 text-sm">
             Beyond our residential luxury work, WL Interiors holds certifications and partnerships that support institutional and large-scale commercial projects across the region.
           </p>
@@ -111,7 +117,7 @@ const About = () => (
           {processSteps.map((step) => (
             <div key={step.num} className="text-center">
               <span className="font-serif text-3xl text-brass">{step.num}</span>
-              <h4 className="font-serif text-lg mt-3 mb-2">{step.title}</h4>
+              <h3 className="font-serif text-lg mt-3 mb-2">{step.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
             </div>
           ))}

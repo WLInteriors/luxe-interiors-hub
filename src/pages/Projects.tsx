@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 
 // Kitchens
 import kBrightOpen from "@/assets/wli/kitchen-bright-open.jpg";
@@ -194,11 +195,24 @@ const Projects = () => {
   }, [lightbox]);
 
   const filtered = filter === "all" ? projects : projects.filter((p) => p.category === filter);
+  const activeCategory = categories.find((c) => c.value === filter);
+  const pageTitle = filter === "all"
+    ? "Projects | WL Interiors Portfolio"
+    : `${activeCategory?.label ?? "Projects"} | WL Interiors`;
+  const pageDescription = filter === "all"
+    ? "Explore our portfolio of luxury kitchens, bathrooms, living spaces, full renovations, custom millwork, and commercial projects across the tri-state area."
+    : `${activeCategory?.label ?? "Project"} portfolio from WL Interiors — luxury renovations and custom millwork delivered across the tri-state area.`;
 
   return (
     <Layout>
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        path={filter === "all" ? "/projects" : `/projects/${filter}`}
+      />
       <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h1 className="sr-only">{pageTitle}</h1>
           <SectionHeading
             label="Our Portfolio"
             title="Completed Projects"
