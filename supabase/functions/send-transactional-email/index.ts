@@ -120,6 +120,24 @@ Deno.serve(async (req) => {
   // Create Supabase client with service role (bypasses RLS)
   const supabase = createClient(supabaseUrl, supabaseServiceKey)
 
+  // Generate signed URLs for any consultation-upload attachments (paths only stored in DB).
+  if (Array.isArray((templateData as any).attachments)) {
+    const atts = (templateData as any).attachments as Array<{ name?: string; path?: string; url?: string; size?: number; type?: string }>
+    const signed = await Promise.all(atts.map(async (a) => {
+      if (a.url || !a.path) return a
+      const { data, error } = await supabase.storage
+        .from('consultation-uploads')
+        .createSignedUrl(a.path, 60 * 60 * 24 * 7) // 7 days
+      if (error || !data) {
+        console.error('Signed URL failed', { path: a.path, error })
+        return { ...a, url: '' }
+      }
+      return { ...a, url: data.signedUrl }
+    }))
+    ;(templateData as any).attachments = signed
+  }
+
+
   // 2. Check suppression list (fail-closed: if we can't verify, don't send)
   const { data: suppressed, error: suppressionError } = await supabase
     .from('suppressed_emails')

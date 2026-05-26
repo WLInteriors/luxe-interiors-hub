@@ -54,7 +54,7 @@ const Consultation = () => {
     const id = crypto.randomUUID();
 
     // Upload attachments first
-    const attachments: { name: string; url: string; size: number; type: string }[] = [];
+    const attachments: { name: string; path: string; size: number; type: string }[] = [];
     for (const f of files) {
       const safeName = f.name.replace(/[^a-zA-Z0-9._-]/g, "_");
       const path = `${id}/${Date.now()}-${safeName}`;
@@ -67,8 +67,7 @@ const Consultation = () => {
         setSubmitting(false);
         return;
       }
-      const { data: pub } = supabase.storage.from("consultation-uploads").getPublicUrl(path);
-      attachments.push({ name: f.name, url: pub.publicUrl, size: f.size, type: f.type });
+      attachments.push({ name: f.name, path, size: f.size, type: f.type });
     }
 
     const payload = {
