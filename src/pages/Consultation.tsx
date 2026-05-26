@@ -80,10 +80,10 @@ const Consultation = () => {
       attachments,
     };
 
-    const { error } = await supabase.from("consultation_inquiries").insert(payload);
+    const { error } = await supabase.functions.invoke("submit-consultation", { body: payload });
 
     if (error) {
-      console.error("Failed to save inquiry", error);
+      console.error("Failed to submit inquiry", error);
       toast({
         title: "Something went wrong",
         description: "Please try again or call us at (914) 467-0807.",
@@ -91,39 +91,6 @@ const Consultation = () => {
       });
       setSubmitting(false);
       return;
-    }
-
-    const templateData = {
-      name: form.name,
-      email: form.email,
-      phone: form.phone,
-      projectType: form.project,
-      message: form.message,
-      attachments,
-    };
-
-    // Fire-and-log emails; submission is already saved so the user always sees success.
-    supabase.functions.invoke("send-transactional-email", {
-      body: {
-        templateName: "consultation-notification",
-        idempotencyKey: `consult-notify-${id}`,
-        templateData,
-      },
-    }).then(({ error }) => {
-      if (error) console.error("Notification email failed", error);
-    });
-
-    if (form.email) {
-      supabase.functions.invoke("send-transactional-email", {
-        body: {
-          templateName: "consultation-confirmation",
-          recipientEmail: form.email,
-          idempotencyKey: `consult-confirm-${id}`,
-          templateData: { name: form.name },
-        },
-      }).then(({ error }) => {
-        if (error) console.error("Confirmation email failed", error);
-      });
     }
 
     setSubmitted(true);
