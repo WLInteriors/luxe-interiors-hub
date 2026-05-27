@@ -30,19 +30,14 @@ import bDoubleVanity from "@/assets/wli/bath-double-vanity.jpg";
 import bWalkInGlass from "@/assets/wli/bath-walk-in-glass.jpg";
 
 // Living
-import lSkyline from "@/assets/wli/living-skyline-penthouse.jpg";
-import lGlassStair from "@/assets/wli/living-glass-stair.jpg";
-import lCantilever from "@/assets/wli/living-cantilever-stair.jpg";
-import lPenthouseDining from "@/assets/wli/living-penthouse-dining.jpg";
+import lSkyline from "@/assets/wli/living-skyline-penthouse.png";
 import lFireplaceBuiltins from "@/assets/wli/living-fireplace-builtins.jpg";
 import lCofferedCeiling from "@/assets/wli/living-coffered-ceiling.jpg";
 import lDiningPaneled from "@/assets/wli/dining-paneled-walls.jpg";
 import lDiningStatement from "@/assets/wli/dining-statement-light.jpg";
-import lLoftLounge from "@/assets/wli/living-loft-lounge.jpg";
 
 // Bedrooms
 import bedPaneled from "@/assets/wli/bedroom-paneled-headboard.jpg";
-import bedPaneledDetail from "@/assets/wli/bedroom-paneled-detail.jpg";
 import bedSerene from "@/assets/wli/bedroom-serene-neutral.jpg";
 import bedSereneWide from "@/assets/wli/bedroom-serene-wide.jpg";
 import bedWarmOak from "@/assets/wli/bedroom-warm-oak.jpg";
@@ -59,6 +54,9 @@ import rModernPenthouse from "@/assets/wli/reno-modern-penthouse-kitchen.jpg";
 import rHilltop from "@/assets/wli/reno-hilltop-estate-kitchen.jpg";
 import rOpenFamily from "@/assets/wli/reno-open-family-kitchen.jpg";
 import rLivingExtra from "@/assets/wli/living-room-2.jpg";
+import rGlassStair from "@/assets/wli/living-glass-stair.jpg";
+import rCantilever from "@/assets/wli/living-cantilever-stair.jpg";
+import rPenthouseDining from "@/assets/wli/living-penthouse-dining.jpg";
 
 // Millwork
 import mWalnutFluted from "@/assets/wli/millwork-walnut-fluted.jpg";
@@ -77,7 +75,6 @@ import cGlass from "@/assets/wli/commercial-glass-offices.jpg";
 import cStorefront from "@/assets/wli/commercial-storefront.jpg";
 import cBankAtm from "@/assets/wli/commercial-bank-atm.jpg";
 import cGlassSuite from "@/assets/wli/commercial-glass-office-suite.jpg";
-import cGlassPartitions from "@/assets/wli/commercial-glass-partitions.jpg";
 import cLobbyLounge from "@/assets/wli/commercial-lobby-lounge.jpg";
 
 // New batch
@@ -91,12 +88,8 @@ import bGrayDoubleVanityTub from "@/assets/wli/bath-gray-double-vanity-tub.jpg";
 import bModernTroughSink from "@/assets/wli/bath-modern-trough-sink.jpg";
 import bMarbleTubShowerSuite from "@/assets/wli/bath-marble-tub-shower-suite.jpg";
 import bDarkWoodBrassDouble from "@/assets/wli/bath-dark-wood-brass-double.jpg";
-import lTransitionalDining from "@/assets/wli/living-transitional-dining-chandelier.jpg";
 import lBrightWindowsLounge from "@/assets/wli/living-bright-windows-lounge.jpg";
 import lClassicCofferedFireplace from "@/assets/wli/living-classic-coffered-fireplace.jpg";
-import lDarkSlateLounge from "@/assets/wli/living-dark-slate-lounge.png";
-import bedPenthouseReal from "@/assets/wli/bedroom-penthouse-real-wide.png";
-import bedPenthouseRealSingle from "@/assets/wli/bedroom-penthouse-real-single.png";
 import mRadiatorWindowBench from "@/assets/wli/millwork-radiator-window-bench.jpg";
 import mTraditionalVanityTower from "@/assets/wli/millwork-traditional-vanity-tower.jpg";
 import mBlackPanelFireplace from "@/assets/wli/millwork-black-panel-fireplace.jpg";
@@ -109,6 +102,7 @@ import mMudroomSlatBench from "@/assets/wli/millwork-mudroom-slat-bench.jpg";
 import mGrayBuiltinsShelves from "@/assets/wli/millwork-gray-builtins-shelves.png";
 import cBankEntrance from "@/assets/wli/commercial-bank-entrance.jpg";
 import cWoodDoors from "@/assets/wli/commercial-wood-doors.jpg";
+import cOfficeKitchen from "@/assets/wli/commercial-office-kitchen.png";
 
 const categories = [
   { label: "All", value: "all" },
@@ -137,7 +131,7 @@ const projects = [
   { title: "Stair-Side Bar Kitchen", category: "kitchens", image: kStairBar },
   { title: "Warm Wood Kitchen with Wine Wall", category: "kitchens", image: kWarmWoodWineWall },
 
-  // Bathrooms (15)
+  // Bathrooms
   { title: "Marble & Brass Primary Bath", category: "bathrooms", image: bMarbleBrass },
   { title: "Spa-Inspired Master Bath", category: "bathrooms", image: bSpaMarble },
   { title: "Rose Vanity Powder Suite", category: "bathrooms", image: bRoseBrass },
@@ -156,23 +150,16 @@ const projects = [
 
   // Living Spaces
   { title: "Skyline Penthouse Living Room", category: "living-spaces", image: lSkyline },
-  { title: "Glass Stair Lounge & Dining", category: "living-spaces", image: lGlassStair },
-  { title: "Cantilevered Stair Great Room", category: "living-spaces", image: lCantilever },
-  { title: "Penthouse Living & Dining", category: "living-spaces", image: lPenthouseDining },
   { title: "Fireplace & Built-Ins Living Room", category: "living-spaces", image: lFireplaceBuiltins },
   { title: "Coffered Ceiling Great Room", category: "living-spaces", image: lCofferedCeiling },
   { title: "Paneled Dining Room", category: "living-spaces", image: lDiningPaneled },
   { title: "Statement-Light Dining Room", category: "living-spaces", image: lDiningStatement },
-  { title: "Loft Lounge", category: "living-spaces", image: lLoftLounge },
-  { title: "Transitional Dining with Chandelier", category: "living-spaces", image: lTransitionalDining },
   { title: "Bright Windowed Family Room", category: "living-spaces", image: lBrightWindowsLounge },
   { title: "Classic Coffered Living Room with Fireplace", category: "living-spaces", image: lClassicCofferedFireplace },
   { title: "Warm Oak & Marble Living Space", category: "living-spaces", image: kWarmOakMarble },
-  { title: "Dark Slate Lounge", category: "living-spaces", image: lDarkSlateLounge },
 
-  // Bedrooms (12)
+  // Bedrooms
   { title: "Paneled Headboard Primary Suite", category: "bedrooms", image: bedPaneled },
-  { title: "Paneled Primary Suite (Detail)", category: "bedrooms", image: bedPaneledDetail },
   { title: "Serene Neutral Bedroom", category: "bedrooms", image: bedSerene },
   { title: "Serene Neutral Bedroom (Wide)", category: "bedrooms", image: bedSereneWide },
   { title: "Warm Oak Primary Bedroom", category: "bedrooms", image: bedWarmOak },
@@ -181,16 +168,17 @@ const projects = [
   { title: "Soft Modern Bedroom", category: "bedrooms", image: bedSoftModern },
   { title: "Soft Modern Bedroom (Alt View)", category: "bedrooms", image: bedSoftModernAlt },
   { title: "Loft Bunk Bedroom (Wide View)", category: "bedrooms", image: bedLoftBunkWide },
-  { title: "Penthouse Primary Bedroom", category: "bedrooms", image: bedPenthouseReal },
-  { title: "Penthouse Bedroom Detail", category: "bedrooms", image: bedPenthouseRealSingle },
 
-  // Full Renovation (6)
+  // Full Renovation
   { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair },
   { title: "Whole-Home Kitchen Transformation", category: "full-renovation", image: rWholeKitchen },
   { title: "Modern Penthouse Kitchen Renovation", category: "full-renovation", image: rModernPenthouse },
   { title: "Hilltop Estate Renovation", category: "full-renovation", image: rHilltop },
   { title: "Open Family-Home Renovation", category: "full-renovation", image: rOpenFamily },
   { title: "Living Room Renovation", category: "full-renovation", image: rLivingExtra },
+  { title: "Penthouse Dining Renovation", category: "full-renovation", image: rPenthouseDining },
+  { title: "Penthouse Glass Stair Renovation", category: "full-renovation", image: rGlassStair },
+  { title: "Cantilever Stair Renovation", category: "full-renovation", image: rCantilever },
 
   // Millwork
   { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted },
@@ -212,7 +200,7 @@ const projects = [
   { title: "Wallpapered Walk-in Closet", category: "millwork", image: mWallpaperedCloset },
   { title: "Slat-Wood Mudroom Bench", category: "millwork", image: mMudroomSlatBench },
   { title: "Custom Round Oak Dining Table", category: "millwork", image: kWhiteChandelierRound },
-  { title: "Built-In Shelving & Cabinetry", category: "millwork", image: mGrayBuiltinsShelves },
+  { title: "Painted Built-In Shelving", category: "millwork", image: mGrayBuiltinsShelves },
 
   // Commercial
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy },
@@ -220,11 +208,11 @@ const projects = [
   { title: "Boutique Café Storefront", category: "commercial", image: cStorefront },
   { title: "Bank ATM Lobby Build-Out", category: "commercial", image: cBankAtm },
   { title: "Executive Glass Office Suite", category: "commercial", image: cGlassSuite },
-  { title: "Glass Partitioned Conference Room", category: "commercial", image: cGlassPartitions },
   { title: "Corporate Lobby Lounge", category: "commercial", image: cLobbyLounge },
   { title: "Bank Branch Entrance", category: "commercial", image: cBankEntrance },
   { title: "Custom Wood Office Doors", category: "commercial", image: cWoodDoors },
   { title: "Commercial Kitchen with Custom Paneling", category: "commercial", image: kDarkMoodySlate },
+  { title: "Commercial Office Kitchen", category: "commercial", image: cOfficeKitchen },
 ];
 
 const Projects = () => {
