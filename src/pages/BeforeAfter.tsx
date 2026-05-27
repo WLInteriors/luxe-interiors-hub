@@ -8,6 +8,8 @@ import baBeforeKitchen from "@/assets/wli/ba-before-kitchen.jpg";
 import baAfterKitchen from "@/assets/wli/ba-after-kitchen.jpg";
 import baBeforeMurphy from "@/assets/wli/ba-before-murphy.jpg";
 import baAfterMurphy from "@/assets/wli/ba-after-murphy.jpg";
+import baBeforeMurphy2 from "@/assets/wli/ba-before-murphy2.jpg";
+import baAfterMurphy2 from "@/assets/wli/ba-after-murphy2.jpg";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 
 type BAItem = {
@@ -41,6 +43,15 @@ const beforeAfterItems: BAItem[] = [
     description: "A dual-purpose guest suite featuring a custom white oak Murphy bed that disappears flush into a millwork wall when closed, then folds down to reveal a hotel-grade queen bed. Integrated bookshelves with warm LED lighting, grasscloth panels, brass reading sconces, and a sculptural rope chandelier — all built in-house.",
     beforeImage: baBeforeMurphy,
     afterImage: baAfterMurphy,
+    beforeLabel: "Closed",
+    afterLabel: "Open",
+  },
+  {
+    title: "Open-Plan Murphy Bed Conversion",
+    location: "Tri-State Area",
+    description: "A bright open-concept kitchen and dining great room with a fully integrated white oak Murphy bed wall. By day the millwork reads as seamless floor-to-ceiling cabinetry that complements the kitchen; by night it folds down into a hotel-grade queen bed with crisp linens, plush pillows, and integrated reading lights — turning a multi-use space into a private guest suite without sacrificing the design of the room.",
+    beforeImage: baBeforeMurphy2,
+    afterImage: baAfterMurphy2,
     beforeLabel: "Closed",
     afterLabel: "Open",
   },
