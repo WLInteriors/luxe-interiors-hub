@@ -82,6 +82,37 @@ import cSoundproofing from "@/assets/wli/commercial-soundproofing.jpg";
 import cOfficeBuildout from "@/assets/wli/commercial-office-buildout.jpg";
 import cLobbyLounge from "@/assets/wli/commercial-lobby-lounge.jpg";
 
+// New batch
+import kWarmOakMarble from "@/assets/wli/kitchen-warm-oak-marble.jpg";
+import kWhiteChandelierRound from "@/assets/wli/kitchen-white-chandelier-round.jpg";
+import kWhiteBlackChairs from "@/assets/wli/kitchen-white-black-chairs.jpg";
+import kWarmWoodWineWall from "@/assets/wli/kitchen-warm-wood-wine-wall.jpg";
+import kDarkMoodySlate from "@/assets/wli/kitchen-dark-moody-slate.jpg";
+import kWarmWoodIslandClassic from "@/assets/wli/kitchen-warm-wood-island-classic.jpg";
+import kDarkWoodLarchmont from "@/assets/wli/kitchen-dark-wood-island-larchmont.jpg";
+import kWhiteWoodSinkWindow from "@/assets/wli/kitchen-white-wood-sink-window.jpg";
+import kWhiteBlueChandelier from "@/assets/wli/kitchen-white-blue-chandelier.jpg";
+import bDarkMarbleWalnut from "@/assets/wli/bath-dark-marble-walnut-vanity.jpg";
+import bCurvedWalnutBrass from "@/assets/wli/bath-curved-walnut-vanity-brass.jpg";
+import bGrayDoubleVanityTub from "@/assets/wli/bath-gray-double-vanity-tub.jpg";
+import bModernTroughSink from "@/assets/wli/bath-modern-trough-sink.jpg";
+import bMarbleTubShowerSuite from "@/assets/wli/bath-marble-tub-shower-suite.jpg";
+import bDarkWoodBrassDouble from "@/assets/wli/bath-dark-wood-brass-double.jpg";
+import lTransitionalDining from "@/assets/wli/living-transitional-dining-chandelier.jpg";
+import lBrightWindowsLounge from "@/assets/wli/living-bright-windows-lounge.jpg";
+import lClassicCofferedFireplace from "@/assets/wli/living-classic-coffered-fireplace.jpg";
+import bedPenthouseFireplaceTv from "@/assets/wli/bedroom-penthouse-fireplace-tv.jpg";
+import bedPenthouseCityView from "@/assets/wli/bedroom-penthouse-city-view.jpg";
+import mRadiatorWindowBench from "@/assets/wli/millwork-radiator-window-bench.jpg";
+import mTraditionalVanityTower from "@/assets/wli/millwork-traditional-vanity-tower.jpg";
+import mBlackPanelFireplace from "@/assets/wli/millwork-black-panel-fireplace.jpg";
+import mWalkinClosetAisle from "@/assets/wli/millwork-walkin-closet-aisle.jpg";
+import mMarbleBrassBar from "@/assets/wli/millwork-marble-brass-bar.jpg";
+import mReededGreenPantry from "@/assets/wli/millwork-reeded-green-pantry.jpg";
+import mCabinFireplaceNook from "@/assets/wli/millwork-cabin-fireplace-nook.jpg";
+import mWallpaperedCloset from "@/assets/wli/millwork-wallpapered-closet.jpg";
+import mMudroomSlatBench from "@/assets/wli/millwork-mudroom-slat-bench.jpg";
+
 const categories = [
   { label: "All", value: "all" },
   { label: "Kitchens", value: "kitchens" },
