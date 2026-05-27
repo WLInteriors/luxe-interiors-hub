@@ -161,7 +161,7 @@ const projects = [
   { title: "Paneled Headboard Primary Suite", category: "bedrooms", image: bedPaneled },
   { title: "Warm Oak Primary Bedroom", category: "bedrooms", image: bedWarmOak },
   { title: "Warm Oak Primary Bedroom (Alt View)", category: "bedrooms", image: bedWarmOakAlt },
-  { title: "Window-Bench Guest Bedroom", category: "bedrooms", image: bedWindowBench },
+  
   { title: "Soft Modern Bedroom", category: "bedrooms", image: bedSoftModern },
   { title: "Soft Modern Bedroom (Alt View)", category: "bedrooms", image: bedSoftModernAlt },
   { title: "Loft Bunk Bedroom (Wide View)", category: "bedrooms", image: bedLoftBunkWide },
@@ -173,8 +173,6 @@ const projects = [
   { title: "Hilltop Estate Renovation", category: "full-renovation", image: rHilltop },
   { title: "Open Family-Home Renovation", category: "full-renovation", image: rOpenFamily },
   { title: "Living Room Renovation", category: "full-renovation", image: rLivingExtra },
-  { title: "Penthouse Dining Renovation", category: "full-renovation", image: rPenthouseDining },
-  { title: "Penthouse Glass Stair Renovation", category: "full-renovation", image: rGlassStair },
   { title: "Cantilever Stair Renovation", category: "full-renovation", image: rCantilever },
 
   // Millwork
@@ -197,7 +195,7 @@ const projects = [
   { title: "Wallpapered Walk-in Closet", category: "millwork", image: mWallpaperedCloset },
   { title: "Slat-Wood Mudroom Bench", category: "millwork", image: mMudroomSlatBench },
   { title: "Custom Round Oak Dining Table", category: "millwork", image: kWhiteChandelierRound },
-  { title: "Painted Built-In Shelving", category: "millwork", image: mGrayBuiltinsShelves },
+  
 
   // Commercial
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy },
