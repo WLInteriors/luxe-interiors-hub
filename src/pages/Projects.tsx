@@ -78,8 +78,6 @@ import cStorefront from "@/assets/wli/commercial-storefront.jpg";
 import cBankAtm from "@/assets/wli/commercial-bank-atm.jpg";
 import cGlassSuite from "@/assets/wli/commercial-glass-office-suite.jpg";
 import cGlassPartitions from "@/assets/wli/commercial-glass-partitions.jpg";
-import cSoundproofing from "@/assets/wli/commercial-soundproofing.jpg";
-import cOfficeBuildout from "@/assets/wli/commercial-office-buildout.jpg";
 import cLobbyLounge from "@/assets/wli/commercial-lobby-lounge.jpg";
 
 // New batch
