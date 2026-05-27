@@ -138,8 +138,17 @@ const projects = [
   { title: "Statement Hood Kitchen", category: "kitchens", image: kStatementHood },
   { title: "Luxury Stone-Backsplash Kitchen", category: "kitchens", image: kClassicIsland },
   { title: "Stair-Side Bar Kitchen", category: "kitchens", image: kStairBar },
+  { title: "Warm Oak & Marble Kitchen", category: "kitchens", image: kWarmOakMarble },
+  { title: "White Kitchen with Round Oak Table", category: "kitchens", image: kWhiteChandelierRound },
+  { title: "Modern White Kitchen with Black Chairs", category: "kitchens", image: kWhiteBlackChairs },
+  { title: "Warm Wood Kitchen with Wine Wall", category: "kitchens", image: kWarmWoodWineWall },
+  { title: "Dark Slate Modern Kitchen", category: "kitchens", image: kDarkMoodySlate },
+  { title: "Warm Wood Classic Island Kitchen", category: "kitchens", image: kWarmWoodIslandClassic },
+  { title: "Larchmont Dark Wood Island Kitchen", category: "kitchens", image: kDarkWoodLarchmont },
+  { title: "Scarsdale White & Wood Kitchen", category: "kitchens", image: kWhiteWoodSinkWindow },
+  { title: "White & Navy Chandelier Kitchen", category: "kitchens", image: kWhiteBlueChandelier },
 
-  // Bathrooms (9)
+  // Bathrooms (15)
   { title: "Marble & Brass Primary Bath", category: "bathrooms", image: bMarbleBrass },
   { title: "Spa-Inspired Master Bath", category: "bathrooms", image: bSpaMarble },
   { title: "Rose Vanity Powder Suite", category: "bathrooms", image: bRoseBrass },
@@ -149,8 +158,14 @@ const projects = [
   { title: "Mosaic Tile Shower Bath", category: "bathrooms", image: bMosaicShower },
   { title: "Double Vanity Primary Bath", category: "bathrooms", image: bDoubleVanity },
   { title: "Walk-in Glass Shower Suite", category: "bathrooms", image: bWalkInGlass },
+  { title: "Dark Marble & Walnut Bath", category: "bathrooms", image: bDarkMarbleWalnut },
+  { title: "Curved Walnut Vanity with Brass", category: "bathrooms", image: bCurvedWalnutBrass },
+  { title: "Gray Double Vanity Primary Bath", category: "bathrooms", image: bGrayDoubleVanityTub },
+  { title: "Modern Trough-Sink Bath", category: "bathrooms", image: bModernTroughSink },
+  { title: "Marble Tub & Shower Suite", category: "bathrooms", image: bMarbleTubShowerSuite },
+  { title: "Dark Wood & Brass Double Vanity", category: "bathrooms", image: bDarkWoodBrassDouble },
 
-  // Living Spaces (9)
+  // Living Spaces (12)
   { title: "Skyline Penthouse Living Room", category: "living-spaces", image: lSkyline },
   { title: "Glass Stair Lounge & Dining", category: "living-spaces", image: lGlassStair },
   { title: "Cantilevered Stair Great Room", category: "living-spaces", image: lCantilever },
@@ -160,8 +175,11 @@ const projects = [
   { title: "Paneled Dining Room", category: "living-spaces", image: lDiningPaneled },
   { title: "Statement-Light Dining Room", category: "living-spaces", image: lDiningStatement },
   { title: "Loft Lounge", category: "living-spaces", image: lLoftLounge },
+  { title: "Transitional Dining with Chandelier", category: "living-spaces", image: lTransitionalDining },
+  { title: "Bright Windowed Family Room", category: "living-spaces", image: lBrightWindowsLounge },
+  { title: "Classic Coffered Living Room with Fireplace", category: "living-spaces", image: lClassicCofferedFireplace },
 
-  // Bedrooms (10)
+  // Bedrooms (12)
   { title: "Paneled Headboard Primary Suite", category: "bedrooms", image: bedPaneled },
   { title: "Paneled Primary Suite (Detail)", category: "bedrooms", image: bedPaneledDetail },
   { title: "Serene Neutral Bedroom", category: "bedrooms", image: bedSerene },
@@ -172,6 +190,8 @@ const projects = [
   { title: "Soft Modern Bedroom", category: "bedrooms", image: bedSoftModern },
   { title: "Soft Modern Bedroom (Alt View)", category: "bedrooms", image: bedSoftModernAlt },
   { title: "Loft Bunk Bedroom (Wide View)", category: "bedrooms", image: bedLoftBunkWide },
+  { title: "Penthouse Bedroom with Fireplace", category: "bedrooms", image: bedPenthouseFireplaceTv },
+  { title: "Penthouse Bedroom with City View", category: "bedrooms", image: bedPenthouseCityView },
 
   // Full Renovation (6)
   { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair },
@@ -181,7 +201,7 @@ const projects = [
   { title: "Open Family-Home Renovation", category: "full-renovation", image: rOpenFamily },
   { title: "Living Room Renovation", category: "full-renovation", image: rLivingExtra },
 
-  // Millwork (9)
+  // Millwork (18)
   { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted },
   { title: "Black & Brass Cane Bar", category: "millwork", image: mCaneBar },
   { title: "Reeded Glass Walnut Library", category: "millwork", image: mReededLib },
@@ -191,6 +211,15 @@ const projects = [
   { title: "Floating Walnut Vanity (Detail)", category: "millwork", image: mVanityDetail },
   { title: "Custom Walk-in Closet", category: "millwork", image: mWalkInCloset },
   { title: "Boutique Island Closet", category: "millwork", image: mIslandCloset },
+  { title: "Custom Radiator Window Bench", category: "millwork", image: mRadiatorWindowBench },
+  { title: "Traditional Vanity & Storage Tower", category: "millwork", image: mTraditionalVanityTower },
+  { title: "Black Paneled Fireplace Wall", category: "millwork", image: mBlackPanelFireplace },
+  { title: "Custom Walk-in Closet Aisle", category: "millwork", image: mWalkinClosetAisle },
+  { title: "Marble & Brass Wet Bar", category: "millwork", image: mMarbleBrassBar },
+  { title: "Reeded Sage Pantry", category: "millwork", image: mReededGreenPantry },
+  { title: "Cabin Built-In Fireplace Nook", category: "millwork", image: mCabinFireplaceNook },
+  { title: "Wallpapered Walk-in Closet", category: "millwork", image: mWallpaperedCloset },
+  { title: "Slat-Wood Mudroom Bench", category: "millwork", image: mMudroomSlatBench },
 
   // Commercial (9)
   { title: "White-Brick Privacy Booths", category: "commercial", image: cPrivacy },
