@@ -144,24 +144,21 @@ const projects = [
   { title: "Dark Marble & Walnut Bath", category: "bathrooms", image: bDarkMarbleWalnut },
   { title: "Curved Walnut Vanity with Brass", category: "bathrooms", image: bCurvedWalnutBrass },
   { title: "Gray Double Vanity Primary Bath", category: "bathrooms", image: bGrayDoubleVanityTub },
-  { title: "Modern Trough-Sink Bath", category: "bathrooms", image: bModernTroughSink },
   { title: "Marble Tub & Shower Suite", category: "bathrooms", image: bMarbleTubShowerSuite },
   { title: "Dark Wood & Brass Double Vanity", category: "bathrooms", image: bDarkWoodBrassDouble },
 
   // Living Spaces
-  { title: "Skyline Penthouse Living Room", category: "living-spaces", image: lSkyline },
+  
   { title: "Fireplace & Built-Ins Living Room", category: "living-spaces", image: lFireplaceBuiltins },
   { title: "Coffered Ceiling Great Room", category: "living-spaces", image: lCofferedCeiling },
   { title: "Paneled Dining Room", category: "living-spaces", image: lDiningPaneled },
   { title: "Statement-Light Dining Room", category: "living-spaces", image: lDiningStatement },
   { title: "Bright Windowed Family Room", category: "living-spaces", image: lBrightWindowsLounge },
   { title: "Classic Coffered Living Room with Fireplace", category: "living-spaces", image: lClassicCofferedFireplace },
-  { title: "Warm Oak & Marble Living Space", category: "living-spaces", image: kWarmOakMarble },
+  
 
   // Bedrooms
   { title: "Paneled Headboard Primary Suite", category: "bedrooms", image: bedPaneled },
-  { title: "Serene Neutral Bedroom", category: "bedrooms", image: bedSerene },
-  { title: "Serene Neutral Bedroom (Wide)", category: "bedrooms", image: bedSereneWide },
   { title: "Warm Oak Primary Bedroom", category: "bedrooms", image: bedWarmOak },
   { title: "Warm Oak Primary Bedroom (Alt View)", category: "bedrooms", image: bedWarmOakAlt },
   { title: "Window-Bench Guest Bedroom", category: "bedrooms", image: bedWindowBench },
