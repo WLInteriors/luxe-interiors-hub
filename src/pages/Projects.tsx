@@ -144,7 +144,7 @@ const projects = [
   { title: "Dark Marble & Walnut Bath", category: "bathrooms", image: bDarkMarbleWalnut },
   { title: "Curved Walnut Vanity with Brass", category: "bathrooms", image: bCurvedWalnutBrass },
   { title: "Gray Double Vanity Primary Bath", category: "bathrooms", image: bGrayDoubleVanityTub },
-  { title: "Marble Tub & Shower Suite", category: "bathrooms", image: bMarbleTubShowerSuite },
+  
   { title: "Dark Wood & Brass Double Vanity", category: "bathrooms", image: bDarkWoodBrassDouble },
 
   // Living Spaces
