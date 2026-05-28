@@ -225,6 +225,7 @@ const projects = [
   { title: "Commercial Office Kitchen", category: "commercial", image: cOfficeKitchen },
   { title: "Modern Midtown Office Kitchenette", category: "commercial", image: cModernOfficeKitchenette },
   { title: "Open-Plan Loft Office Buildout", category: "commercial", image: cLoftOfficeBuildout },
+  { title: "Reeded Glass Office with Custom Millwork", category: "commercial", image: cReededGlassOfficeMillwork },
 ];
 
 const Projects = () => {
