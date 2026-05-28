@@ -112,6 +112,7 @@ import cOfficeKitchen from "@/assets/wli/commercial-office-kitchen.png";
 import cModernOfficeKitchenette from "@/assets/wli/commercial-modern-office-kitchenette.jpg";
 import cLoftOfficeBuildout from "@/assets/wli/commercial-loft-office-buildout.jpg";
 import cReededGlassOfficeMillwork from "@/assets/wli/commercial-reeded-glass-office-millwork.jpg";
+import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millwork.jpg";
 
 const categories = [
   { label: "All", value: "all" },
