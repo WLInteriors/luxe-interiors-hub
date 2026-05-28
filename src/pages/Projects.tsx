@@ -217,7 +217,7 @@ const projects = [
   { title: "Executive Glass Office Suite", category: "commercial", image: cGlassSuite },
   { title: "Corporate Lobby Lounge", category: "commercial", image: cLobbyLounge },
   { title: "Bank Branch Entrance", category: "commercial", image: cBankEntrance },
-  { title: "Custom Wood Office Doors", category: "commercial", image: cWoodDoors },
+  
   
   { title: "Commercial Office Kitchen", category: "commercial", image: cOfficeKitchen },
 ];
