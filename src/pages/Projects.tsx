@@ -28,6 +28,11 @@ import bCheckerFloor from "@/assets/wli/bath-checker-floor.jpg";
 import bMosaicShower from "@/assets/wli/bath-mosaic-shower.jpg";
 import bDoubleVanity from "@/assets/wli/bath-double-vanity.jpg";
 import bWalkInGlass from "@/assets/wli/bath-walk-in-glass.jpg";
+import bOakFloatingGray from "@/assets/wli/bath-oak-floating-gray-top.jpg";
+import bPowderBlueDouble from "@/assets/wli/bath-powder-blue-double-vanity.jpg";
+import bOakLinenTowers from "@/assets/wli/bath-oak-vanity-linen-towers.jpg";
+import bMarbleChandelierSuite from "@/assets/wli/bath-marble-chandelier-suite.jpg";
+import bSilverWallpaperPowder from "@/assets/wli/bath-silver-wallpaper-powder.jpg";
 
 // Living
 import lSkyline from "@/assets/wli/living-skyline-penthouse.png";
@@ -146,6 +151,11 @@ const projects = [
   { title: "Gray Double Vanity Primary Bath", category: "bathrooms", image: bGrayDoubleVanityTub },
   
   { title: "Dark Wood & Brass Double Vanity", category: "bathrooms", image: bDarkWoodBrassDouble },
+  { title: "Oak Floating Vanity with Gray Quartz", category: "bathrooms", image: bOakFloatingGray },
+  { title: "Powder Blue Double Vanity Suite", category: "bathrooms", image: bPowderBlueDouble },
+  { title: "Oak Vanity with Twin Linen Towers", category: "bathrooms", image: bOakLinenTowers },
+  { title: "Marble Primary Bath with Chandelier", category: "bathrooms", image: bMarbleChandelierSuite },
+  { title: "Silver Wallpapered Powder Room", category: "bathrooms", image: bSilverWallpaperPowder },
 
   // Living Spaces
   
