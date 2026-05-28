@@ -89,7 +89,7 @@ import kWarmWoodWineWall from "@/assets/wli/kitchen-warm-wood-wine-wall.jpg";
 import kDarkMoodySlate from "@/assets/wli/kitchen-dark-moody-slate.jpg";
 import bDarkMarbleWalnut from "@/assets/wli/bath-dark-marble-walnut-vanity.jpg";
 import bCurvedWalnutBrass from "@/assets/wli/bath-curved-walnut-vanity-brass.jpg";
-import bGrayDoubleVanityTub from "@/assets/wli/bath-gray-double-vanity-tub.jpg";
+import bMarbleBrassWalkInShower from "@/assets/wli/bath-marble-brass-walk-in-shower.jpg";
 import bModernTroughSink from "@/assets/wli/bath-modern-trough-sink.jpg";
 import bMarbleTubShowerSuite from "@/assets/wli/bath-marble-tub-shower-suite.jpg";
 import bDarkWoodBrassDouble from "@/assets/wli/bath-dark-wood-brass-double.jpg";
@@ -148,7 +148,7 @@ const projects = [
   { title: "Walk-in Glass Shower Suite", category: "bathrooms", image: bWalkInGlass },
   { title: "Dark Marble & Walnut Bath", category: "bathrooms", image: bDarkMarbleWalnut },
   { title: "Curved Walnut Vanity with Brass", category: "bathrooms", image: bCurvedWalnutBrass },
-  { title: "Gray Double Vanity Primary Bath", category: "bathrooms", image: bGrayDoubleVanityTub },
+  { title: "Marble & Brass Walk-In Shower", category: "bathrooms", image: bMarbleBrassWalkInShower },
   
   { title: "Dark Wood & Brass Double Vanity", category: "bathrooms", image: bDarkWoodBrassDouble },
   { title: "Oak Floating Vanity with Gray Quartz", category: "bathrooms", image: bOakFloatingGray },
