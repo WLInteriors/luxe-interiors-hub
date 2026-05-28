@@ -51,6 +51,7 @@ import bedWindowBench from "@/assets/wli/bedroom-window-bench.jpg";
 import bedSoftModern from "@/assets/wli/bedroom-soft-modern.jpg";
 import bedSoftModernAlt from "@/assets/wli/bedroom-soft-modern-alt.jpg";
 import bedLoftBunkWide from "@/assets/wli/bedroom-loft-bunk-wide.jpg";
+import bedBridgeViewSuite from "@/assets/wli/bed-bridge-view-suite.jpg";
 
 // Full Renovation
 import rPenthouseStair from "@/assets/wli/reno-penthouse-stair-kitchen.jpg";
@@ -175,6 +176,7 @@ const projects = [
   { title: "Soft Modern Bedroom", category: "bedrooms", image: bedSoftModern },
   { title: "Soft Modern Bedroom (Alt View)", category: "bedrooms", image: bedSoftModernAlt },
   { title: "Loft Bunk Bedroom (Wide View)", category: "bedrooms", image: bedLoftBunkWide },
+  { title: "Bridge View Primary Suite", category: "bedrooms", image: bedBridgeViewSuite },
 
   // Full Renovation
   { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair },
