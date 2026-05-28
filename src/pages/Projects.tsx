@@ -110,6 +110,7 @@ import cBankEntrance from "@/assets/wli/commercial-bank-entrance.jpg";
 import cWoodDoors from "@/assets/wli/commercial-wood-doors.jpg";
 import cOfficeKitchen from "@/assets/wli/commercial-office-kitchen.png";
 import cModernOfficeKitchenette from "@/assets/wli/commercial-modern-office-kitchenette.jpg";
+import cLoftOfficeBuildout from "@/assets/wli/commercial-loft-office-buildout.jpg";
 
 const categories = [
   { label: "All", value: "all" },
@@ -222,6 +223,7 @@ const projects = [
   
   { title: "Commercial Office Kitchen", category: "commercial", image: cOfficeKitchen },
   { title: "Modern Midtown Office Kitchenette", category: "commercial", image: cModernOfficeKitchenette },
+  { title: "Open-Plan Loft Office Buildout", category: "commercial", image: cLoftOfficeBuildout },
 ];
 
 const Projects = () => {
