@@ -178,10 +178,8 @@ const projects = [
   // Living Spaces
   
   { title: "Fireplace & Built-Ins Living Room", category: "living-spaces", image: lFireplaceBuiltins },
-  { title: "Coffered Ceiling Great Room", category: "living-spaces", image: lCofferedCeiling },
   { title: "Paneled Dining Room", category: "living-spaces", image: lDiningPaneled },
   { title: "Statement-Light Dining Room", category: "living-spaces", image: lDiningStatement },
-  { title: "Bright Windowed Family Room", category: "living-spaces", image: lBrightWindowsLounge },
   { title: "Classic Coffered Living Room with Fireplace", category: "living-spaces", image: lClassicCofferedFireplace },
   { title: "Stone Fireplace Family Room", category: "living-spaces", image: lStoneFireplaceFamilyRoom },
   { title: "Slat Wood Fireplace with Skyline View", category: "living-spaces", image: lSlatWoodFireplaceSkyline },
@@ -330,10 +328,6 @@ const Projects = () => {
                 className="group relative overflow-hidden aspect-[4/3] cursor-zoom-in text-left"
               >
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-                <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/50 transition-colors duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="font-serif text-lg text-cream">{project.title}</h3>
-                </div>
               </button>
             ))}
           </div>
