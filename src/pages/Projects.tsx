@@ -128,6 +128,8 @@ import mCabinFireplaceNook from "@/assets/wli/millwork-cabin-fireplace-nook.jpg"
 import mWallpaperedCloset from "@/assets/wli/millwork-wallpapered-closet.jpg";
 import mMudroomSlatBench from "@/assets/wli/millwork-mudroom-slat-bench.jpg";
 import mGrayBuiltinsShelves from "@/assets/wli/millwork-gray-builtins-shelves.png";
+import mWalnutFlutedMediaCabinet from "@/assets/wli/millwork-walnut-fluted-media-cabinet.jpg";
+import mHiddenStairStorage from "@/assets/wli/millwork-hidden-stair-storage.jpg";
 import cBankEntrance from "@/assets/wli/commercial-bank-entrance.jpg";
 import cWoodDoors from "@/assets/wli/commercial-wood-doors.jpg";
 import cOfficeKitchen from "@/assets/wli/commercial-office-kitchen.png";
@@ -258,6 +260,10 @@ const projects = [
   { title: "Wallpapered Walk-in Closet", category: "millwork", image: mWallpaperedCloset },
   { title: "Slat-Wood Mudroom Bench", category: "millwork", image: mMudroomSlatBench },
   { title: "Custom Round Oak Dining Table", category: "millwork", image: kWhiteChandelierRound },
+  { title: "Walnut Fluted Media Cabinet", category: "millwork", image: mWalnutFlutedMediaCabinet },
+  { title: "Hidden Stair Storage Paneling", category: "millwork", image: mHiddenStairStorage },
+  
+
   
 
   // Commercial
