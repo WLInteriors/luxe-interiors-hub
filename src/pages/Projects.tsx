@@ -4,6 +4,12 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import SEO from "@/components/SEO";
 
+// Cache-bust image URLs in dev so edited assets show immediately without a hard refresh.
+// In production, Vite already fingerprints assets, so this is a no-op.
+const BUILD_ID = import.meta.env.DEV ? Date.now().toString(36) : "";
+const bust = (src: string) =>
+  BUILD_ID ? `${src}${src.includes("?") ? "&" : "?"}v=${BUILD_ID}` : src;
+
 // Kitchens
 import kBrightOpen from "@/assets/wli/kitchen-bright-open.jpg";
 import kOakBrass from "@/assets/wli/kitchen-oak-brass.jpg";
@@ -352,7 +358,7 @@ const Projects = () => {
                 onClick={() => setLightboxIndex(idx)}
                 className="group relative overflow-hidden aspect-[4/3] cursor-zoom-in text-left"
               >
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                <img src={bust(project.image)} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
               </button>
             ))}
           </div>
@@ -397,7 +403,7 @@ const Projects = () => {
           )}
           <figure onClick={(e) => e.stopPropagation()} className="max-w-6xl w-full max-h-full flex flex-col items-center">
             <img
-              src={lightbox.image}
+              src={bust(lightbox.image)}
               alt={lightbox.title}
               className="max-h-[85vh] w-auto max-w-full object-contain shadow-2xl"
             />
