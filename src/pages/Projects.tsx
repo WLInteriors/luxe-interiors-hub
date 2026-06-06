@@ -55,6 +55,11 @@ import bedSoftModern from "@/assets/wli/bedroom-soft-modern.jpg";
 import bedSoftModernAlt from "@/assets/wli/bedroom-soft-modern-alt.jpg";
 import bedLoftBunkWide from "@/assets/wli/bedroom-loft-bunk-wide.jpg";
 import bedBridgeViewSuite from "@/assets/wli/bed-bridge-view-suite.jpg";
+import bedBridgeViewLounge from "@/assets/wli/bedroom-bridge-view-lounge.jpg";
+import bedCharcoalHallway from "@/assets/wli/bedroom-charcoal-hallway.jpg";
+import bedCharcoalHallwayAlt from "@/assets/wli/bedroom-charcoal-hallway-alt.jpg";
+import bedWovenWallSuite from "@/assets/wli/bedroom-woven-wall-suite.jpg";
+import bedCornerDeskRoom from "@/assets/wli/bedroom-corner-desk-room.jpg";
 
 // Full Renovation
 import rPenthouseStair from "@/assets/wli/reno-penthouse-stair-kitchen.jpg";
