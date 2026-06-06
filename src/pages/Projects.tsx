@@ -33,6 +33,9 @@ import bPowderBlueDouble from "@/assets/wli/bath-powder-blue-double-vanity.jpg";
 import bOakLinenTowers from "@/assets/wli/bath-oak-vanity-linen-towers.jpg";
 import bMarbleChandelierSuite from "@/assets/wli/bath-marble-chandelier-suite.jpg";
 import bSilverWallpaperPowder from "@/assets/wli/bath-silver-wallpaper-powder.jpg";
+import bBrassMarbleShowerSuite from "@/assets/wli/bath-brass-marble-shower-suite.jpg";
+import bReededOakMarbleTub from "@/assets/wli/bath-reeded-oak-marble-tub.jpg";
+import bBlueLacquerVanityLinen from "@/assets/wli/bath-blue-lacquer-vanity-linen.jpg";
 
 // Living
 import lSkyline from "@/assets/wli/living-skyline-penthouse.png";
@@ -161,6 +164,9 @@ const projects = [
   { title: "Oak Vanity with Twin Linen Towers", category: "bathrooms", image: bOakLinenTowers },
   { title: "Marble Primary Bath with Chandelier", category: "bathrooms", image: bMarbleChandelierSuite },
   { title: "Silver Wallpapered Powder Room", category: "bathrooms", image: bSilverWallpaperPowder },
+  { title: "Brass & Marble Walk-In Shower Suite", category: "bathrooms", image: bBrassMarbleShowerSuite },
+  { title: "Reeded Oak Vanity with Marble Tub", category: "bathrooms", image: bReededOakMarbleTub },
+  { title: "Blue Lacquer Vanity with Linen Tower", category: "bathrooms", image: bBlueLacquerVanityLinen },
 
   // Living Spaces
   
