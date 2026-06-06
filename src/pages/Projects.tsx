@@ -55,7 +55,7 @@ import bedSoftModern from "@/assets/wli/bedroom-soft-modern.jpg";
 import bedSoftModernAlt from "@/assets/wli/bedroom-soft-modern-alt.jpg";
 import bedLoftBunkWide from "@/assets/wli/bedroom-loft-bunk-wide.jpg";
 import bedBridgeViewSuite from "@/assets/wli/bed-bridge-view-suite.jpg";
-import bedBridgeViewLounge from "@/assets/wli/bedroom-bridge-view-lounge.jpg";
+
 import bedCharcoalHallway from "@/assets/wli/bedroom-charcoal-hallway.jpg";
 import bedCharcoalHallwayAlt from "@/assets/wli/bedroom-charcoal-hallway-alt.jpg";
 import bedWovenWallSuite from "@/assets/wli/bedroom-woven-wall-suite.jpg";
@@ -201,7 +201,7 @@ const projects = [
   { title: "Soft Modern Bedroom (Alt View)", category: "bedrooms", image: bedSoftModernAlt },
   { title: "Loft Bunk Bedroom (Wide View)", category: "bedrooms", image: bedLoftBunkWide },
   { title: "Bridge View Primary Suite", category: "bedrooms", image: bedBridgeViewSuite },
-  { title: "Bridge View Bedroom Lounge", category: "bedrooms", image: bedBridgeViewLounge },
+  
   { title: "Charcoal Paneled Hallway", category: "bedrooms", image: bedCharcoalHallway },
   { title: "Charcoal Hallway (Alt View)", category: "bedrooms", image: bedCharcoalHallwayAlt },
   { title: "Woven Wall Bedroom Suite", category: "bedrooms", image: bedWovenWallSuite },
