@@ -239,15 +239,28 @@ const projects = [
 const Projects = () => {
   const { category } = useParams();
   const [filter, setFilter] = useState(category ?? "all");
-  const [lightbox, setLightbox] = useState<null | { image: string; title: string }>(null);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   useEffect(() => {
     setFilter(category ?? "all");
+    setLightboxIndex(null);
   }, [category]);
 
+  const filtered = filter === "all" ? projects : projects.filter((p) => p.category === filter);
+  const lightbox = lightboxIndex !== null ? filtered[lightboxIndex] ?? null : null;
+
+  const showPrev = () =>
+    setLightboxIndex((i) => (i === null ? i : (i - 1 + filtered.length) % filtered.length));
+  const showNext = () =>
+    setLightboxIndex((i) => (i === null ? i : (i + 1) % filtered.length));
+
   useEffect(() => {
-    if (!lightbox) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setLightbox(null);
+    if (lightboxIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightboxIndex(null);
+      else if (e.key === "ArrowLeft") showPrev();
+      else if (e.key === "ArrowRight") showNext();
+    };
     document.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -255,9 +268,7 @@ const Projects = () => {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
     };
-  }, [lightbox]);
-
-  const filtered = filter === "all" ? projects : projects.filter((p) => p.category === filter);
+  }, [lightboxIndex, filtered.length]);
   const activeCategory = categories.find((c) => c.value === filter);
   const pageTitle = filter === "all"
     ? "Projects | WL Interiors Portfolio"
