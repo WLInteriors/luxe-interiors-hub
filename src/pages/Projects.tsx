@@ -239,15 +239,28 @@ const projects = [
 const Projects = () => {
   const { category } = useParams();
   const [filter, setFilter] = useState(category ?? "all");
-  const [lightbox, setLightbox] = useState<null | { image: string; title: string }>(null);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   useEffect(() => {
     setFilter(category ?? "all");
+    setLightboxIndex(null);
   }, [category]);
 
+  const filtered = filter === "all" ? projects : projects.filter((p) => p.category === filter);
+  const lightbox = lightboxIndex !== null ? filtered[lightboxIndex] ?? null : null;
+
+  const showPrev = () =>
+    setLightboxIndex((i) => (i === null ? i : (i - 1 + filtered.length) % filtered.length));
+  const showNext = () =>
+    setLightboxIndex((i) => (i === null ? i : (i + 1) % filtered.length));
+
   useEffect(() => {
-    if (!lightbox) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setLightbox(null);
+    if (lightboxIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightboxIndex(null);
+      else if (e.key === "ArrowLeft") showPrev();
+      else if (e.key === "ArrowRight") showNext();
+    };
     document.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -255,9 +268,7 @@ const Projects = () => {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
     };
-  }, [lightbox]);
-
-  const filtered = filter === "all" ? projects : projects.filter((p) => p.category === filter);
+  }, [lightboxIndex, filtered.length]);
   const activeCategory = categories.find((c) => c.value === filter);
   const pageTitle = filter === "all"
     ? "Projects | WL Interiors Portfolio"
@@ -299,11 +310,11 @@ const Projects = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((project) => (
+            {filtered.map((project, idx) => (
               <button
                 type="button"
                 key={project.title}
-                onClick={() => setLightbox(project)}
+                onClick={() => setLightboxIndex(idx)}
                 className="group relative overflow-hidden aspect-[4/3] cursor-zoom-in text-left"
               >
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -322,17 +333,37 @@ const Projects = () => {
           role="dialog"
           aria-modal="true"
           aria-label={lightbox.title}
-          onClick={() => setLightbox(null)}
+          onClick={() => setLightboxIndex(null)}
           className="fixed inset-0 z-[100] bg-foreground/90 backdrop-blur-sm flex items-center justify-center p-4 md:p-10 animate-fade-in cursor-zoom-out"
         >
           <button
             type="button"
             aria-label="Close"
-            onClick={(e) => { e.stopPropagation(); setLightbox(null); }}
+            onClick={(e) => { e.stopPropagation(); setLightboxIndex(null); }}
             className="absolute top-5 right-5 text-cream/80 hover:text-cream text-3xl leading-none w-10 h-10 flex items-center justify-center"
           >
             ×
           </button>
+          {filtered.length > 1 && (
+            <>
+              <button
+                type="button"
+                aria-label="Previous image"
+                onClick={(e) => { e.stopPropagation(); showPrev(); }}
+                className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 text-cream/80 hover:text-cream w-12 h-12 flex items-center justify-center text-4xl leading-none cursor-pointer"
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                aria-label="Next image"
+                onClick={(e) => { e.stopPropagation(); showNext(); }}
+                className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 text-cream/80 hover:text-cream w-12 h-12 flex items-center justify-center text-4xl leading-none cursor-pointer"
+              >
+                ›
+              </button>
+            </>
+          )}
           <figure onClick={(e) => e.stopPropagation()} className="max-w-6xl w-full max-h-full flex flex-col items-center">
             <img
               src={lightbox.image}
