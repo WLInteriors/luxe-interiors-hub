@@ -4,6 +4,12 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import SEO from "@/components/SEO";
 
+// Cache-bust image URLs in dev so edited assets show immediately without a hard refresh.
+// In production, Vite already fingerprints assets, so this is a no-op.
+const BUILD_ID = import.meta.env.DEV ? Date.now().toString(36) : "";
+const bust = (src: string) =>
+  BUILD_ID ? `${src}${src.includes("?") ? "&" : "?"}v=${BUILD_ID}` : src;
+
 // Kitchens
 import kBrightOpen from "@/assets/wli/kitchen-bright-open.jpg";
 import kOakBrass from "@/assets/wli/kitchen-oak-brass.jpg";
