@@ -117,6 +117,13 @@ import cLoftOfficeBuildout from "@/assets/wli/commercial-loft-office-buildout.jp
 import cReededGlassOfficeMillwork from "@/assets/wli/commercial-reeded-glass-office-millwork.jpg";
 import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millwork.jpg";
 
+// Latest living spaces
+import lStoneFireplaceFamilyRoom from "@/assets/wli/living-stone-fireplace-family-room.jpg";
+import lSlatWoodFireplaceSkyline from "@/assets/wli/living-slat-wood-fireplace-skyline.jpg";
+import lWalnutSlatMediaWall from "@/assets/wli/living-walnut-slat-media-wall.jpg";
+import lOrangeSofaChandelierView from "@/assets/wli/living-orange-sofa-chandelier-view.jpg";
+import lNavyVelvetArchedWindows from "@/assets/wli/living-navy-velvet-arched-windows.jpg";
+
 const categories = [
   { label: "All", value: "all" },
   { label: "Kitchens", value: "kitchens" },
