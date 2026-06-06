@@ -117,6 +117,13 @@ import cLoftOfficeBuildout from "@/assets/wli/commercial-loft-office-buildout.jp
 import cReededGlassOfficeMillwork from "@/assets/wli/commercial-reeded-glass-office-millwork.jpg";
 import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millwork.jpg";
 
+// Latest living spaces
+import lStoneFireplaceFamilyRoom from "@/assets/wli/living-stone-fireplace-family-room.jpg";
+import lSlatWoodFireplaceSkyline from "@/assets/wli/living-slat-wood-fireplace-skyline.jpg";
+import lWalnutSlatMediaWall from "@/assets/wli/living-walnut-slat-media-wall.jpg";
+import lOrangeSofaChandelierView from "@/assets/wli/living-orange-sofa-chandelier-view.jpg";
+import lNavyVelvetArchedWindows from "@/assets/wli/living-navy-velvet-arched-windows.jpg";
+
 const categories = [
   { label: "All", value: "all" },
   { label: "Kitchens", value: "kitchens" },
@@ -176,6 +183,11 @@ const projects = [
   { title: "Statement-Light Dining Room", category: "living-spaces", image: lDiningStatement },
   { title: "Bright Windowed Family Room", category: "living-spaces", image: lBrightWindowsLounge },
   { title: "Classic Coffered Living Room with Fireplace", category: "living-spaces", image: lClassicCofferedFireplace },
+  { title: "Stone Fireplace Family Room", category: "living-spaces", image: lStoneFireplaceFamilyRoom },
+  { title: "Slat Wood Fireplace with Skyline View", category: "living-spaces", image: lSlatWoodFireplaceSkyline },
+  { title: "Walnut Slat Custom Media Wall", category: "living-spaces", image: lWalnutSlatMediaWall },
+  { title: "Velvet Sofa Lounge with City View", category: "living-spaces", image: lOrangeSofaChandelierView },
+  { title: "Navy Velvet Living Room with Arched Windows", category: "living-spaces", image: lNavyVelvetArchedWindows },
   
 
   // Bedrooms
