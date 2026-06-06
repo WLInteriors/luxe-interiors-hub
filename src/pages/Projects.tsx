@@ -352,7 +352,7 @@ const Projects = () => {
                 onClick={() => setLightboxIndex(idx)}
                 className="group relative overflow-hidden aspect-[4/3] cursor-zoom-in text-left"
               >
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                <img src={bust(project.image)} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
               </button>
             ))}
           </div>
