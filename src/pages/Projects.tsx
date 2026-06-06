@@ -197,11 +197,15 @@ const projects = [
   { title: "Paneled Headboard Primary Suite", category: "bedrooms", image: bedPaneled },
   { title: "Warm Oak Primary Bedroom", category: "bedrooms", image: bedWarmOak },
   { title: "Warm Oak Primary Bedroom (Alt View)", category: "bedrooms", image: bedWarmOakAlt },
-  
   { title: "Soft Modern Bedroom", category: "bedrooms", image: bedSoftModern },
   { title: "Soft Modern Bedroom (Alt View)", category: "bedrooms", image: bedSoftModernAlt },
   { title: "Loft Bunk Bedroom (Wide View)", category: "bedrooms", image: bedLoftBunkWide },
   { title: "Bridge View Primary Suite", category: "bedrooms", image: bedBridgeViewSuite },
+  { title: "Bridge View Bedroom Lounge", category: "bedrooms", image: bedBridgeViewLounge },
+  { title: "Charcoal Paneled Hallway", category: "bedrooms", image: bedCharcoalHallway },
+  { title: "Charcoal Hallway (Alt View)", category: "bedrooms", image: bedCharcoalHallwayAlt },
+  { title: "Woven Wall Bedroom Suite", category: "bedrooms", image: bedWovenWallSuite },
+  { title: "Bedroom Corner Desk Nook", category: "bedrooms", image: bedCornerDeskRoom },
 
   // Full Renovation
   { title: "Tri-Level Penthouse Renovation", category: "full-renovation", image: rPenthouseStair },
