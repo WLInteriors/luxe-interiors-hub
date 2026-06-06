@@ -260,6 +260,10 @@ const projects = [
   { title: "Wallpapered Walk-in Closet", category: "millwork", image: mWallpaperedCloset },
   { title: "Slat-Wood Mudroom Bench", category: "millwork", image: mMudroomSlatBench },
   { title: "Custom Round Oak Dining Table", category: "millwork", image: kWhiteChandelierRound },
+  { title: "Walnut Fluted Media Cabinet", category: "millwork", image: mWalnutFlutedMediaCabinet },
+  { title: "Hidden Stair Storage Paneling", category: "millwork", image: mHiddenStairStorage },
+  
+
   
 
   // Commercial
