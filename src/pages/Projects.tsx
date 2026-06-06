@@ -223,6 +223,14 @@ const projects = [
   { title: "Open Family-Home Renovation", category: "full-renovation", image: rOpenFamily },
   { title: "Living Room Renovation", category: "full-renovation", image: rLivingExtra },
   { title: "Cantilever Stair Renovation", category: "full-renovation", image: rCantilever },
+  { title: "Concrete Tile Walnut Bath", category: "full-renovation", image: rBathConcreteWalnut },
+  { title: "Carved Headboard Suite", category: "full-renovation", image: rBedroomCarvedHeadboardSuite },
+  { title: "Teal Gloss Hallway", category: "full-renovation", image: rHallwayTealGlossMirror },
+  { title: "Kids Room Highland Cow", category: "full-renovation", image: rKidsroomHighlandCow },
+  { title: "Rope Pendant Quartzite Kitchen", category: "full-renovation", image: rKitchenRopePendantQuartzite },
+  { title: "Navy Marble Fireplace Living Room", category: "full-renovation", image: rLivingNavyFlutedMarbleCity },
+  { title: "Skyline Soaker Tub Bath", category: "full-renovation", image: rBathSkylineSoakerTub },
+  { title: "Purple LED Marble Powder Room", category: "full-renovation", image: rPowderPurpleLedMarble },
 
   // Millwork
   { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted },
