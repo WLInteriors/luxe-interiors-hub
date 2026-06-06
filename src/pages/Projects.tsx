@@ -376,9 +376,6 @@ const Projects = () => {
               alt={lightbox.title}
               className="max-h-[85vh] w-auto max-w-full object-contain shadow-2xl"
             />
-            <figcaption className="mt-4 text-center">
-              <h3 className="font-serif text-xl text-cream">{lightbox.title}</h3>
-            </figcaption>
           </figure>
         </div>
       )}
