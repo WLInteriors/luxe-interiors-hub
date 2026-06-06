@@ -71,6 +71,14 @@ import rLivingExtra from "@/assets/wli/living-room-2.jpg";
 import rGlassStair from "@/assets/wli/living-glass-stair.jpg";
 import rCantilever from "@/assets/wli/living-cantilever-stair.jpg";
 import rPenthouseDining from "@/assets/wli/living-penthouse-dining.jpg";
+import rBathConcreteWalnut from "@/assets/wli/reno-bath-concrete-walnut.jpg";
+import rBedroomCarvedHeadboardSuite from "@/assets/wli/reno-bedroom-carved-headboard-suite.jpg";
+import rHallwayTealGlossMirror from "@/assets/wli/reno-hallway-teal-gloss-mirror.jpg";
+import rKidsroomHighlandCow from "@/assets/wli/reno-kidsroom-highland-cow.jpg";
+import rKitchenRopePendantQuartzite from "@/assets/wli/reno-kitchen-rope-pendant-quartzite.jpg";
+import rLivingNavyFlutedMarbleCity from "@/assets/wli/reno-living-navy-fluted-marble-city.jpg";
+import rBathSkylineSoakerTub from "@/assets/wli/reno-bath-skyline-soaker-tub.jpg";
+import rPowderPurpleLedMarble from "@/assets/wli/reno-powder-purple-led-marble.jpg";
 
 // Millwork
 import mWalnutFluted from "@/assets/wli/millwork-walnut-fluted.jpg";
