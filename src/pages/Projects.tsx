@@ -397,7 +397,7 @@ const Projects = () => {
           )}
           <figure onClick={(e) => e.stopPropagation()} className="max-w-6xl w-full max-h-full flex flex-col items-center">
             <img
-              src={lightbox.image}
+              src={bust(lightbox.image)}
               alt={lightbox.title}
               className="max-h-[85vh] w-auto max-w-full object-contain shadow-2xl"
             />
