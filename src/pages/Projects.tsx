@@ -285,6 +285,7 @@ const projects = [
   { title: "Loft Reception with Reeded Millwork Wall", category: "commercial", image: cLoftReceptionMillwork },
   { title: "Open Commercial Kitchenette", category: "commercial", image: cOpenOfficeKitchenetteWide },
   { title: "Reeded Glass Feature Wall", category: "commercial", image: cReededGlassFeatureWall },
+  { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   
 ];
 
