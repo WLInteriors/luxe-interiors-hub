@@ -139,6 +139,7 @@ import cReededGlassOfficeMillwork from "@/assets/wli/commercial-reeded-glass-off
 import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millwork.jpg";
 import cOpenOfficeKitchenetteWide from "@/assets/wli/commercial-open-office-kitchenette-wide.jpg";
 import cReededGlassFeatureWall from "@/assets/wli/commercial-reeded-glass-feature-wall.jpg";
+import cLuxuryLobbyLoungeMarble from "@/assets/wli/commercial-luxury-lobby-lounge-marble.jpg";
 
 
 // Latest living spaces
