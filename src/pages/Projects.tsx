@@ -139,6 +139,7 @@ import cReededGlassOfficeMillwork from "@/assets/wli/commercial-reeded-glass-off
 import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millwork.jpg";
 import cOpenOfficeKitchenetteWide from "@/assets/wli/commercial-open-office-kitchenette-wide.jpg";
 import cReededGlassFeatureWall from "@/assets/wli/commercial-reeded-glass-feature-wall.jpg";
+import cLuxuryLobbyLoungeMarble from "@/assets/wli/commercial-luxury-lobby-lounge-marble.jpg";
 
 
 // Latest living spaces
@@ -284,6 +285,7 @@ const projects = [
   { title: "Loft Reception with Reeded Millwork Wall", category: "commercial", image: cLoftReceptionMillwork },
   { title: "Open Commercial Kitchenette", category: "commercial", image: cOpenOfficeKitchenetteWide },
   { title: "Reeded Glass Feature Wall", category: "commercial", image: cReededGlassFeatureWall },
+  { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   
 ];
 
