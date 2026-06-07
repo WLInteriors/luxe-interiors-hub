@@ -139,7 +139,7 @@ import cReededGlassOfficeMillwork from "@/assets/wli/commercial-reeded-glass-off
 import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millwork.jpg";
 import cOpenOfficeKitchenetteWide from "@/assets/wli/commercial-open-office-kitchenette-wide.jpg";
 import cReededGlassFeatureWall from "@/assets/wli/commercial-reeded-glass-feature-wall.jpg";
-import cOpenPlanBuildoutMillwork from "@/assets/wli/commercial-open-plan-buildout-millwork.jpg";
+
 
 // Latest living spaces
 import lStoneFireplaceFamilyRoom from "@/assets/wli/living-stone-fireplace-family-room.jpg";
@@ -284,7 +284,7 @@ const projects = [
   { title: "Loft Reception with Reeded Millwork Wall", category: "commercial", image: cLoftReceptionMillwork },
   { title: "Open Commercial Kitchenette", category: "commercial", image: cOpenOfficeKitchenetteWide },
   { title: "Reeded Glass Feature Wall", category: "commercial", image: cReededGlassFeatureWall },
-  { title: "Open-Plan Commercial Buildout", category: "commercial", image: cOpenPlanBuildoutMillwork },
+  
 ];
 
 const Projects = () => {
