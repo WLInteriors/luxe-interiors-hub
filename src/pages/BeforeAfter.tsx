@@ -12,6 +12,8 @@ import baBeforeMurphyOak from "@/assets/wli/ba-before-murphy-oak-builtin.jpg";
 import baAfterMurphyOak from "@/assets/wli/ba-after-murphy-oak-builtin.jpg";
 import baBeforeConference from "@/assets/wli/ba-before-conference-room.jpg";
 import baAfterConference from "@/assets/wli/ba-after-conference-room.jpg";
+import baBeforeHiddenScreen from "@/assets/wli/ba-before-hidden-screen-builtin.jpg";
+import baAfterHiddenScreen from "@/assets/wli/ba-after-hidden-screen-builtin.jpg";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 
 type BAItem = {
@@ -63,6 +65,15 @@ const beforeAfterItems: BAItem[] = [
     description: "A full commercial conference room buildout — taken back to exposed metal studs, then finished with crisp white walls, a new acoustic ceiling system with integrated linear LEDs, dual mounted displays, framed art, patterned carpet tile, and a blue accent wall with built-in orange bench seating.",
     beforeImage: baBeforeConference,
     afterImage: baAfterConference,
+  },
+  {
+    title: "Hidden Projection Screen Window Seat",
+    location: "New York, NY",
+    description: "A custom-painted millwork piece built beneath a panoramic window, designed as a tailored window seat and media cabinet with integrated speakers, a hidden projector, and a concealed projection screen that rises from within the casework. Closed, the installation reads as elegant architectural millwork; open, it transforms the room into a discreet home cinema without sacrificing the skyline view.",
+    beforeImage: baBeforeHiddenScreen,
+    afterImage: baAfterHiddenScreen,
+    beforeLabel: "Closed",
+    afterLabel: "Open",
   },
 ];
 
