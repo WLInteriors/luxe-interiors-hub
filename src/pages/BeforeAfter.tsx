@@ -10,6 +10,8 @@ import baBeforeMurphy from "@/assets/wli/ba-before-murphy.jpg";
 import baAfterMurphy from "@/assets/wli/ba-after-murphy.jpg";
 import baBeforeMurphyOak from "@/assets/wli/ba-before-murphy-oak-builtin.jpg";
 import baAfterMurphyOak from "@/assets/wli/ba-after-murphy-oak-builtin.jpg";
+import baBeforeConference from "@/assets/wli/ba-before-conference-room.jpg";
+import baAfterConference from "@/assets/wli/ba-after-conference-room.jpg";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 
 type BAItem = {
@@ -54,6 +56,13 @@ const beforeAfterItems: BAItem[] = [
     afterImage: baAfterMurphyOak,
     beforeLabel: "Closed",
     afterLabel: "Open",
+  },
+  {
+    title: "Corporate Conference Room Buildout",
+    location: "New York, NY",
+    description: "A full commercial conference room buildout — taken back to exposed metal studs, then finished with crisp white walls, a new acoustic ceiling system with integrated linear LEDs, dual mounted displays, framed art, patterned carpet tile, and a blue accent wall with built-in orange bench seating.",
+    beforeImage: baBeforeConference,
+    afterImage: baAfterConference,
   },
 ];
 
