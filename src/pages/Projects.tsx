@@ -137,6 +137,9 @@ import cModernOfficeKitchenette from "@/assets/wli/commercial-modern-office-kitc
 import cLoftOfficeBuildout from "@/assets/wli/commercial-loft-office-buildout.jpg";
 import cReededGlassOfficeMillwork from "@/assets/wli/commercial-reeded-glass-office-millwork.jpg";
 import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millwork.jpg";
+import cOpenOfficeKitchenetteWide from "@/assets/wli/commercial-open-office-kitchenette-wide.jpg";
+import cReededGlassFeatureWall from "@/assets/wli/commercial-reeded-glass-feature-wall.jpg";
+import cOpenPlanBuildoutMillwork from "@/assets/wli/commercial-open-plan-buildout-millwork.jpg";
 
 // Latest living spaces
 import lStoneFireplaceFamilyRoom from "@/assets/wli/living-stone-fireplace-family-room.jpg";
