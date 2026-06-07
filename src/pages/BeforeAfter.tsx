@@ -8,6 +8,8 @@ import baBeforeKitchen from "@/assets/wli/ba-before-kitchen.jpg";
 import baAfterKitchen from "@/assets/wli/ba-after-kitchen.jpg";
 import baBeforeMurphy from "@/assets/wli/ba-before-murphy.jpg";
 import baAfterMurphy from "@/assets/wli/ba-after-murphy.jpg";
+import baBeforeMurphyOak from "@/assets/wli/ba-before-murphy-oak-builtin.jpg";
+import baAfterMurphyOak from "@/assets/wli/ba-after-murphy-oak-builtin.jpg";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 
 type BAItem = {
@@ -41,6 +43,15 @@ const beforeAfterItems: BAItem[] = [
     description: "A dual-purpose guest suite featuring a custom white oak Murphy bed that disappears flush into a millwork wall when closed, then folds down to reveal a hotel-grade queen bed. Integrated bookshelves with warm LED lighting, grasscloth panels, brass reading sconces, and a sculptural rope chandelier — all built in-house.",
     beforeImage: baBeforeMurphy,
     afterImage: baAfterMurphy,
+    beforeLabel: "Closed",
+    afterLabel: "Open",
+  },
+  {
+    title: "White Oak Built-In Murphy Bed",
+    location: "Westchester County, NY",
+    description: "A handcrafted white oak built-in with flanking lit display shelving and lower storage cabinets — the center millwork conceals a fold-down queen Murphy bed. Closed, it reads as a refined library wall; open, it transforms the room into a hotel-grade guest suite with crisp white linens and a soft oatmeal throw.",
+    beforeImage: baBeforeMurphyOak,
+    afterImage: baAfterMurphyOak,
     beforeLabel: "Closed",
     afterLabel: "Open",
   },
