@@ -199,9 +199,8 @@ const BeforeAfter = () => {
                   </button>
                 </div>
                 <div className="lg:col-span-2">
+                  <h3 className="font-serif text-2xl lg:text-3xl mb-2">{item.title}</h3>
                   <span className="text-xs uppercase tracking-widest text-brass">{item.location}</span>
-                  <h3 className="font-serif text-2xl lg:text-3xl mt-2 mb-4">{item.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}
