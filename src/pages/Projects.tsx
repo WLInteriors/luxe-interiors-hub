@@ -148,6 +148,7 @@ import lSlatWoodFireplaceSkyline from "@/assets/wli/living-slat-wood-fireplace-s
 import lWalnutSlatMediaWall from "@/assets/wli/living-walnut-slat-media-wall.jpg";
 
 import lNavyVelvetArchedWindows from "@/assets/wli/living-navy-velvet-arched-windows.jpg";
+import lOrangeSofaSkylineView from "@/assets/wli/living-orange-sofa-skyline-view.jpg";
 
 const categories = [
   { label: "All", value: "all" },
@@ -211,6 +212,7 @@ const projects = [
   { title: "Walnut Slat Custom Media Wall", category: "living-spaces", image: lWalnutSlatMediaWall },
   
   { title: "Navy Velvet Living Room with Arched Windows", category: "living-spaces", image: lNavyVelvetArchedWindows },
+  { title: "Velvet Sofa Lounge with Skyline View", category: "living-spaces", image: lOrangeSofaSkylineView },
   
 
   // Bedrooms
