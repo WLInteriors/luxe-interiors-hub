@@ -209,7 +209,7 @@ const projects = [
   { title: "Stone Fireplace Family Room", category: "living-spaces", image: lStoneFireplaceFamilyRoom },
   { title: "Slat Wood Fireplace with Skyline View", category: "living-spaces", image: lSlatWoodFireplaceSkyline },
   { title: "Walnut Slat Custom Media Wall", category: "living-spaces", image: lWalnutSlatMediaWall },
-  { title: "Velvet Sofa Lounge with City View", category: "living-spaces", image: lOrangeSofaChandelierView },
+  
   { title: "Navy Velvet Living Room with Arched Windows", category: "living-spaces", image: lNavyVelvetArchedWindows },
   
 
