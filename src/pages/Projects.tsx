@@ -146,7 +146,7 @@ import cLuxuryLobbyLoungeMarble from "@/assets/wli/commercial-luxury-lobby-loung
 import lStoneFireplaceFamilyRoom from "@/assets/wli/living-stone-fireplace-family-room.jpg";
 import lSlatWoodFireplaceSkyline from "@/assets/wli/living-slat-wood-fireplace-skyline.jpg";
 import lWalnutSlatMediaWall from "@/assets/wli/living-walnut-slat-media-wall.jpg";
-import lOrangeSofaChandelierView from "@/assets/wli/living-orange-sofa-chandelier-view.jpg";
+
 import lNavyVelvetArchedWindows from "@/assets/wli/living-navy-velvet-arched-windows.jpg";
 
 const categories = [
