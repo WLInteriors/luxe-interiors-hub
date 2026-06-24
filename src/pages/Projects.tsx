@@ -140,6 +140,8 @@ import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millw
 import cOpenOfficeKitchenetteWide from "@/assets/wli/commercial-open-office-kitchenette-wide.jpg";
 import cReededGlassFeatureWall from "@/assets/wli/commercial-reeded-glass-feature-wall.jpg";
 import cLuxuryLobbyLoungeMarble from "@/assets/wli/commercial-luxury-lobby-lounge-marble.jpg";
+import cReceptionHallwayOrangeChair from "@/assets/wli/commercial-reception-hallway-orange-chair.jpg";
+import cReceptionLibraryLounge from "@/assets/wli/commercial-reception-library-lounge.jpg";
 
 
 // Latest living spaces
@@ -288,6 +290,9 @@ const projects = [
   { title: "Open Commercial Kitchenette", category: "commercial", image: cOpenOfficeKitchenetteWide },
   { title: "Reeded Glass Feature Wall", category: "commercial", image: cReededGlassFeatureWall },
   { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
+  { title: "Reception Hallway with Velvet Lounge Chair", category: "commercial", image: cReceptionHallwayOrangeChair },
+  { title: "Reception & Library Lounge", category: "commercial", image: cReceptionLibraryLounge },
+  
   
 ];
 
