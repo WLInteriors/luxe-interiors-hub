@@ -279,15 +279,11 @@ const projects = [
   { title: "Corporate Lobby Lounge", category: "commercial", image: cLobbyLounge },
   { title: "Bank Branch Entrance", category: "commercial", image: cBankEntrance },
   { title: "Commercial Office Kitchen", category: "commercial", image: cOfficeKitchen },
-  { title: "Modern Midtown Office Kitchenette", category: "commercial", image: cModernOfficeKitchenette },
   { title: "Open-Plan Loft Office Buildout", category: "commercial", image: cLoftOfficeBuildout },
-  { title: "Reeded Glass Office with Custom Millwork", category: "commercial", image: cReededGlassOfficeMillwork },
-  { title: "Loft Reception with Reeded Millwork Wall", category: "commercial", image: cLoftReceptionMillwork },
   { title: "Open Commercial Kitchenette", category: "commercial", image: cOpenOfficeKitchenetteWide },
-  { title: "Reeded Glass Feature Wall", category: "commercial", image: cReededGlassFeatureWall },
-  { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   { title: "Reception Hallway with Velvet Lounge Chair", category: "commercial", image: cReceptionHallwayOrangeChair },
   { title: "Reception & Library Lounge", category: "commercial", image: cReceptionLibraryLounge },
+  { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   
   
 ];
