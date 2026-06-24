@@ -132,12 +132,14 @@ import mWalnutFlutedMediaCabinet from "@/assets/wli/millwork-walnut-fluted-media
 import mHiddenStairStorage from "@/assets/wli/millwork-hidden-stair-storage.jpg";
 import cBankEntrance from "@/assets/wli/commercial-bank-entrance.jpg";
 import cWoodDoors from "@/assets/wli/commercial-wood-doors.jpg";
-import cOfficeKitchen from "@/assets/wli/commercial-office-kitchen.png";
+import cOpenKitchenetteLongView from "@/assets/wli/commercial-open-kitchenette-long-view.jpg";
 import cLoftOfficeBuildout from "@/assets/wli/commercial-loft-office-buildout.jpg";
 import cOpenOfficeKitchenetteWide from "@/assets/wli/commercial-open-office-kitchenette-wide.jpg";
 import cLuxuryLobbyLoungeMarble from "@/assets/wli/commercial-luxury-lobby-lounge-marble.jpg";
 import cReceptionHallwayOrangeChair from "@/assets/wli/commercial-reception-hallway-orange-chair.jpg";
 import cReceptionLibraryLounge from "@/assets/wli/commercial-reception-library-lounge.jpg";
+import cGlassConferenceBlueAccent from "@/assets/wli/commercial-glass-conference-blue-accent.jpg";
+import cConferenceGreenAccentWall from "@/assets/wli/commercial-conference-green-accent-wall.jpg";
 
 
 // Latest living spaces
@@ -278,11 +280,13 @@ const projects = [
   { title: "Executive Glass Office Suite", category: "commercial", image: cGlassSuite },
   { title: "Corporate Lobby Lounge", category: "commercial", image: cLobbyLounge },
   { title: "Bank Branch Entrance", category: "commercial", image: cBankEntrance },
-  { title: "Commercial Office Kitchen", category: "commercial", image: cOfficeKitchen },
+  { title: "Long-View Open Kitchenette with Linear Pendants", category: "commercial", image: cOpenKitchenetteLongView },
   { title: "Open-Plan Loft Office Buildout", category: "commercial", image: cLoftOfficeBuildout },
   { title: "Open Commercial Kitchenette", category: "commercial", image: cOpenOfficeKitchenetteWide },
   { title: "Reception Hallway with Velvet Lounge Chair", category: "commercial", image: cReceptionHallwayOrangeChair },
   { title: "Reception & Library Lounge", category: "commercial", image: cReceptionLibraryLounge },
+  { title: "Glass-Enclosed Conference Room with Blue Accent", category: "commercial", image: cGlassConferenceBlueAccent },
+  { title: "Modern Conference Room with Green Accent Wall", category: "commercial", image: cConferenceGreenAccentWall },
   { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   
   
