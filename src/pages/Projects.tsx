@@ -133,12 +133,8 @@ import mHiddenStairStorage from "@/assets/wli/millwork-hidden-stair-storage.jpg"
 import cBankEntrance from "@/assets/wli/commercial-bank-entrance.jpg";
 import cWoodDoors from "@/assets/wli/commercial-wood-doors.jpg";
 import cOfficeKitchen from "@/assets/wli/commercial-office-kitchen.png";
-import cModernOfficeKitchenette from "@/assets/wli/commercial-modern-office-kitchenette.jpg";
 import cLoftOfficeBuildout from "@/assets/wli/commercial-loft-office-buildout.jpg";
-import cReededGlassOfficeMillwork from "@/assets/wli/commercial-reeded-glass-office-millwork.jpg";
-import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millwork.jpg";
 import cOpenOfficeKitchenetteWide from "@/assets/wli/commercial-open-office-kitchenette-wide.jpg";
-import cReededGlassFeatureWall from "@/assets/wli/commercial-reeded-glass-feature-wall.jpg";
 import cLuxuryLobbyLoungeMarble from "@/assets/wli/commercial-luxury-lobby-lounge-marble.jpg";
 import cReceptionHallwayOrangeChair from "@/assets/wli/commercial-reception-hallway-orange-chair.jpg";
 import cReceptionLibraryLounge from "@/assets/wli/commercial-reception-library-lounge.jpg";
