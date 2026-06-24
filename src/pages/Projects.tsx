@@ -133,12 +133,8 @@ import mHiddenStairStorage from "@/assets/wli/millwork-hidden-stair-storage.jpg"
 import cBankEntrance from "@/assets/wli/commercial-bank-entrance.jpg";
 import cWoodDoors from "@/assets/wli/commercial-wood-doors.jpg";
 import cOfficeKitchen from "@/assets/wli/commercial-office-kitchen.png";
-import cModernOfficeKitchenette from "@/assets/wli/commercial-modern-office-kitchenette.jpg";
 import cLoftOfficeBuildout from "@/assets/wli/commercial-loft-office-buildout.jpg";
-import cReededGlassOfficeMillwork from "@/assets/wli/commercial-reeded-glass-office-millwork.jpg";
-import cLoftReceptionMillwork from "@/assets/wli/commercial-loft-reception-millwork.jpg";
 import cOpenOfficeKitchenetteWide from "@/assets/wli/commercial-open-office-kitchenette-wide.jpg";
-import cReededGlassFeatureWall from "@/assets/wli/commercial-reeded-glass-feature-wall.jpg";
 import cLuxuryLobbyLoungeMarble from "@/assets/wli/commercial-luxury-lobby-lounge-marble.jpg";
 import cReceptionHallwayOrangeChair from "@/assets/wli/commercial-reception-hallway-orange-chair.jpg";
 import cReceptionLibraryLounge from "@/assets/wli/commercial-reception-library-lounge.jpg";
@@ -283,15 +279,11 @@ const projects = [
   { title: "Corporate Lobby Lounge", category: "commercial", image: cLobbyLounge },
   { title: "Bank Branch Entrance", category: "commercial", image: cBankEntrance },
   { title: "Commercial Office Kitchen", category: "commercial", image: cOfficeKitchen },
-  { title: "Modern Midtown Office Kitchenette", category: "commercial", image: cModernOfficeKitchenette },
   { title: "Open-Plan Loft Office Buildout", category: "commercial", image: cLoftOfficeBuildout },
-  { title: "Reeded Glass Office with Custom Millwork", category: "commercial", image: cReededGlassOfficeMillwork },
-  { title: "Loft Reception with Reeded Millwork Wall", category: "commercial", image: cLoftReceptionMillwork },
   { title: "Open Commercial Kitchenette", category: "commercial", image: cOpenOfficeKitchenetteWide },
-  { title: "Reeded Glass Feature Wall", category: "commercial", image: cReededGlassFeatureWall },
-  { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   { title: "Reception Hallway with Velvet Lounge Chair", category: "commercial", image: cReceptionHallwayOrangeChair },
   { title: "Reception & Library Lounge", category: "commercial", image: cReceptionLibraryLounge },
+  { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   
   
 ];
