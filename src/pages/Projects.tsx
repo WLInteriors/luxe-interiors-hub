@@ -140,6 +140,8 @@ import cReceptionHallwayOrangeChair from "@/assets/wli/commercial-reception-hall
 import cReceptionLibraryLounge from "@/assets/wli/commercial-reception-library-lounge.jpg";
 import cGlassConferenceBlueAccent from "@/assets/wli/commercial-glass-conference-blue-accent.jpg";
 import cConferenceGreenAccentWall from "@/assets/wli/commercial-conference-green-accent-wall.jpg";
+import cConferenceGreenWallVideo from "@/assets/wli/commercial-conference-green-wall-video.jpg";
+
 
 
 // Latest living spaces
@@ -287,6 +289,7 @@ const projects = [
   { title: "Reception & Library Lounge", category: "commercial", image: cReceptionLibraryLounge },
   { title: "Glass-Enclosed Conference Room with Blue Accent", category: "commercial", image: cGlassConferenceBlueAccent },
   { title: "Modern Conference Room with Green Accent Wall", category: "commercial", image: cConferenceGreenAccentWall },
+  { title: "Conference Room with Wall-Mounted Video Display", category: "commercial", image: cConferenceGreenWallVideo },
   { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   
   
