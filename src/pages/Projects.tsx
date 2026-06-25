@@ -298,6 +298,14 @@ const projects = [
   { title: "Glass-Enclosed Conference Room with Blue Accent", category: "commercial", image: cGlassConferenceBlueAccent },
   { title: "Modern Conference Room with Green Accent Wall", category: "commercial", image: cConferenceGreenAccentWall },
   { title: "Conference Room with Wall-Mounted Video Display", category: "commercial", image: cConferenceGreenWallVideo },
+  { title: "Backlit Wood & Steel Display Shelving", category: "commercial", image: cBacklitShelvingConcrete },
+  { title: "Curved Retail Shelving with Oak Display Island", category: "commercial", image: cRetailCurvedShelvingOakIsland },
+  { title: "Retail Glass Display at Window Wall", category: "commercial", image: cRetailGlassDisplayWindowWall },
+  { title: "L-Shape Glass Display under Backlit Ceiling", category: "commercial", image: cRetailGlassDisplayLShape },
+  { title: "Floating Steel Staircase with Oak Bench Cubes", category: "commercial", image: cFloatingStaircaseOakBenches },
+  { title: "Luxury Retail Showroom with Coffered Ceiling", category: "commercial", image: cLuxuryRetailCofferedShowroom },
+  { title: "Oak Lounge with Cascading Vine Wall", category: "commercial", image: cLoungeOakVinesSwivelChairs },
+  { title: "Oak Ceiling Dining Area with Slat Divider", category: "commercial", image: cOakCeilingDiningSlatDivider },
   { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   
   
