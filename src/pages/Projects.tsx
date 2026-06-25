@@ -141,6 +141,14 @@ import cReceptionLibraryLounge from "@/assets/wli/commercial-reception-library-l
 import cGlassConferenceBlueAccent from "@/assets/wli/commercial-glass-conference-blue-accent.jpg";
 import cConferenceGreenAccentWall from "@/assets/wli/commercial-conference-green-accent-wall.jpg";
 import cConferenceGreenWallVideo from "@/assets/wli/commercial-conference-green-wall-video.jpg";
+import cBacklitShelvingConcrete from "@/assets/wli/commercial-backlit-shelving-concrete.jpg";
+import cRetailCurvedShelvingOakIsland from "@/assets/wli/commercial-retail-curved-shelving-oak-island.jpg";
+import cRetailGlassDisplayWindowWall from "@/assets/wli/commercial-retail-glass-display-window-wall.jpg";
+import cRetailGlassDisplayLShape from "@/assets/wli/commercial-retail-glass-display-l-shape.jpg";
+import cFloatingStaircaseOakBenches from "@/assets/wli/commercial-floating-staircase-oak-benches.jpg";
+import cLuxuryRetailCofferedShowroom from "@/assets/wli/commercial-luxury-retail-coffered-ceiling-showroom.jpg";
+import cLoungeOakVinesSwivelChairs from "@/assets/wli/commercial-lounge-oak-vines-swivel-chairs.jpg";
+import cOakCeilingDiningSlatDivider from "@/assets/wli/commercial-oak-ceiling-dining-slat-divider.jpg";
 
 
 
