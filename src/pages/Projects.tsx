@@ -149,6 +149,7 @@ import cFloatingStaircaseOakBenches from "@/assets/wli/commercial-floating-stair
 import cLuxuryRetailCofferedShowroom from "@/assets/wli/commercial-luxury-retail-coffered-ceiling-showroom.jpg";
 import cLoungeOakVinesSwivelChairs from "@/assets/wli/commercial-lounge-oak-vines-swivel-chairs.jpg";
 import cOakCeilingDiningSlatDivider from "@/assets/wli/commercial-oak-ceiling-dining-slat-divider.jpg";
+import cReededWallBenchCubbies from "@/assets/wli/commercial-reeded-wall-bench-cubbies.jpg";
 
 
 
@@ -306,6 +307,7 @@ const projects = [
   { title: "Luxury Retail Showroom with Coffered Ceiling", category: "commercial", image: cLuxuryRetailCofferedShowroom },
   { title: "Oak Lounge with Cascading Vine Wall", category: "commercial", image: cLoungeOakVinesSwivelChairs },
   { title: "Oak Ceiling Dining Area with Slat Divider", category: "commercial", image: cOakCeilingDiningSlatDivider },
+  { title: "Reeded Wood Feature Wall with Built-In Bench", category: "commercial", image: cReededWallBenchCubbies },
   { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
   
   
