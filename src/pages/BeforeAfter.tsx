@@ -81,6 +81,29 @@ const beforeAfterItems: BAItem[] = [
     beforeLabel: "Closed",
     afterLabel: "Open",
   },
+  {
+    title: "Built-In Bookcase Wall Conversion",
+    location: "New York, NY",
+    description: "",
+    beforeImage: baBeforeBookcase,
+    afterImage: baAfterBookcase,
+  },
+  {
+    title: "Home Office Built-In Transformation",
+    location: "New York, NY",
+    description: "",
+    beforeImage: baBeforeHomeOffice,
+    afterImage: baAfterHomeOffice,
+  },
+  {
+    title: "White Millwork Murphy Bed Wall",
+    location: "New York, NY",
+    description: "",
+    beforeImage: baBeforeMurphyWhite,
+    afterImage: baAfterMurphyWhite,
+    beforeLabel: "Closed",
+    afterLabel: "Open",
+  },
 ];
 
 const BeforeAfterSlider = ({
