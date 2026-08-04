@@ -14,6 +14,12 @@ import baBeforeConference from "@/assets/wli/ba-before-conference-room.jpg";
 import baAfterConference from "@/assets/wli/ba-after-conference-room.jpg";
 import baBeforeHiddenScreen from "@/assets/wli/ba-before-hidden-screen-builtin.jpg";
 import baAfterHiddenScreen from "@/assets/wli/ba-after-hidden-screen-builtin.jpg";
+import baBeforeBookcase from "@/assets/wli/ba-before-builtin-bookcase.jpg";
+import baAfterBookcase from "@/assets/wli/ba-after-builtin-bookcase.jpg";
+import baBeforeHomeOffice from "@/assets/wli/ba-before-home-office.jpg";
+import baAfterHomeOffice from "@/assets/wli/ba-after-home-office.jpg";
+import baBeforeMurphyWhite from "@/assets/wli/ba-before-murphy-white-builtin.jpg";
+import baAfterMurphyWhite from "@/assets/wli/ba-after-murphy-white-builtin.jpg";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 
 type BAItem = {
@@ -72,6 +78,29 @@ const beforeAfterItems: BAItem[] = [
     description: "A custom-painted millwork piece built beneath a panoramic window, designed as a tailored window seat and media cabinet with integrated speakers, a hidden projector, and a concealed projection screen that rises from within the casework. Closed, the installation reads as elegant architectural millwork; open, it transforms the room into a discreet home cinema without sacrificing the skyline view.",
     beforeImage: baBeforeHiddenScreen,
     afterImage: baAfterHiddenScreen,
+    beforeLabel: "Closed",
+    afterLabel: "Open",
+  },
+  {
+    title: "Built-In Bookcase Wall Conversion",
+    location: "New York, NY",
+    description: "",
+    beforeImage: baBeforeBookcase,
+    afterImage: baAfterBookcase,
+  },
+  {
+    title: "Home Office Built-In Transformation",
+    location: "New York, NY",
+    description: "",
+    beforeImage: baBeforeHomeOffice,
+    afterImage: baAfterHomeOffice,
+  },
+  {
+    title: "White Millwork Murphy Bed Wall",
+    location: "New York, NY",
+    description: "",
+    beforeImage: baBeforeMurphyWhite,
+    afterImage: baAfterMurphyWhite,
     beforeLabel: "Closed",
     afterLabel: "Open",
   },
