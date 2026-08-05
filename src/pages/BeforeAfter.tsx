@@ -16,8 +16,6 @@ import baBeforeHiddenScreen from "@/assets/wli/ba-before-hidden-screen-builtin.j
 import baAfterHiddenScreen from "@/assets/wli/ba-after-hidden-screen-builtin.jpg";
 import baBeforeBookcase from "@/assets/wli/ba-before-builtin-bookcase.jpg";
 import baAfterBookcase from "@/assets/wli/ba-after-builtin-bookcase.jpg";
-import baBeforeHomeOffice from "@/assets/wli/ba-before-home-office.jpg";
-import baAfterHomeOffice from "@/assets/wli/ba-after-home-office.jpg";
 import baBeforeMurphyWhite from "@/assets/wli/ba-before-murphy-white-builtin.jpg";
 import baAfterMurphyWhite from "@/assets/wli/ba-after-murphy-white-builtin.jpg";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
@@ -35,21 +33,21 @@ type BAItem = {
 const beforeAfterItems: BAItem[] = [
   {
     title: "Living Room Modernization",
-    location: "New York, NY",
+    location: "Brooklyn, NY",
     description: "A dated apartment living room with worn hardwood, dark accent walls, and aging fixtures was reimagined as a bright, contemporary space featuring a custom walnut slat accent wall, refinished wide-plank flooring, and refreshed millwork throughout.",
     beforeImage: baBeforeLiving,
     afterImage: baAfterLiving,
   },
   {
     title: "Kitchen & Floor Renovation",
-    location: "New York, NY",
+    location: "Brooklyn, NY",
     description: "Severely damaged subfloor and a cramped pass-through were rebuilt from the studs out — new luxury vinyl plank flooring, white shaker cabinetry, marble-look subway backsplash, granite peninsula, and stainless appliances.",
     beforeImage: baBeforeKitchen,
     afterImage: baAfterKitchen,
   },
   {
     title: "Custom Murphy Bed Suite",
-    location: "Westchester County, NY",
+    location: "Rumson, NJ",
     description: "A dual-purpose guest suite featuring a custom white oak Murphy bed that disappears flush into a millwork wall when closed, then folds down to reveal a hotel-grade queen bed. Integrated bookshelves with warm LED lighting, grasscloth panels, brass reading sconces, and a sculptural rope chandelier — all built in-house.",
     beforeImage: baBeforeMurphy,
     afterImage: baAfterMurphy,
@@ -89,14 +87,7 @@ const beforeAfterItems: BAItem[] = [
     afterImage: baAfterBookcase,
   },
   {
-    title: "Home Office Built-In Transformation",
-    location: "New York, NY",
-    description: "",
-    beforeImage: baBeforeHomeOffice,
-    afterImage: baAfterHomeOffice,
-  },
-  {
-    title: "White Millwork Murphy Bed Wall",
+    title: "Custom Murphy Bed & Bookcase",
     location: "New York, NY",
     description: "",
     beforeImage: baBeforeMurphyWhite,
