@@ -16,8 +16,6 @@ import baBeforeHiddenScreen from "@/assets/wli/ba-before-hidden-screen-builtin.j
 import baAfterHiddenScreen from "@/assets/wli/ba-after-hidden-screen-builtin.jpg";
 import baBeforeBookcase from "@/assets/wli/ba-before-builtin-bookcase.jpg";
 import baAfterBookcase from "@/assets/wli/ba-after-builtin-bookcase.jpg";
-import baBeforeHomeOffice from "@/assets/wli/ba-before-home-office.jpg";
-import baAfterHomeOffice from "@/assets/wli/ba-after-home-office.jpg";
 import baBeforeMurphyWhite from "@/assets/wli/ba-before-murphy-white-builtin.jpg";
 import baAfterMurphyWhite from "@/assets/wli/ba-after-murphy-white-builtin.jpg";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
@@ -89,14 +87,7 @@ const beforeAfterItems: BAItem[] = [
     afterImage: baAfterBookcase,
   },
   {
-    title: "Home Office Built-In Transformation",
-    location: "New York, NY",
-    description: "",
-    beforeImage: baBeforeHomeOffice,
-    afterImage: baAfterHomeOffice,
-  },
-  {
-    title: "White Millwork Murphy Bed Wall",
+    title: "Custom Murphy Bed & Bookcase",
     location: "New York, NY",
     description: "",
     beforeImage: baBeforeMurphyWhite,
