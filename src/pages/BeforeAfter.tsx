@@ -35,21 +35,21 @@ type BAItem = {
 const beforeAfterItems: BAItem[] = [
   {
     title: "Living Room Modernization",
-    location: "New York, NY",
+    location: "Brooklyn, NY",
     description: "A dated apartment living room with worn hardwood, dark accent walls, and aging fixtures was reimagined as a bright, contemporary space featuring a custom walnut slat accent wall, refinished wide-plank flooring, and refreshed millwork throughout.",
     beforeImage: baBeforeLiving,
     afterImage: baAfterLiving,
   },
   {
     title: "Kitchen & Floor Renovation",
-    location: "New York, NY",
+    location: "Brooklyn, NY",
     description: "Severely damaged subfloor and a cramped pass-through were rebuilt from the studs out — new luxury vinyl plank flooring, white shaker cabinetry, marble-look subway backsplash, granite peninsula, and stainless appliances.",
     beforeImage: baBeforeKitchen,
     afterImage: baAfterKitchen,
   },
   {
     title: "Custom Murphy Bed Suite",
-    location: "Westchester County, NY",
+    location: "Rumson, NJ",
     description: "A dual-purpose guest suite featuring a custom white oak Murphy bed that disappears flush into a millwork wall when closed, then folds down to reveal a hotel-grade queen bed. Integrated bookshelves with warm LED lighting, grasscloth panels, brass reading sconces, and a sculptural rope chandelier — all built in-house.",
     beforeImage: baBeforeMurphy,
     afterImage: baAfterMurphy,
