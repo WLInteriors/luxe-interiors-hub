@@ -30,6 +30,7 @@ type BAItem = {
   afterImage: string;
   beforeLabel?: string;
   afterLabel?: string;
+  portrait?: boolean;
 };
 
 const beforeAfterItems: BAItem[] = [
@@ -103,6 +104,7 @@ const beforeAfterItems: BAItem[] = [
     description: "",
     beforeImage: baBeforeBathroom,
     afterImage: baAfterBathroom,
+    portrait: true,
   },
 ];
 
@@ -114,6 +116,7 @@ const BeforeAfterSlider = ({
   beforeLabel = "Before",
   afterLabel = "After",
   onExpand,
+  portrait = false,
 }: {
   before: string;
   after: string;
@@ -122,12 +125,14 @@ const BeforeAfterSlider = ({
   beforeLabel?: string;
   afterLabel?: string;
   onExpand?: () => void;
+  portrait?: boolean;
 }) => {
   const [position, setPosition] = useState(50);
 
   return (
     <div
-      className="relative overflow-hidden aspect-[16/10] cursor-col-resize select-none group"
+      className={`relative overflow-hidden ${portrait ? "aspect-[9/14] max-w-md mx-auto" : "aspect-[16/10]"} cursor-col-resize select-none group`}
+      
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
         setPosition(((e.clientX - rect.left) / rect.width) * 100);
@@ -224,6 +229,7 @@ const BeforeAfter = () => {
                       beforeLabel={item.beforeLabel}
                       afterLabel={item.afterLabel}
                       onExpand={() => setLightbox(item)}
+                      portrait={item.portrait}
                     />
                   </button>
                 </div>
