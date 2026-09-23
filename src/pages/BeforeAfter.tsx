@@ -18,6 +18,8 @@ import baBeforeBookcase from "@/assets/wli/ba-before-builtin-bookcase.jpg";
 import baAfterBookcase from "@/assets/wli/ba-after-builtin-bookcase.jpg";
 import baBeforeMurphyWhite from "@/assets/wli/ba-before-murphy-white-builtin.jpg";
 import baAfterMurphyWhite from "@/assets/wli/ba-after-murphy-white-builtin.jpg";
+import baBeforeBathroom from "@/assets/wli/ba-before-bathroom.jpg";
+import baAfterBathroom from "@/assets/wli/ba-after-bathroom.jpg";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 
 type BAItem = {
@@ -94,6 +96,13 @@ const beforeAfterItems: BAItem[] = [
     afterImage: baAfterMurphyWhite,
     beforeLabel: "Closed",
     afterLabel: "Open",
+  },
+  {
+    title: "Marble Bathroom Renovation",
+    location: "New York, NY",
+    description: "",
+    beforeImage: baBeforeBathroom,
+    afterImage: baAfterBathroom,
   },
 ];
 
