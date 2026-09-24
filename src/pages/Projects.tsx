@@ -23,6 +23,8 @@ import kCoastalBlue from "@/assets/wli/kitchen-coastal-blue.jpg";
 import kStatementHood from "@/assets/wli/kitchen-statement-hood.jpg";
 import kClassicIsland from "@/assets/wli/kitchen-replacement-luxury.jpg";
 import kStairBar from "@/assets/wli/kitchen-stair-bar.jpg";
+import kGrayOakPantry from "@/assets/wli/kitchen-gray-oak-open-pantry.jpg";
+import kGrayOakWaterfallIsland from "@/assets/wli/kitchen-gray-oak-waterfall-island.jpg";
 
 // Bathrooms
 import bMarbleBrass from "@/assets/wli/bath-marble-brass.jpg";
