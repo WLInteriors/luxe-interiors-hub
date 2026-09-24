@@ -192,6 +192,8 @@ const projects = [
   { title: "Luxury Stone-Backsplash Kitchen", category: "kitchens", image: kClassicIsland },
   { title: "Stair-Side Bar Kitchen", category: "kitchens", image: kStairBar },
   { title: "Warm Wood Kitchen with Wine Wall", category: "kitchens", image: kWarmWoodWineWall },
+  { title: "Gray Oak Pantry Wall with Open Storage", category: "kitchens", image: kGrayOakPantry },
+  { title: "Gray Oak Kitchen with Waterfall Island", category: "kitchens", image: kGrayOakWaterfallIsland },
 
   // Bathrooms
   { title: "Marble & Brass Primary Bath", category: "bathrooms", image: bMarbleBrass },
