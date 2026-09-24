@@ -85,9 +85,9 @@ import rKitchenRopePendantQuartzite from "@/assets/wli/reno-kitchen-rope-pendant
 import rLivingNavyFlutedMarbleCity from "@/assets/wli/reno-living-navy-fluted-marble-city.jpg";
 import rBathSkylineSoakerTub from "@/assets/wli/reno-bath-skyline-soaker-tub.jpg";
 import rPowderPurpleLedMarble from "@/assets/wli/reno-powder-purple-led-marble.jpg";
-import rExposedBrickOakFloorAsset from "@/assets/wli/reno-exposed-brick-oak-floor.jpg.asset.json";
+import rExposedBrickOakFloor from "@/assets/wli/reno-exposed-brick-oak-floor.jpg";
 import rMarbleBathToiletClean from "@/assets/wli/reno-marble-bath-toilet-clean.jpg";
-import rMarbleBathWalnutVanityAsset from "@/assets/wli/reno-marble-bath-walnut-vanity.jpg.asset.json";
+import rMarbleBathWalnutVanity from "@/assets/wli/reno-marble-bath-walnut-vanity.jpg";
 
 // Millwork
 import mWalnutFluted from "@/assets/wli/millwork-walnut-fluted.jpg";
@@ -259,9 +259,9 @@ const projects = [
   { title: "Navy Marble Fireplace Living Room", category: "full-renovation", image: rLivingNavyFlutedMarbleCity },
   { title: "Skyline Soaker Tub Bath", category: "full-renovation", image: rBathSkylineSoakerTub },
   { title: "Purple LED Marble Powder Room", category: "full-renovation", image: rPowderPurpleLedMarble },
-  { title: "Exposed Brick & Oak Floor Renovation", category: "full-renovation", image: rExposedBrickOakFloorAsset.url },
+  { title: "Exposed Brick & Oak Floor Renovation", category: "full-renovation", image: rExposedBrickOakFloor },
   { title: "Marble Bath with Wall-Hung Toilet", category: "full-renovation", image: rMarbleBathToiletClean },
-  { title: "Walnut Vanity & Marble Bath", category: "full-renovation", image: rMarbleBathWalnutVanityAsset.url },
+  { title: "Walnut Vanity & Marble Bath", category: "full-renovation", image: rMarbleBathWalnutVanity },
 
   // Millwork
   { title: "Walnut Fluted Credenza Wall", category: "millwork", image: mWalnutFluted },
