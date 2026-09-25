@@ -235,7 +235,6 @@ const projects = [
   { title: "Navy Velvet Living Room with Arched Windows", category: "living-spaces", image: lNavyVelvetArchedWindows },
   { title: "Velvet Sofa Lounge with Skyline View", category: "living-spaces", image: lOrangeSofaSkylineView },
   { title: "Custom Wardrobe Suite with Integrated Desk", category: "living-spaces", image: lWardrobeAngled },
-  { title: "Dark Wood Wardrobe & Bed Wall", category: "living-spaces", image: lWardrobeBed },
   { title: "Custom Wardrobe with Open Storage Display", category: "living-spaces", image: lWardrobeOpen },
   
 
