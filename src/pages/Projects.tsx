@@ -1,3 +1,5 @@
+import cLockerYellow from "@/assets/wli/commercial-locker-hallway-yellow.jpg";
+import cLockerBlue from "@/assets/wli/commercial-locker-hallway-blue.jpg";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Layout from "@/components/Layout";
@@ -323,6 +325,8 @@ const projects = [
   { title: "Oak Ceiling Dining Area with Slat Divider", category: "commercial", image: cOakCeilingDiningSlatDivider },
   { title: "Reeded Wood Feature Wall with Built-In Bench", category: "commercial", image: cReededWallBenchCubbies },
   { title: "Luxury Residential Lobby Lounge", category: "commercial", image: cLuxuryLobbyLoungeMarble },
+  { title: "School Locker Hallway in Sunflower Yellow", category: "commercial", image: cLockerYellow },
+  { title: "School Locker Hallway in Classic Blue", category: "commercial", image: cLockerBlue },
   
   
 ];
