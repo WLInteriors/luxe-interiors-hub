@@ -166,7 +166,6 @@ import lWalnutSlatMediaWall from "@/assets/wli/living-walnut-slat-media-wall.jpg
 import lNavyVelvetArchedWindows from "@/assets/wli/living-navy-velvet-arched-windows.jpg";
 import lOrangeSofaSkylineView from "@/assets/wli/living-orange-sofa-skyline-view.jpg";
 import lWardrobeAngled from "@/assets/wli/living-custom-wardrobe-angled.jpg";
-import lWardrobeBed from "@/assets/wli/living-custom-wardrobe-bed.jpg";
 import lWardrobeOpen from "@/assets/wli/living-custom-wardrobe-open.jpg";
 
 const categories = [
